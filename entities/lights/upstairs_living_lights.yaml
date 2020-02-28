@@ -1,0 +1,13 @@
+---
+
+platform: group
+name: Upstairs Living Lights
+entities:
+  - light.upstairs_living_downlight_1
+  - light.upstairs_living_downlight_2
+  - light.upstairs_living_downlight_3
+  - light.upstairs_living_downlight_4
+  - light.landing_lights
+  - light.bridge_downlight
+  - light.stair_leds
+  - light.stair_downlight

@@ -1,0 +1,70 @@
+---
+bedtime_music:
+  alias: Bedtime Music
+  sequence:
+
+    - service: sonos.set_sleep_timer
+      data:
+        entity_id:
+          - media_player.office_sonos
+          - media_player.balcony_sonos
+          - media_player.alfresco_sonos
+          - media_player.dining_room_sonos
+          - media_player.living_room_sonos
+          - media_player.upstairs_living_sonos
+        sleep_time: 30 #set for 0 mins to transition off
+  
+    - service: sonos.unjoin
+      data:
+        entity_id:
+          - media_player.master_bedroom_sonos
+          - media_player.master_bathroom_sonos
+
+    - service: sonos.join
+      data:
+        master: media_player.master_bedroom_sonos
+        entity_id:
+          - media_player.master_bedroom_sonos
+          - media_player.master_bathroom_sonos
+
+    - service: media_player.volume_set
+      data:
+        entity_id:
+          - media_player.master_bedroom_sonos
+          - media_player.master_bathroom_sonos
+        volume_level: 0.10
+
+    - service: sonos.set_sleep_timer
+      data:
+        entity_id: media_player.master_bedroom_sonos
+        sleep_time: 5400 #in seconds - set for 90 mins
+
+    - service: media_player.shuffle_set
+      data:
+        entity_id:
+          - media_player.master_bedroom_sonos
+        shuffle: true
+    
+    - service: media_player.select_source
+      data:
+        entity_id: media_player.master_bedroom_sonos
+        source: Sleep Playlist
+
+    - delay:
+        minutes: 15
+
+    - service: sonos.unjoin
+      data:
+        entity_id:
+          - media_player.master_bathroom_sonos
+
+    - service: media_player.volume_set
+      data:
+        entity_id:
+          - media_player.master_bedroom_sonos
+        volume_level: 0.06
+
+    - service: sonos.set_sleep_timer
+      data:
+        entity_id: media_player.master_bathroom_sonos
+        sleep_time: 0 # in seconds - for immediate ramp down

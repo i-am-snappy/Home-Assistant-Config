@@ -1,0 +1,11 @@
+---
+# This is an input boolean to use with automations
+# for when we want to disable the cirdadian lighting
+# for the laundry downlights.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+disable_circadian_lighting_laundry_downlights:
+  name: Disable Circadian Lighting Laundry Cupboard
+  initial: false
+  icon: mdi:theme-light-dark

@@ -1,0 +1,16 @@
+---
+
+platform: qnap
+host: !secret qnap_host
+ssl: true
+verify_ssl: false
+port: 443
+username:  !secret qnap_username
+password:  !secret qnap_password
+monitored_conditions:
+  - status
+  - cpu_usage
+  - memory_percent_used
+  - network_tx
+  - volume_percentage_used
+

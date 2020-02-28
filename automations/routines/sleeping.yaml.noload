@@ -1,0 +1,12 @@
+---
+
+alias: Sleeping
+initial_state: 'on'
+trigger:
+  - platform: state
+    entity_id: input_boolean.mode_bedtime
+    to: 'on'
+    for: 00:60:00
+
+action:
+  - service: script.sleeping

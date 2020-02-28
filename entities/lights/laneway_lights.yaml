@@ -1,0 +1,9 @@
+---
+
+platform: group
+name: Laneway Lights
+entities:
+  - light.laneway_light_1
+  - light.laneway_light_2
+  - light.laneway_light_3
+  - light.laneway_light_4

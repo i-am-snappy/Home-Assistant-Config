@@ -1,0 +1,8 @@
+---
+
+platform: group
+name: Under Bridge Lights
+entities:
+  - light.under_bridge_downlight_1
+  - light.under_bridge_downlight_2
+  - light.under_bridge_downlight_3

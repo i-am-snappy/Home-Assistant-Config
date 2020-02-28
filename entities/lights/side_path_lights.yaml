@@ -1,0 +1,7 @@
+---
+
+platform: group
+name: Side Path Lights
+entities:
+  - light.side_path_front_light
+  - light.side_path_back_light

@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we are working in the dining room.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_dining_room_work:
+  name: Working in the Dining Room
+  initial: false
+  icon: mdi:desktop-classic

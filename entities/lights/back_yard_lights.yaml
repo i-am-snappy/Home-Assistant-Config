@@ -1,0 +1,9 @@
+---
+
+platform: group
+name: Back Yard Lights
+entities:
+  - light.garden_lights
+  - light.alfresco_lights
+  - light.laneway_lights
+  - light.side_path_lights

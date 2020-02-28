@@ -1,0 +1,7 @@
+---
+  
+name: james
+platform: group
+services:
+  - service: mobile_app_james_phone
+  - service: teams_james_hon

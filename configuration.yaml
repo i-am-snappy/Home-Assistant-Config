@@ -1,0 +1,11 @@
+homeassistant:
+
+  # Load packages and integrations
+  packages: !include_dir_named integrations
+
+  auth_providers:
+    - type: homeassistant
+    - type: trusted_networks
+      trusted_networks:
+        - !secret trusted_ip1
+        - !secret trusted_ip3

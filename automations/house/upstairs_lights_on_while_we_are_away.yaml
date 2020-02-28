@@ -1,0 +1,37 @@
+---
+
+alias: Upstairs Lights on while we are away
+initial_state: 'on'
+trigger:
+- platform: state
+  entity_id: binary_sensor.upstairs_pir
+  to: 'on'
+condition:
+  condition: and
+  conditions:
+  - condition: numeric_state
+    entity_id: sun.sun
+    value_template: '{{ state.attributes.elevation }}'
+    below: 3.5
+  - condition: or
+    conditions:
+      - condition: state
+        entity_id: sensor.james_status
+        state: 'Away'
+      - condition: state
+        entity_id: sensor.james_status
+        state: 'Extended Away'
+  - condition: or
+    conditions:
+      - condition: state
+        entity_id: sensor.denise_status
+        state: 'Away'
+      - condition: state
+        entity_id: sensor.denise_status
+        state: 'Extended Away'
+action:
+- service: light.turn_on
+  data:
+    entity_id: light.upstairs_living_lights
+    brightness: 132
+    color_temp: 250

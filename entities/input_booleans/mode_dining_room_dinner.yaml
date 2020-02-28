@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we are having dinner in the dining room.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_dining_room_dinner:
+  name: Dinner in the Dining Room
+  initial: false
+  icon: mdi:food-fork-drink

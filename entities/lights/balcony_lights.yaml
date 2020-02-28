@@ -1,0 +1,9 @@
+---
+
+platform: group
+name: Balcony Lights
+entities:
+  - light.balcony_downlight_1
+  - light.balcony_downlight_2
+  - light.balcony_downlight_3
+  - light.balcony_downlight_4

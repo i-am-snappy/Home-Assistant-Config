@@ -1,0 +1,8 @@
+---
+
+platform: group
+name: Landing Lights
+entities:
+  - light.landing_downlight_1
+  - light.landing_downlight_2
+  - light.landing_downlight_3

@@ -1,0 +1,5 @@
+---
+
+disable_doorbell:
+  name: Disable Doorbell Automation
+  icon: mdi:bell-off

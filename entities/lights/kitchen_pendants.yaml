@@ -1,0 +1,7 @@
+---
+
+platform: group
+name: Kitchen Pendants
+entities:
+  - light.pendant_high
+  - light.pendant_low

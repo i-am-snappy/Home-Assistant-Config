@@ -1,0 +1,7 @@
+---
+
+platform: plex
+host: !secret plex_ip1
+port: 32400
+token: !secret plex_token
+ssl: false

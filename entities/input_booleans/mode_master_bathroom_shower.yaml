@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we are having a shower in the master bathroom.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_master_bathroom_shower:
+  name: Master Bathroom Showering
+  initial: false
+  icon: mdi:shower-head

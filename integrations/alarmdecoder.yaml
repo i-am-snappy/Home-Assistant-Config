@@ -1,0 +1,63 @@
+alarmdecoder:
+  device:
+    type: socket
+    host: !secret alarm_ip
+    port: 10000
+  panel_display: true
+  zones:
+    05:
+      name: 'Rear Siren Tamper'
+      type: 'problem'
+    06:
+      name: 'Front Siren Tamper'
+      type: 'problem'
+    09:
+      name: 'Front Door'
+      type: 'door'
+      rfid: 0950912
+      loop: 1
+    11:
+      name: 'Office PIR'
+      type: 'motion'
+      rfid: 0287359
+      loop: 2
+    12:
+      name: 'Living Room PIR'
+      type: 'motion'
+      rfid: 0474253
+      loop: 2
+    13:
+      name: 'Dining Room PIR'
+      type: 'motion'
+      rfid: 0282944
+      loop: 2
+    14:
+      name: 'Whisky Room PIR'
+      type: 'motion'
+      rfid: 0733569
+      loop: 1
+    16:
+      name: 'Laundry PIR'
+      type: 'motion'
+      rfid: 0637327
+      loop: 1
+    17:
+      name: 'Living Room Glass'
+      type: 'sound'
+      rfid: 0788608
+      loop: 1
+    18:
+      name: 'Kitchen Glass'
+      type: 'sound'
+      rfid: 0561281
+      loop: 1
+    21:
+      name: 'Upstairs PIR'
+      type: 'motion'
+      rfid: 0620331
+      loop: 2
+    22:
+      name: 'Garage PIR'
+      type: 'motion'
+      rfid: 0760226
+      loop: 2

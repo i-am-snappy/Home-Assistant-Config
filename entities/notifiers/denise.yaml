@@ -1,0 +1,6 @@
+---
+  
+name: denise
+platform: group
+services:
+  - service: html5_denise_phone

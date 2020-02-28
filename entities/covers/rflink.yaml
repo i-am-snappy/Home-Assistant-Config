@@ -1,0 +1,12 @@
+---
+    
+platform: rflink
+devices:
+  brelmotor_012045_a0:
+    name: Living Room Blinds
+  brelmotor_012045_a1:
+    name: Living Room Blinds Bottom
+  brelmotor_012045_a2:
+    name: Living Room Blinds Top
+  brelmotor_6c01f0_91:
+    name: Master Bedroom Blinds

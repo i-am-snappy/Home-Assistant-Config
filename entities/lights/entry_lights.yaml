@@ -1,0 +1,11 @@
+---
+
+platform: group
+name: Entry Lights
+entities:
+  - light.under_bridge_downlight_1
+  - light.under_bridge_downlight_2
+  - light.under_bridge_downlight_3
+  - light.entry_downlight
+  - light.stair_leds
+  - light.stair_downlight

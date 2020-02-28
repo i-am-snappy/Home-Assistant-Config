@@ -1,0 +1,9 @@
+---
+
+platform: template
+sensors:
+  front_door_outdoor_movement:
+    friendly_name: 'Front Door Outdoor Movement'
+    value_template: '{% if is_state("binary_sensor.ring_front_doorbell_motion", "on") %}Movement detected{% else %}No movement{% endif %}'
+    icon_template: '{% if is_state("binary_sensor.ring_front_doorbell_motion", "on") %}mdi:run-fast{% else %}mdi:sleep{% endif %}'
+  

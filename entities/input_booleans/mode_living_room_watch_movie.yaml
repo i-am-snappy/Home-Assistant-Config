@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we are watching a movie in the living room.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_living_room_watch_movie:
+  name: Watching a movie in the Living Room
+  initial: false
+  icon: mdi:filmstrip

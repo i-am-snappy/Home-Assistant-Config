@@ -1,0 +1,11 @@
+---
+# This is an input boolean to use with automations
+# for when we want to disable the cirdadian lighting
+# for the master bathroom led strip.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+disable_circadian_lighting_master_bathroom_led:
+  name: Disable Circadian Lighting Master Bathroom LED
+  initial: false
+  icon: mdi:theme-light-dark

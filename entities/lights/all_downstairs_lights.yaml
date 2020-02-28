@@ -1,0 +1,11 @@
+---
+
+platform: group
+name: All Downstairs Lights
+entities:
+  - light.downstairs_living_lights
+  - light.back_room_lights
+  - light.office_lights
+  - light.pantry_light
+  - light.laundry_cupboard_light
+  - light.whisky_room_lights

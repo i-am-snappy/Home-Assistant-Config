@@ -1,0 +1,9 @@
+---
+
+platform: generic
+name: Cam 3
+still_image_url: http://cam3.snappylan/ISAPI/Streaming/channels/101/picture
+#mjpeg_url: http://cam3.snappylan/ISAPI/Streaming/channels/102/httppreview
+stream_source: !secret cam3_stream_url
+username: !secret cam_username
+password: !secret cam3_password

@@ -1,0 +1,8 @@
+---
+
+platform: group
+name: Ambient Lights
+entities:
+  - light.tv_light
+  - light.under_bench_light
+  - light.stair_leds

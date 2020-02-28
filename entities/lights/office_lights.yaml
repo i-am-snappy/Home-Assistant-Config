@@ -1,0 +1,7 @@
+---
+
+platform: group
+name: Office Lights
+entities:
+  - light.office_downlight_1
+  - light.office_downlight_2

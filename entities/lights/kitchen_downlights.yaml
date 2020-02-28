@@ -1,0 +1,10 @@
+---
+
+platform: group
+name: Kitchen Downlights
+entities:
+  - light.kitchen_downlight_1
+  - light.kitchen_downlight_2
+  - light.kitchen_downlight_3
+  - light.kitchen_downlight_4
+  - light.kitchen_downlight_5

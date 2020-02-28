@@ -1,0 +1,389 @@
+#input_select:
+#  dishwasher_status:
+#    name: Dishwasher Status
+#    options:
+#      - Dirty
+#      - Running
+#      - Drying
+#      - Clean
+#    initial: Dirty
+#  
+#  washing_machine_status:
+#    name: Washing Machine Status
+#    options:
+#      - Idle
+#      - Running
+#      - Finishing
+#      - Clean
+#    initial: Idle
+#
+#sensor:
+#  - platform: template
+#    sensors:
+#      washing_machine_status:
+#        value_template: '{{ states.input_select.washing_machine_status.state}}'
+#        friendly_name: 'Washing Machine Status'
+#      dishwasher_status:
+#        value_template: '{{ states.input_select.dishwasher_status.state}}'
+#        friendly_name: 'Dishwasher Status'
+#
+##################################################################################
+
+#automation:
+# 
+#  # When we detect power being drawn from the dishwasher,
+#  # mark the dishwasher as using power
+#  
+#  - id: set_dishwasher_active_when_power_detected
+#    alias: Set dishwasher active when power detected
+#    initial_state: true
+#    trigger:
+#      - platform: numeric_state
+#        entity_id: sensor.dishwasher_power
+#        above: 10
+#    condition:
+#      condition: or
+#      conditions:
+#        - condition: state
+#          entity_id: input_select.dishwasher_status
+#          state: Dirty
+#        - condition: state
+#          entity_id: input_select.dishwasher_status
+#          state: Clean
+#        - condition: state
+#          entity_id: input_select.dishwasher_status
+#          state: Drying
+#    action:
+#      - service: input_select.select_option
+#        data:
+#          entity_id: input_select.dishwasher_status
+#          option: Running
+#  
+#  # When the power level drops below 10, and the Dishwasher is set to
+#  # the 'Running' state, mark the Dishwasher as Finished
+#  
+#  - id: set_dishwasher_drying_when_power_drops
+#    alias: Set dishwasher drying when power drops
+#    initial_state: true
+#    trigger:
+#      - platform: numeric_state
+#        entity_id: sensor.dishwasher_power
+#        below: 10
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: state
+#          entity_id: input_select.dishwasher_status
+#          state: Running
+#    action:
+#      - service: input_select.select_option
+#        data:
+#          entity_id: input_select.dishwasher_status
+#          option: Drying
+  
+  # Once the dishwasher status has been 'Drying' for 30 minutes, mark the
+  # dishwasher as clean
+  
+#  - id: set_dishwasher_clean
+#    alias: Set dishwasher clean
+#    initial_state: true
+#    trigger:
+#      - platform: state
+#        entity_id: input_select.dishwasher_status
+#        to: Drying
+#        for:
+#          minutes: 15
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: state
+#          entity_id: input_select.dishwasher_status
+#          state: Drying
+#    action:
+#      - service: input_select.select_option
+#        data:
+#          entity_id: input_select.dishwasher_status
+#          option: Clean
+  
+  # When the power drops and the dishwasher is Clean or Drying, someone has
+  # turned the Dishwasher off and emptied it. We should do this when the state
+  # of the Dishwasher is clean or Finishing, just incase someone opens the
+  # Dishwasher before the 30 minute timeout has been reached.
+  
+#  - id: set_dishwasher_dirty_when_power_off
+#    alias: Set Dishwasher dirty when power off
+#    initial_state: true
+#    trigger:
+#      - platform: numeric_state
+#        entity_id: sensor.dishwasher_power
+#        below: 0.5
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: numeric_state
+#          entity_id: sensor.dishwasher_power
+#          below: 0.5
+#        - condition: or
+#          conditions:
+#          - condition: state
+#            entity_id: input_select.dishwasher_status
+#            state: Clean
+#          - condition: state
+#            entity_id: input_select.dishwasher_status
+#            state: Drying
+#    action:
+#      - service: input_select.select_option
+#        data:
+#          entity_id: input_select.dishwasher_status
+#          option: Dirty
+#      - service_template: >
+#          {% if (is_state('device_tracker.james_phone', 'home')) or (is_state('device_tracker.denise_phone', 'home'))  %}
+#            tts.google_translate_say
+#          {% endif %}
+#        entity_id: group.google_home
+#        data:
+#          message: 'The Dishwasher is now dirty'
+      
+
+# 
+#  - id: send_alert_when_dishwasher_is_clean
+#    alias: Send alert when dishwasher is clean
+#    initial_state: true
+#    trigger:
+#      - platform: state
+#        entity_id: input_select.dishwasher_status
+#        to: Clean
+#      - platform: time
+#        at: '8:30:00'
+#      - platform: state
+#        entity_id: sensor.james_status
+#        to: 'Home'
+#        for:
+#          minutes: 10
+#      - platform: state
+#        entity_id: sensor.denise_status
+#        to: 'Home'
+#        for:
+#          minutes: 10    
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: time
+#          before: '22:30:00'
+#          after: '8:30:00'
+#        - condition: state
+#          entity_id: group.household
+#          state: 'home'
+#        - condition: state
+#          entity_id: input_select.dishwasher_status
+#          state: Clean
+#        # Don't send this alert if it was last triggered less than 30 minutes ago (1,800 seconds)
+#        - condition: template
+#          value_template: >
+#            {% if states.automation.send_alert_when_dishwasher_is_clean.last_triggered is not none %}
+#              {% if as_timestamp(now()) | int   -  as_timestamp(states.automation.send_alert_when_dishwasher_is_clean.attributes.last_triggered) | int > 3600 %} true {% else %} false
+#              {% endif %}
+#            {% else %}
+#            false
+#            {% endif %}
+#    action:
+#      - service_template: >
+#          {% if (is_state('device_tracker.james_phone', 'home')) and (is_state('device_tracker.denise_phone', 'home'))  %}
+#            notify.james_and_denise
+#          {% elif is_state('device_tracker.james_phone', 'home') %}
+#            notify.james
+#          {% elif is_state('device_tracker.denise_phone', 'home') %}
+#            notify.denise
+#          {% endif %}
+#        data:
+#          message: 'The Dishwasher has finished and is ready to be emptied!'
+#          title: 'Dishwasher Update'
+#      - service_template: >
+#          {% if (is_state('device_tracker.james_phone', 'home')) or (is_state('device_tracker.denise_phone', 'home'))  %}
+#            tts.google_translate_say
+#          {% endif %}
+#        entity_id: group.google_home
+#        data:
+#          message: 'The Dishwasher has finished!'
+
+
+###################################################################################
+#
+#  
+#  # When power is detected, and the washing machine is not in 
+#  # the Running state, change the status of the washing machine
+#  # to Running. 
+#  # The status check will ensure we don't try to put the state 
+#  # to Running each time the power level changes, and we're already
+#  # in the Running state.
+#  
+#  - id: set_washing_machine_active_when_power_detected
+#    alias: Set washing machine active when power detected
+#    initial_state: true
+#    trigger:
+#      - platform: numeric_state
+#        entity_id: sensor.washing_machine_power
+#        above: 10
+#    condition:
+#      condition: or
+#      conditions:
+#        - condition: state
+#          entity_id: sensor.washing_machine_status
+#          state: Idle
+#        - condition: state
+#          entity_id: sensor.washing_machine_status
+#          state: Clean
+#        - condition: state
+#          entity_id: sensor.washing_machine_status
+#          state: Finishing
+#    action:
+#      - service: input_select.select_option
+#        data:
+#          entity_id: input_select.washing_machine_status
+#          option: Running
+#  
+#  # When the power drops, move the state of the washing machine to 
+#  # Finishing.
+#  
+#  - id: set_washing_machine_finished_when_power_drops
+#    alias: Set washing machine finished when power drops
+#    initial_state: true
+#    trigger:
+#      - platform: numeric_state
+#        entity_id: sensor.washing_machine_power
+#        below: 6
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: state
+#          entity_id: input_select.washing_machine_status
+#          state: Running
+#    action:
+#      - service: input_select.select_option
+#        data:
+#          entity_id: input_select.washing_machine_status
+#          option: Finishing
+#  
+#  # Wait 8 minutes for us to be in the Finishing state before we
+#  # decide the washing machine has finished. This way, if the 
+#  # washing machine is in between cycles and the power drops, we 
+#  # won't mark the washing machine cycle as finished too early.
+#  
+#  - id: set_washing_machine_clean_after_timeout
+#    alias: Set washing machine clean after timeout
+#    initial_state: true
+#    trigger:
+#      - platform: state
+#        entity_id: input_select.washing_machine_status
+#        to: Finishing
+#        for:
+#          minutes: 3
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: state
+#          entity_id: input_select.washing_machine_status
+#          state: Finishing
+#    action:
+#      - service: input_select.select_option
+#        data:
+#          entity_id: input_select.washing_machine_status
+#          option: Clean
+#  
+#  # When we open the washing machine door, reset the status back to
+#  # idle, so we don't spam people that the washing machine has 
+#  # finished, and someone has already emptied it
+#  - id: set_washing_machine_dirty_when_door_opens
+#    alias: Set washing machine dirty when door opens
+#    initial_state: true
+#    trigger:
+#      - platform: numeric_state
+#        entity_id: sensor.washing_machine_power
+#        below: 1
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: state
+#          entity_id: input_select.washing_machine_status
+#          state: Clean
+#    action:
+#      - service: input_select.select_option
+#        data:
+#          entity_id: input_select.washing_machine_status
+#          option: Idle
+#      - service_template: >
+#          {% if (is_state('device_tracker.james_phone', 'home')) or (is_state('device_tracker.denise_phone', 'home'))  %}
+#            tts.google_translate_say
+#          {% endif %}
+#        entity_id: group.google_home
+#        data:
+#          message: 'The washing machine is now empty'
+#
+#
+# 
+#
+#  - id: send_alert_when_washing_machine_is_finished
+#    alias: Send alert when washing machine is finished
+#    initial_state: true
+#    trigger:
+#      - platform: state
+#        entity_id: sensor.washing_machine_status
+#        to: Clean
+#        for:
+#          minutes: 1
+#      - platform: state
+#        entity_id: sensor.james_status
+#        to: 'Home'
+#        for:
+#          minutes: 10
+#      - platform: state
+#        entity_id: sensor.denise_status
+#        to: 'Home'
+#        for:
+#          minutes: 10    
+#      - platform: time
+#        at: '8:45:00'
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: time
+#          before: '22:30:00'
+#          after: '8:30:00'
+#        - condition: state
+#          entity_id: group.household
+#          state: 'home'
+#        - condition: state
+#          entity_id: input_select.washing_machine_status
+#          state: Clean
+#        - condition: template
+#          value_template: >
+#            {% if states.automation.send_alert_when_washing_machine_is_finished.last_triggered is not none %}
+#              {% if as_timestamp(now()) | int   -  as_timestamp(states.automation.send_alert_when_washing_machine_is_finished.attributes.last_triggered) | int > 1800 %} true {% else %} false
+#              {% endif %}
+#            {% else %}
+#            false
+#            {% endif %}
+#    action:
+#      - service_template: >
+#          {% if (is_state('device_tracker.james_phone', 'home')) and (is_state('device_tracker.denise_phone', 'home'))  %}
+#            notify.james_and_denise
+#          {% elif is_state('device_tracker.james_phone', 'home') %}
+#            notify.james
+#          {% elif is_state('device_tracker.denise_phone', 'home') %}
+#            notify.denise
+#          {% endif %}
+#        data:
+#          message: 'Hey, the washing machine has finished and is ready to be emptied'
+#          title: 'Washing Machine'
+#      - service_template: >
+#          {% if (is_state('device_tracker.james_phone', 'home')) or (is_state('device_tracker.denise_phone', 'home'))  %}
+#            tts.google_translate_say
+#          {% endif %}
+#        entity_id: group.google_home
+#        data:
+#          message: 'The Washing Machine has finished!'
+#
+#
+#
+################################################################################
+#    

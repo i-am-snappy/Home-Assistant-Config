@@ -1,0 +1,76 @@
+# Example .gitignore file for your config dir.
+# A * ensures that everything will be ignored.
+*.xml
+*.conf
+*.pickle
+*.db-shm
+*.db-wal
+*.sqlite
+
+# You can whitelist files/folders with !, these will not be ignored.
+!*.yaml
+!.gitignore
+!*.md
+
+# Ignore folders.
+.storage
+.cloud
+.uuid
+.vscode
+appdaemon
+node-red
+deps
+esphome
+
+
+# Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
+.homekit.state
+ios.conf
+production_auth.json
+__pycache__
+
+#####################################################################
+
+# Created by https://www.gitignore.io/api/homeassistant
+# Edit at https://www.gitignore.io/?templates=homeassistant
+
+### HomeAssistant ###
+# Files with personal details
+*.crt
+*.csr
+*.key
+.google.token
+.uuid
+icloud/
+google_calendars.yaml
+harmony_media_room.conf
+home-assistant.db
+home-assistant_v2.db
+home-assistant_v2.db-*
+html5_push_registrations.conf
+ip_bans.yaml
+known_devices.yaml
+phue.conf
+plex.conf
+pyozw.sqlite
+secrets.yaml
+tradfri.conf
+
+# Temporary files
+*.db-journal
+*.pid
+tts
+
+# automatically downloaded dependencies
+deps
+lib
+www
+
+# Log files
+home-assistant.log
+ozw_log.txt
+
+# Development files
+custom_components/
+
+# End of https://www.gitignore.io/api/homeassistant

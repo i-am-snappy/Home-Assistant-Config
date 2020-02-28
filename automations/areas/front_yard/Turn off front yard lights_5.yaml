@@ -1,0 +1,31 @@
+---
+##########################################################
+## Turn off front yard lights_5
+##########################################################
+
+alias: Turn off front yard lights_5
+initial_state: 'off'
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.cam_6_line_crossing
+    from: 'on'
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 00
+
+condition:
+  - condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+  - condition: state
+    entity_id: input_boolean.disable_doorbell
+    state: 'off'
+
+action:
+  - service: light.turn_off
+    entity_id: light.front_yard_lights
+    data:
+      transition: 30

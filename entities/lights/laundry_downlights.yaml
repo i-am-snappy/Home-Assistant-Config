@@ -1,0 +1,7 @@
+---
+
+platform: group
+name: Laundry Downlights
+entities:
+  - light.laundry_downlight_1
+  - light.laundry_downlight_2

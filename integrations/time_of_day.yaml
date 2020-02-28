@@ -1,0 +1,120 @@
+#######################################
+#
+# Times of the Day
+#
+# Morning            2 hours before sunrise to 12pm (noon)
+#
+# -Early morning     2 hours before sunrise to 8am
+# -Mid Morning       8am to 10am
+# -Late morning      10am to 12pm
+#
+#
+# Afternoon          12pm to sunset
+#
+# -Early afternoon   12pm to 2pm
+# -Mid Afternoon     2pm to 4pm
+# -Late afternoon    4pm to sunset
+# 
+#
+# Evening            sunset to 9pm
+#
+# -Early evening     sunset to 7pm
+# -Late Evening      7pm to 9pm
+#
+#
+# Night              9pm to 2 hours before sunrise
+#
+# -Early Night       9pm to 11pm
+# -Late Night        11pm to 2 hours before sunrise
+#
+#######################################
+
+binary_sensor: 
+
+# Morning
+  - platform: tod
+    name: Morning
+    after: sunrise
+    after_offset: '-02:00'
+    before: '12:00'
+
+### Early Morning
+  - platform: tod
+    name: Early Morning
+    after: sunrise
+    after_offset: '-02:00'
+    before: '08:00'
+
+### Mid Morning
+  - platform: tod
+    name: Mid Morning
+    after: '08:00'
+    before: '10:00'
+
+### Late Morning
+  - platform: tod
+    name: Late Morning
+    after: '10:00'
+    before: '12:00'
+
+# Afternoon
+  - platform: tod
+    name: Afternoon
+    after: '12:00'
+    before: '18:00'
+
+### Early Afternoon
+  - platform: tod
+    name: Early Afternoon
+    after: '12:00'
+    before: '14:00'
+
+### Mid Afternoon
+  - platform: tod
+    name: Mid Afternoon
+    after: '14:00'
+    before: '16:00'
+
+### Late Afternoon
+  - platform: tod
+    name: Late Afternoon
+    after: '16:00'
+    before: '17:00'
+
+# Evening
+  - platform: tod
+    name: Evening
+    after: sunset
+    before: '21:00'
+
+### Early Evening
+  - platform: tod
+    name: Early Evening
+    after: sunset
+    before: '19:00'
+
+### Late Evening
+  - platform: tod
+    name: Late Evening
+    after: '19:00'
+    before: '21:00'
+
+# Night
+  - platform: tod
+    name: Night
+    after: '21:00'
+    before: sunrise
+    before_offset: '-02:00'
+
+### Early Night
+  - platform: tod
+    name: Early Night
+    after: '21:00'
+    before: '23:00'
+
+### Late Night
+  - platform: tod
+    name: Late Night
+    after: '23:00'
+    before: sunrise
+    before_offset: '-02:00'

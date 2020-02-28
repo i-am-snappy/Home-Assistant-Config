@@ -1,0 +1,9 @@
+---
+# The fan component is built for the controlling
+# covers such as rollershutters, blinds, and garage doors.
+#
+# This loads up my cover configurations
+#
+# https://www.home-assistant.io/components/cover/
+#
+cover: !include_dir_list ../entities/covers

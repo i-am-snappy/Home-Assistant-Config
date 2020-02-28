@@ -1,0 +1,12 @@
+---
+
+harmony:
+  name: Harmony Control
+  options:
+    - Select Input
+    - Watch TV
+    - Shield TV
+    - Listen To Sonos
+    - PowerOff
+  initial: Select Input
+  icon: mdi:remote
