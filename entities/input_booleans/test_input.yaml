@@ -1,0 +1,10 @@
+---
+# This is a test input boolean to use with testing.
+# 
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+test_input:
+  name: Test Input
+  initial: false
+  icon: mdi:sleep

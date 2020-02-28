@@ -1,0 +1,17 @@
+---
+  
+id: system_travis_build_status
+alias: System Travis Build Status
+initial_state: 'on'
+trigger:
+  - platform: state
+    entity_id: sensor.jamessnappyhomeassistantconfig_last_build_state
+    from: "started"
+    to: "failed"
+action:
+  - service: notify.ios_james_phone
+    data_template:
+      message: >
+        Travis build failed! {{ "\uD83E\uDD2C" }}
+      data:
+        url: https://travis-ci.org/james-snappy/Home-AssistantConfig

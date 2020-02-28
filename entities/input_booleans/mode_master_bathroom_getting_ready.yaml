@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we are getting ready in the master bathroom.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_master_bathroom_getting_ready:
+  name: Getting Ready in Master Bathroom
+  initial: false
+  icon: mdi:account-clock

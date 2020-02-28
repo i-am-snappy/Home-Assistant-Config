@@ -1,0 +1,28 @@
+---
+##########################################################
+## Turn On Front Lights when Door Bell Rings or camera motion_4
+##########################################################
+
+alias: Turn On Front Lights when Door Bell Rings or camera motion_4
+initial_state: 'off'
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.cam_2_line_crossing
+    from: 'off'
+    to: 'on'
+
+condition:
+  - condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+  - condition: state
+    entity_id: input_boolean.disable_doorbell
+    state: 'off'
+
+action:
+  - service: light.turn_on
+    entity_id: light.front_yard_lights
+    data:
+      brightness: 255
+      color_temp: 200

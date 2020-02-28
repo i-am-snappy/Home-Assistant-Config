@@ -1,0 +1,8 @@
+---
+
+platform: group
+name: All Lights
+entities:
+  - light.inside_lights
+  - light.outside_lights
+  - light.garage_light

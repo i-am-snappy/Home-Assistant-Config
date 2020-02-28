@@ -1,0 +1,22 @@
+---
+# Circadian Lighting slowly synchronizes your color changing lights with the
+# regular naturally occuring color temperature of the sky throughout the day.
+#
+# This switch allows me to enable or disable this feature on the lights
+# out on the balcony.
+#
+# https://github.com/claytonjn/hass-circadian_lighting
+#
+platform: circadian_lighting
+name: Balcony Downlights
+lights_ct:
+  - light.balcony_downlight_1
+  - light.balcony_downlight_2
+  - light.balcony_downlight_3
+  - light.balcony_downlight_4
+sleep_entity: input_boolean.mode_sleeping
+sleep_state: 'on'
+sleep_colortemp: 10000
+sleep_brightness: 1
+disable_entity: input_boolean.disable_circadian_lighting_balcony_downlights
+disable_state: 'on'

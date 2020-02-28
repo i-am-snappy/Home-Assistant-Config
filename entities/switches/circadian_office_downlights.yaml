@@ -1,0 +1,21 @@
+---
+# Circadian Lighting slowly synchronizes your color changing lights with the
+# regular naturally occuring color temperature of the sky throughout the day.
+#
+# This switch allows me to enable or disable this feature on the lights
+# in the office.
+#
+# https://github.com/claytonjn/hass-circadian_lighting
+#
+platform: circadian_lighting
+name: Office Downlights
+lights_ct:
+  - light.james_desk_downlight
+  - light.denise_desk_downlight
+min_brightness: 75
+sleep_entity: input_boolean.mode_sleeping
+sleep_state: 'on'
+sleep_colortemp: 10000
+sleep_brightness: 1
+disable_entity: input_boolean.disable_circadian_lighting_office_downlights
+disable_state: 'on'

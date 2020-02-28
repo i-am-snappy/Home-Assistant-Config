@@ -1,0 +1,7 @@
+living_room_heater_temp_set:
+  name: Living Room Temp Set
+  #initial: 22
+  min: 15
+  max: 27
+  step: 1
+  mode: box

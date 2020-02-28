@@ -1,0 +1,10 @@
+---
+
+platform: generic
+name: Cam 9
+still_image_url: http://cam9.snappylan/dms.jpg
+stream_source: !secret cam9_stream_url
+#mjpeg_url: http://cam9/video/mjpg.cgi
+username: !secret cam_username
+password: !secret cam9_password
+

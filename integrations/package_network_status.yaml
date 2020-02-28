@@ -1,0 +1,89 @@
+---
+  
+sensor:
+  - platform: template
+    sensors:
+      harmony_hub_online:
+        friendly_name: 'Harmony Hub'
+        value_template: "{% if states.device_tracker.harmony_hub %}
+          {% if is_state('device_tracker.harmony_hub', 'home') %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+          {% else %}
+            Unknown
+          {% endif %}"
+
+      efergy_hub_online:
+        friendly_name: 'Efergy Hub'
+        value_template: "{% if states.device_tracker.efergy_hub %}
+          {% if is_state('device_tracker.efergy_hub', 'home') %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+          {% else %}
+            Unknown
+          {% endif %}"
+          
+      goliath_online:
+        friendly_name: 'Goliath NIC 1'
+        value_template: "{% if states.device_tracker.goliath %}
+          {% if is_state('device_tracker.goliath', 'home') %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+          {% else %}
+            Unknown
+          {% endif %}"
+      
+      goliath2_online:
+        friendly_name: 'Goliath NIC 2'
+        value_template: "{% if states.device_tracker.goliath_2 %}
+          {% if is_state('device_tracker.goliath_2', 'home') %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+          {% else %}
+            Unknown
+          {% endif %}"
+      
+      optiplex_online:
+        friendly_name: 'Optiplex'
+        value_template: "{% if states.device_tracker.optiplex %}
+          {% if is_state('device_tracker.optiplex', 'home') %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+          {% else %}
+            Unknown
+          {% endif %}"
+      
+      pi_hole_online:
+        friendly_name: 'Pi-Hole'
+        value_template: "{% if states.device_tracker.pi_hole %}
+          {% if is_state('device_tracker.pi_hole', 'home') %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+          {% else %}
+            Unknown
+          {% endif %}"
+      
+      unifi_controller_online:
+        friendly_name: 'Unifi Controller'
+        value_template: "{% if states.device_tracker.unifi_controller %}
+          {% if is_state('device_tracker.unifi_controller', 'home') %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+          {% else %}
+            Unknown
+          {% endif %}" 
+

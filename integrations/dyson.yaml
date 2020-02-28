@@ -1,0 +1,9 @@
+---
+
+dyson:
+  username: !secret dyson_username
+  password: !secret dyson_password
+  language: AU
+  devices:
+    - device_id: !secret dyson1_serial 
+      device_ip: !secret dyson1_ip

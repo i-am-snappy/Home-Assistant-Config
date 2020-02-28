@@ -1,0 +1,6 @@
+---
+
+platform: switch
+name: Garden Lights
+entity_id:
+  - switch.garden_lights

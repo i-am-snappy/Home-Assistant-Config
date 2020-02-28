@@ -1,0 +1,10 @@
+---
+
+platform: group
+name: All Upstairs Lights
+entities:
+  - light.upstairs_living_lights
+  - light.entry_downlight
+  - light.master_bathroom_lights
+  - light.master_bedroom_lights
+  - light.hallway_downlight

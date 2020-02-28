@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we are watching TV in the living room.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_living_room_watch_tv:
+  name: Watching TV in the Living Room
+  initial: false
+  icon: mdi:television-classic

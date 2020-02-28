@@ -1,0 +1,3 @@
+rflink:
+  port: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0042_857303138363514160F1-if00
+#  port: /dev/ttyACM1

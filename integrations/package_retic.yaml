@@ -1,0 +1,98 @@
+---
+#automation:
+#  - alias: retic_system_offline
+#    initial_state: true
+#    trigger:
+#      - platform: state
+#        entity_id: binary_sensor.retic_controller_status
+#        to: 'off'
+#        for: '02:00:00'
+#    action:
+#      - service: script.notify_web
+#        data_template:
+#          title: "Retic System Offline"
+#          message: "The Retic System has been offline for 2 hours!"
+#          id: "offline"
+#
+#      - service: script.notify_mobile
+#        data_template:
+#          title: "Retic System Offline"
+#          message: "The Retic System has been offline for 2 hours"
+#          who: "brian"
+
+binary_sensor:
+  - platform: template
+    sensors:
+      retic_zone1:
+        friendly_name: Retic Zone 1
+        entity_id: switch.retic_zone1
+        value_template: "{{ is_state('switch.retic_zone1','on') }}"
+
+  - platform: template
+    sensors:
+      retic_zone2:
+        friendly_name: Retic Zone 2
+        entity_id: switch.retic_zone2
+        value_template: "{{ is_state('switch.retic_zone2','on') }}"
+
+  - platform: template
+    sensors:
+      retic_zone1:
+        friendly_name: Retic Zone 3
+        entity_id: switch.retic_zone3
+        value_template: "{{ is_state('switch.retic_zone3','on') }}"
+
+  - platform: template
+    sensors:
+      retic_zone2:
+        friendly_name: Retic Zone 4
+        entity_id: switch.retic_zone4
+        value_template: "{{ is_state('switch.retic_zone4','on') }}"
+
+
+input_text:
+  retic_zone1_times:
+    name: List of Times (eg. 08:00,12:00,15:00)
+    icon: mdi:clock-outline
+  retic_zone2_times:
+    name: List of Times (eg. 08:00,12:00,15:00)
+    icon: mdi:clock-outline
+  retic_zone3_times:
+    name: List of Times (eg. 08:00,12:00,15:00)
+    icon: mdi:clock-outline
+  retic_zone4_times:
+    name: List of Times (eg. 08:00,12:00,15:00)
+    icon: mdi:clock-outline
+
+input_number:
+  retic_zone1_duration:
+    name: Duration in Minutes
+    icon: mdi:timer-sand
+    min: 0
+    max: 60
+    step: 1
+    unit_of_measurement: "minutes"
+
+  retic_zone2_duration:
+    name: Duration in Minutes
+    icon: mdi:timer-sand
+    min: 0
+    max: 60
+    step: 1
+    unit_of_measurement: "minutes"
+
+  retic_zone3_duration:
+    name: Duration in Minutes
+    icon: mdi:timer-sand
+    min: 0
+    max: 60
+    step: 1
+    unit_of_measurement: "minutes"
+
+  retic_zone4_duration:
+    name: Duration in Minutes
+    icon: mdi:timer-sand
+    min: 0
+    max: 60
+    step: 1
+    unit_of_measurement: "minutes"

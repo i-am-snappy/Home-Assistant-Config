@@ -1,0 +1,4 @@
+---
+
+platform: co2signal
+  token: !secret co2_signal_api

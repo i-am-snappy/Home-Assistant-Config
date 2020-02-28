@@ -1,0 +1,7 @@
+---
+
+platform: group
+name: East Roof Lights
+entities:
+  - light.east_roof_lights_socket_1
+  - light.east_roof_lights_socket_2

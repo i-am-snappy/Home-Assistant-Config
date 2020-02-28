@@ -1,0 +1,43 @@
+---
+lights_at_dark_on:
+  alias: Lights at Dark On
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_lights
+        brightness: 100
+        hs_color: [216.275,47.253]
+        transition: 60
+    - service: light.turn_on
+      data:
+        entity_id: light.laneway_lights
+        brightness: 200
+        color_temp: 200
+        transition: 60
+    - service: light.turn_on
+      data:
+        entity_id: light.kitchen_pendants
+        brightness: 100
+        color_temp: 200
+        transition: 60
+    - service: light.turn_on
+      data:
+        entity_id: light.garden_lights       
+    - service: light.turn_on
+      data:
+        entity_id: light.james_bed_lamp       
+    - service: light.turn_on
+      data:
+        entity_id: light.denise_bed_lamp
+    - service: light.turn_on
+      data:
+        entity_id: light.under_bridge_downlight_2
+        brightness: 10
+        color_temp: 200
+        transition: 60
+    - service: light.turn_on
+      data:
+        entity_id: light.landing_downlight_3
+        brightness: 10
+        color_temp: 200
+        transition: 60

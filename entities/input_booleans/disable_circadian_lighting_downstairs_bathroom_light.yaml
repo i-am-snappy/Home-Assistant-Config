@@ -1,0 +1,11 @@
+---
+# This is an input boolean to use with automations
+# for when we want to disable the cirdadian lighting
+# for the downstaid bathroom light.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+disable_circadian_lighting_downstairs_bathroom_light:
+  name: Disable Circadian Lighting Downstairs Bathroom Light
+  initial: false
+  icon: mdi:theme-light-dark

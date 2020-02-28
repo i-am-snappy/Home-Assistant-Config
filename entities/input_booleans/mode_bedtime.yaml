@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we winding down to go to bed.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_bedtime:
+  name: Bedtime Mode
+  initial: false
+  icon: mdi:hotel

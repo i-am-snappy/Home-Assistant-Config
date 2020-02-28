@@ -1,0 +1,20 @@
+---
+
+platform: template
+switches:
+  living_room_heater_control:
+    value_template: "{{ is_state('input_boolean.living_room_heater', 'on') }}"
+    turn_on:
+      service: remote.send_command
+      data:
+        entity_id: remote.living_room
+        command:
+          - PowerOn
+        device: 54781253
+    turn_off:
+      service: remote.send_command
+      data:
+        entity_id: remote.living_room
+        command:
+          - PowerOff
+        device: 54781253

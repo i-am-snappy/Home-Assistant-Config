@@ -1,0 +1,6 @@
+---
+
+platform: group
+name: Whisky Room Lights
+entities:
+  - light.whisky_room_downlights

@@ -1,0 +1,155 @@
+switch.fridge:
+  icon: mdi:fridge
+switch.wine_fridge:
+  icon: mdi:fridge
+switch.washing_machine:
+  icon: mdi:washing-machine
+switch.dishwasher:
+  icon: mdi:dishwasher
+light.alfresco_downlight_5:
+  icon: mdi:wall-sconce-flat
+sensor.living_room_heater_temp_set:
+  icon: mdi:thermometer
+fan.master_bedroom_fan:
+  icon: mdi:fan
+device_tracker.james_phone:
+  icon: mdi:cellphone-iphone
+device_tracker.denise_phone:
+  icon: mdi:cellphone-android
+light.alfresco_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.alfresco_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.alfresco_downlight_3:
+  icon: mdi:wall-sconce-flat
+light.alfresco_downlight_4:
+  icon: mdi:wall-sconce-flat
+light.alfresco_downlight_6:
+  icon: mdi:wall-sconce-flat
+light.balcony_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.balcony_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.balcony_downlight_3:
+  icon: mdi:wall-sconce-flat
+light.balcony_downlight_4:
+  icon: mdi:wall-sconce-flat
+light.dining_room_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.dining_room_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.dining_room_downlight_3:
+  icon: mdi:wall-sconce-flat
+light.dining_room_downlight_4:
+  icon: mdi:wall-sconce-flat
+light.dining_room_downlight_5:
+  icon: mdi:wall-sconce-flat
+light.dining_room_downlight_6:
+  icon: mdi:wall-sconce-flat
+light.downstairs_bathroom_light:
+  icon: mdi:wall-sconce-flat
+light.denise_bed_lamp:
+  icon: mdi:lamp
+light.bridge_downlight:
+  icon: mdi:wall-sconce-flat
+light.office_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.office_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.entry_downlight:
+  icon: mdi:wall-sconce-flat
+light.garden_lights:
+  icon: mdi:wall-sconce-variant
+light.james_bed_lamp:
+  icon: mdi:lamp
+light.kitchen_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.kitchen_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.kitchen_downlight_3:
+  icon: mdi:wall-sconce-flat
+light.kitchen_downlight_4:
+  icon: mdi:wall-sconce-flat
+light.kitchen_downlight_5:
+  icon: mdi:wall-sconce-flat
+light.landing_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.landing_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.landing_downlight_3:
+  icon: mdi:wall-sconce-flat
+light.master_bathroom_under_sink:
+  icon: mdi:led-strip
+light.laundry_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.laundry_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.laundry_cupboard_light:
+  icon: mdi:wall-sconce-flat
+light.living_room_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.living_room_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.living_room_downlight_3:
+  icon: mdi:wall-sconce-flat
+light.living_room_downlight_4:
+  icon: mdi:wall-sconce-flat
+light.living_room_downlight_5:
+  icon: mdi:wall-sconce-flat
+light.living_room_downlight_6:
+  icon: mdi:wall-sconce-flat
+light.master_bathroom_light:
+  icon: mdi:wall-sconce-flat
+light.upstairs_living_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.upstairs_living_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.upstairs_living_downlight_3:
+  icon: mdi:wall-sconce-flat
+light.upstairs_living_downlight_4:
+  icon: mdi:wall-sconce-flat
+light.pantry_light:
+  icon: mdi:wall-sconce-flat
+light.stair_downlight:
+  icon: mdi:wall-sconce-flat
+light.pendant_low:
+  icon: mdi:ceiling-light
+light.pendant_high:
+  icon: mdi:ceiling-light
+light.tv_light:
+  icon: mdi:led-strip
+light.stair_leds:
+  icon: mdi:wall-sconce-variant
+light.under_bench_light:
+  icon: mdi:led-strip
+light.under_bridge_downlight_1:
+  icon: mdi:wall-sconce-flat
+light.under_bridge_downlight_2:
+  icon: mdi:wall-sconce-flat
+light.under_bridge_downlight_3:
+  icon: mdi:wall-sconce-flat
+sensor.james_status:
+  entity_picture: /local/james.jpg
+sensor.denise_status:
+  entity_picture: /local/denise.jpg
+media_player.google_kitchen:
+  friendly name: Kitchen Google
+media_player.google_upstairs:
+  friendly name: Upstairs Google
+switch.fountain:
+  icon: mdi:water
+cover.living_room_blinds:
+  device_class: blind
+cover.living_room_blinds_top:
+  device_class: blind
+cover.living_room_blinds_bottom:
+  device_class: blind
+cover.master_bedroom_blinds:
+  device_class: blind
+light.christmas_tree:
+  icon: mdi:pine-tree
+binary_sensor.denise_car_bay:
+  device_class: occupancy
+binary_sensor.james_car_bay:
+  device_class: occupancy
+switch.garage_light: {}

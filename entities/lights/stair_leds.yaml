@@ -1,0 +1,6 @@
+---
+
+platform: switch
+name: Stair LEDs
+entity_id:
+  - switch.stair_leds

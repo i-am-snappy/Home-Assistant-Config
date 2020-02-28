@@ -1,0 +1,14 @@
+---
+
+platform: plex_recently_added
+token: !secret plex_token
+host: !secret plex_ip1
+port: 32400
+ssl: false
+ssl_cert: false
+download_images: true
+img_dir: /custom_lovelace/upcoming-media-card/images/plex/
+max: 5
+section_types:
+- movie
+- show

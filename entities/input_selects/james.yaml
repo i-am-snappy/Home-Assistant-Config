@@ -1,0 +1,13 @@
+---
+
+james:
+  name: James
+  options:
+    - Home
+    - Just Arrived
+    - Just Left
+    - Away
+    - Extended Away
+    - Hockey
+    - James Work
+    - Denise Work

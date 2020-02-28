@@ -1,0 +1,10 @@
+---
+
+platform: group
+name: Master Bedroom Downlights
+entities:
+  - light.master_bedroom_downlight_1
+  - light.master_bedroom_downlight_2
+  - light.master_bedroom_downlight_3
+  - light.master_bedroom_downlight_4
+  - light.master_bedroom_downlight_5

@@ -1,0 +1,7 @@
+---
+
+platform: group
+name: Inside Lights
+entities:
+  - light.all_downstairs_lights
+  - light.all_upstairs_lights

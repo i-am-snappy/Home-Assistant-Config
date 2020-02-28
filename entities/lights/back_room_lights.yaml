@@ -1,0 +1,7 @@
+---
+
+platform: group
+name: Back Room Lights
+entities:
+  - light.laundry_lights
+  - light.downstairs_bathroom_light

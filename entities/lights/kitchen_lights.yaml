@@ -1,0 +1,8 @@
+---
+
+platform: group
+name: Kitchen Lights
+entities:
+  - light.kitchen_downlights
+  - light.kitchen_pendants
+  - light.under_bench_light

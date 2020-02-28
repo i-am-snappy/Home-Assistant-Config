@@ -1,0 +1,11 @@
+---
+
+platform: group
+name: Alfresco Lights
+entities:
+  - light.alfresco_downlight_1
+  - light.alfresco_downlight_2
+  - light.alfresco_downlight_3
+  - light.alfresco_downlight_4
+  - light.alfresco_downlight_5
+  - light.alfresco_downlight_6

@@ -1,0 +1,23 @@
+---
+# Circadian Lighting slowly synchronizes your color changing lights with the
+# regular naturally occuring color temperature of the sky throughout the day.
+#
+# This switch allows me to enable or disable this feature on the lights
+# in our upstairs living area.
+#
+# https://github.com/claytonjn/hass-circadian_lighting
+#
+platform: circadian_lighting
+name: Upstairs Living Downlights
+lights_ct:
+  - light.upstairs_living_downlight_1
+  - light.upstairs_living_downlight_2
+  - light.upstairs_living_downlight_3
+  - light.upstairs_living_downlight_4
+  - light.bridge_downlight
+sleep_entity: input_boolean.mode_sleeping
+sleep_state: 'on'
+sleep_colortemp: 10000
+sleep_brightness: 1
+disable_entity: input_boolean.disable_circadian_lighting_upstairs_living_downlights
+disable_state: 'on'

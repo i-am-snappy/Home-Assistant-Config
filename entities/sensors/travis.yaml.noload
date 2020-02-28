@@ -1,0 +1,9 @@
+---
+
+platform: travisci
+api_key: !secret github_travis_token
+repository:
+  - Home-AssistantConfig
+monitored_conditions:
+  - state
+  - last_build_state

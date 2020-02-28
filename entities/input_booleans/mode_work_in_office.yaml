@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we are working in the office.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_work_in_office:
+  name: Working in the Office
+  initial: false
+  icon: mdi:desktop-classic

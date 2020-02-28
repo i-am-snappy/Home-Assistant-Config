@@ -1,0 +1,25 @@
+---
+# The Home Assistant for iOS app offers a companion app for iOS which
+# is deeply integrated into both Home Assistant and iOS.
+#
+# https://www.home-assistant.io/components/ios/
+# https://www.home-assistant.io/docs/ecosystem/ios/
+#
+ios:
+    push:
+        categories:
+          - name: Rubbish Recycle
+            identifier: 'rubbish_recycle'
+            actions:
+              - identifier: 'RUBBISH_LEFT'
+                title: 'Done'
+                activationMode: 'background'
+                authenticationRequired: yes
+                destructive: yes
+                behavior: 'default'
+              - identifier: 'RUBBISH_REMIND_LATER'
+                title: 'Remind Later'
+                activationMode: 'background'
+                authenticationRequired: yes
+                destructive: yes
+                behavior: 'default'

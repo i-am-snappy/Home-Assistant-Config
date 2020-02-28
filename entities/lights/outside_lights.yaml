@@ -1,0 +1,10 @@
+---
+
+platform: group
+name: Outside Lights
+entities:
+  - light.front_yard_lights
+  - light.back_yard_lights
+  - light.laneway_lights
+  - light.alfresco_lights
+  - light.balcony_lights

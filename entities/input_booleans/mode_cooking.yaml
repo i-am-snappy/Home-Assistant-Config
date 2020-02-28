@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when we are cooking in the kitchen.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+mode_cooking:
+  name: Cooking in the Kitchen
+  initial: false
+  icon: mdi:stove

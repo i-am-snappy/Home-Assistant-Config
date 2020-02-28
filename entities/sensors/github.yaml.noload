@@ -1,0 +1,6 @@
+---
+
+platform: github
+access_token: !secret github_sensor_token
+repositories:
+  - path: 'home-assistant/home-assistant'

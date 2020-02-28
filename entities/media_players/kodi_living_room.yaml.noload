@@ -1,0 +1,8 @@
+---
+
+platform: kodi
+host: !secret kodi_ip
+name: Living Room Kodi
+username: !secret kodi_username
+password: !secret kodi_password
+port: 80

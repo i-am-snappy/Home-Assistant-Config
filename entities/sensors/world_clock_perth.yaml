@@ -1,0 +1,6 @@
+---
+
+platform: worldclock
+time_zone: Australia/Perth
+name: Perth Time
+

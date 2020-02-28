@@ -1,0 +1,14 @@
+---
+
+platform: rflink
+#device_defaults:
+#  fire_event: true
+devices:
+  aster_0800_02:
+    name: Master Bedroom Ceiling Fan Off
+  aster_0808_01:
+    name: Master Bedroom Ceiling Fan Speed Low
+  aster_0810_01:
+    name: Master Bedroom Ceiling Fan Speed Medium
+  aster_0820_01:
+    name: Master Bedroom Ceiling Fan Speed High
