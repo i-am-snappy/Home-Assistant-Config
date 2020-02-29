@@ -1,0 +1,111 @@
+---
+#
+# Arlec PB89HA
+#
+substitutions:
+  project: Power Board 01
+  id: power_board_01
+
+  <<: !include common/substitutions/gpio/arlec_pb89ha.yaml
+
+<<: !include common/templates/arlec_pb89ha.yaml
+
+
+#esphome:
+#  name: $id
+#  platform: ESP8266
+#  board: esp01_1m
+#
+#<<: !include common/wifi.yaml
+#<<: !include common/ota.yaml
+#<<: !include common/api.yaml
+#<<: !include common/logger_info.yaml
+#
+#binary_sensor:
+#  - !include common/binary_sensors/power_button_inverted_multiclick4.yaml  
+##  - platform: gpio
+##    pin:
+##      number: 3
+##      mode: INPUT_PULLUP
+##      inverted: true
+##    name: ${project} Button
+##
+##    on_multi_click:
+##      - timing:
+##          - ON for at most 1s
+##          - OFF for at most 0.3s
+##          - ON for at most 1s
+##          - OFF for at least 0.2s
+##        then:
+##          - switch.toggle: switch_2
+##          - logger.log: "Double-Clicked"
+##      - timing:
+##          - ON for at most 1s
+##          - OFF for at least 0.5s
+##        then:
+##          - switch.toggle: switch_1
+##          - logger.log: "Single-Short-Clicked"
+##      - timing:
+##          - ON for 1s to 2s
+##          - OFF for at least 0.5s
+##        then:
+##          - switch.toggle: switch_3
+##          - switch.toggle: switch_4
+##          - logger.log: "Single-Long-Clicked"
+#
+#
+#
+#  - !include common/binary_sensors/status.yaml
+#
+#output:
+#  - !include common/outputs/relay_1.yaml
+#  - !include common/outputs/relay_2.yaml
+#  - !include common/outputs/relay_3.yaml
+#  - !include common/outputs/relay_4.yaml
+##  - platform: gpio
+##    id: led_output
+##    pin:
+##      number: GPIO10
+##      inverted: true
+#
+##  - platform: gpio
+##    pin: GPIO5
+##    id: relay_1
+##
+##  - platform: gpio
+##    pin: GPIO4
+##    id: relay_2
+##
+##  - platform: gpio
+##    pin: GPIO13
+##    id: relay_3
+##
+##  - platform: gpio
+##    pin: GPIO12
+##    id: relay_4
+#
+#switch:
+#  - !include common/switches/socket_1_always_off.yaml
+#  - !include common/switches/socket_2_always_off.yaml
+#  - !include common/switches/socket_3_always_off.yaml
+#  - !include common/switches/socket_4_always_off.yaml
+#
+##  - platform: output
+##    id: switch_1
+##    name: $socket_1
+##    output: relay_1
+##
+##  - platform: output
+##    id: switch_2
+##    name: $socket_2
+##    output: relay_2
+##
+##  - platform: output
+##    id: switch_3
+##    name: $socket_3
+##    output: relay_3
+##
+##  - platform: output
+##    id: switch_4
+##    name: $socket_4
+##    output: relay_4

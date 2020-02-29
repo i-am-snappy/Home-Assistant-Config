@@ -1,0 +1,5 @@
+---
+wifi:
+  ssid: !secret ssid
+  password: !secret ssid_password
+  domain: !secret domain

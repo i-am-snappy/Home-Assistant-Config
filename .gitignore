@@ -1,49 +1,32 @@
-# Example .gitignore file for your config dir.
-# A * ensures that everything will be ignored.
-*.xml
-*.conf
-*.pickle
-*.db-shm
-*.db-wal
-*.sqlite
-
-# You can whitelist files/folders with !, these will not be ignored.
-!*.yaml
-!.gitignore
-!*.md
-
-# Ignore folders.
-.storage
-.cloud
-.uuid
-.vscode
-appdaemon
-node-red
-deps
-esphome
-
-
-# Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
-.homekit.state
-ios.conf
-production_auth.json
-__pycache__
-
-#####################################################################
-
 # Created by https://www.gitignore.io/api/homeassistant
 # Edit at https://www.gitignore.io/?templates=homeassistant
 
 ### HomeAssistant ###
 # Files with personal details
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
+*.xml
+*.conf
+*.pickle
+*.sqlite
 *.crt
 *.csr
 *.key
 .google.token
 .uuid
+.config_entries.json
+.homekit.state
+.ios.conf
+.spotify-token-cache
+.tradfri_psk.conf
 icloud/
 google_calendars.yaml
-harmony_media_room.conf
+harmony_*
 home-assistant.db
 home-assistant_v2.db
 home-assistant_v2.db-*
@@ -55,6 +38,33 @@ plex.conf
 pyozw.sqlite
 secrets.yaml
 tradfri.conf
+core
+options.xml
+OZW_Log.txt
+pyozw.sqlite
+zwcfg_*
+zwscene.xml
+zigbee.db
+
+# Directory (contents) ignores
+.cloud
+.storage
+node-red
+deps
+
+# ESPHome ignores
+/esphome/secrets.yaml
+/esphome/**/
+
+# Ignore files created by IDE's
+.vscode
+.theia
+.Trash*
+
+# Ignore add-on files
+aircast.xml
+airsonos.xml
+notebooks
 
 # Temporary files
 *.db-journal
@@ -72,5 +82,10 @@ ozw_log.txt
 
 # Development files
 custom_components/
+
+
+# Specific keeps
+!.gitkeep
+
 
 # End of https://www.gitignore.io/api/homeassistant

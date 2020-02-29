@@ -1,0 +1,5 @@
+---
+
+platform: esp8266_pwm
+id: _blue
+pin: $blue_gpio

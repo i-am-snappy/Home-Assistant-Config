@@ -1,0 +1,43 @@
+---
+platform: rgb
+id: relay
+name: ${project}
+red: _red
+green: _green
+blue: _blue
+# Effects
+effects:
+  # Use default parameters:
+  - random:
+  # Customize parameters
+  - random:
+      name: "My Slow Random Effect"
+      transition_length: 30s
+      update_interval: 30s
+  - random:
+      name: "My Fast Random Effect"
+      transition_length: 4s
+      update_interval: 5s
+  - strobe:
+  - strobe:
+      name: Strobe Effect With Custom Values
+      colors:
+        - state: True
+          brightness: 100%
+          red: 100%
+          green: 90%
+          blue: 0%
+          duration: 500ms
+        - state: False
+          duration: 250ms
+        - state: True
+          brightness: 100%
+          red: 0%
+          green: 100%
+          blue: 0%
+          duration: 500ms
+  - flicker:
+  - flicker:
+      name: Flicker Effect With Custom Values
+      alpha: 95%
+      intensity: 1.5%

@@ -1,0 +1,4 @@
+---
+# Home Assistant API
+api:
+  password: !secret api_pass

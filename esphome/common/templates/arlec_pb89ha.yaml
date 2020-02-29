@@ -1,0 +1,30 @@
+---
+#
+# Arlec PB89HA
+#
+
+esphome:
+  name: ${id}
+  platform: ESP8266
+  board: esp01_1m
+
+<<: !include ../wifi.yaml
+<<: !include ../ota.yaml
+<<: !include ../api.yaml
+<<: !include ../logger_info.yaml
+
+binary_sensor:
+  - !include ../binary_sensors/status.yaml
+  - !include ../binary_sensors/power_button_inverted_multiclick4.yaml
+
+output:
+  - !include ../outputs/relay_1.yaml
+  - !include ../outputs/relay_2.yaml
+  - !include ../outputs/relay_3.yaml
+  - !include ../outputs/relay_4.yaml
+
+switch:
+  - !include ../switches/socket_1_always_off.yaml
+  - !include ../switches/socket_2_always_off.yaml
+  - !include ../switches/socket_3_always_off.yaml
+  - !include ../switches/socket_4_always_off.yaml

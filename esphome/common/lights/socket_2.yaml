@@ -1,0 +1,6 @@
+---
+
+platform: binary
+id: socket_2
+name: ${project} Socket 2
+output: _relay_2

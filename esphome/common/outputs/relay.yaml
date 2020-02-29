@@ -1,0 +1,5 @@
+---
+
+platform: gpio
+pin: $relay_gpio
+id: _relay

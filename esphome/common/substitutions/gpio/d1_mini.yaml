@@ -1,0 +1,14 @@
+---
+d0_gpio: GPIO16
+
+relay_gpio: GPIO5
+
+d2_gpio: GPIO4
+d3_gpio: GPIO0
+
+led_status_gpio: GPIO2
+
+d5_gpio: GPIO14
+d6_gpio: GPIO12
+d7_gpio: GPIO13
+d8_gpio: GPIO15

@@ -1,0 +1,5 @@
+---
+# These brands share the same pins: Brilliant.
+button_gpio: GPIO14
+led_status_gpio: GPI12
+relay_gpio: GPIO5

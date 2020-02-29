@@ -1,0 +1,32 @@
+# Gitignore settings for ESPHome
+
+# Ignore all subfolders.
+**/
+
+# Specific file ignores.
+secrets.yaml
+.DS_Store
+._*
+
+# Specific folders to include.
+!common
+!common/**
+
+
+
+
+
+
+################################################################
+
+
+
+# This is an example and may include too much for your use-case.
+# You can modify this file to suit your needs.
+#/.esphome/
+#**/.pioenvs/
+#**/.piolibdeps/
+#**/lib/
+#**/src/
+#**/platformio.ini
+#/secrets.yaml

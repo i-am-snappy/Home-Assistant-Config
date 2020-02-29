@@ -1,0 +1,25 @@
+---
+# Arlec Twin PC288HA
+
+esphome:
+  name: ${id}
+  platform: ESP8266
+  board: esp01_1m
+
+<<: !include ../wifi.yaml
+<<: !include ../ota.yaml
+<<: !include ../api.yaml
+<<: !include ../logger_info.yaml
+
+binary_sensor:
+  - !include ../binary_sensors/status.yaml
+  - !include ../binary_sensors/power_button_inverted_multiclick2.yaml
+
+output:
+  - !include ../outputs/status_led.yaml
+  - !include ../outputs/relay_1.yaml
+  - !include ../outputs/relay_2.yaml
+
+light:
+  - !include ../lights/socket_1.yaml
+  - !include ../lights/socket_2.yaml

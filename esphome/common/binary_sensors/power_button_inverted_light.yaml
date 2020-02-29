@@ -1,0 +1,12 @@
+---
+platform: gpio
+pin:
+  number: $button_gpio
+  mode: INPUT_PULLUP
+  inverted: True
+id: ${id}_button
+internal: true
+on_press:
+  - light.toggle: socket
+filters:
+  - delayed_on: 10ms

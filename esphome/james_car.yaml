@@ -1,0 +1,10 @@
+---
+#
+#
+substitutions:
+  project: James Car
+  id: james_car
+
+  <<: !include common/substitutions/gpio/d1_mini.yaml
+
+<<: !include common/templates/d1_mini.yaml

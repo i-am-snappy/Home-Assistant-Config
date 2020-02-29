@@ -1,0 +1,11 @@
+---
+#
+#
+
+substitutions:
+  project: East Roof Lights
+  id: east_roof_lights
+
+  <<: !include common/substitutions/gpio/arlec_twin_pc288ha.yaml
+
+<<: !include common/templates/arlec_twin_pc288ha.yaml

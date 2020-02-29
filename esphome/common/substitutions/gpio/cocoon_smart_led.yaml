@@ -1,0 +1,5 @@
+---
+button_gpio: GPIO0
+red_gpio: GPIO4
+blue_gpio: GPIO12
+green_gpio: GPIO14

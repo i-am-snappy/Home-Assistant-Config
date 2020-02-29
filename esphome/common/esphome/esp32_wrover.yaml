@@ -1,0 +1,5 @@
+---
+  esphome:
+    name: $id
+    platform: ESP32
+    board: esp-wrover-kit

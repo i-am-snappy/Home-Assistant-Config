@@ -1,0 +1,6 @@
+---
+button_gpio: GPIO3
+relay_1_gpio: GPIO5
+relay_2_gpio: GPIO4
+relay_3_gpio: GPIO13
+relay_4_gpio: GPIO12

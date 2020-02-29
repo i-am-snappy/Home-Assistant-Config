@@ -1,0 +1,24 @@
+---
+platform: gpio
+pin:
+  number: $button_gpio
+  mode: INPUT_PULLUP
+  inverted: True
+id: ${id}_button
+internal: true
+
+on_multi_click:
+  - timing:
+      - ON for at most 1s
+      - OFF for at most 0.3s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+    then:
+      - light.toggle: socket_2
+      - logger.log: "Double-Clicked"
+  - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+    then:
+      - light.toggle: socket_1
+      - logger.log: "Single-Clicked"
