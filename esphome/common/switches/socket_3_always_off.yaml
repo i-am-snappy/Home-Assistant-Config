@@ -1,0 +1,6 @@
+---
+platform: gpio
+name:  ${project} Socket 3
+id: socket_3
+pin: $relay_3_gpio
+restore_mode: ALWAYS_OFF

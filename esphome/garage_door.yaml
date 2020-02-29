@@ -1,0 +1,114 @@
+---
+
+substitutions:
+  project: Garage Door
+  id: garage_door
+
+  <<: !include common/substitutions/gpio/d1_mini.yaml
+
+esphome:
+  name: $id
+  platform: ESP8266
+  board: d1_mini
+
+  <<: !include common/esphome/leds/status.yaml
+
+<<: !include common/wifi.yaml
+<<: !include common/ota.yaml
+<<: !include common/logger_info.yaml
+<<: !include common/api.yaml
+
+
+binary_sensor:
+
+  - !include common/binary_sensors/status.yaml
+
+  - platform: gpio
+    pin:
+      number: GPIO13
+      mode: INPUT_PULLUP
+      inverted: False
+    name: "Garage Door"
+    id: garage_door_close
+    device_class: garage_door
+    filters:
+      - delayed_on: 20ms
+
+  - platform: gpio
+    pin:
+      number: GPIO12
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "Garage Door Open"
+    id: garage_door_open
+    filters:
+      - delayed_on: 20ms
+
+  - platform: template
+    name: "James Car Bay"
+    device_class: presence
+    lambda: |-
+      if (id(ultrasonic_sensor_james_car_bay).state < 1.5) {
+        // car is in the garage
+        return true;
+      } else {
+        // no car
+        return false;
+      }   
+          
+  - platform: template
+    name: "Denise Car Bay"
+    device_class: presence
+    lambda: |-
+      if (id(ultrasonic_sensor_denise_car_bay).state < 1.5) {
+        // car is in the garage
+        return true;
+      } else {
+        // no car
+        return false;
+      }   
+
+sensor:
+
+  - !include common/sensors/uptime.yaml
+  - !include common/sensors/wifi_signal.yaml
+
+  - platform: ultrasonic
+    id: ultrasonic_sensor_james_car_bay
+    trigger_pin: D1
+    echo_pin: D2
+    name: "Ultrasonic Sensor James Car Bay"
+    update_interval: 30s
+    filters:
+      filter_out: nan
+    timeout: 9m
+
+  - platform: ultrasonic
+    id: ultrasonic_sensor_denise_car_bay
+    trigger_pin: D3
+    echo_pin: D4
+    name: "Ultrasonic Sensor Denise Car Bay"
+    update_interval: 30s
+    filters:
+      filter_out: nan
+    timeout: 9m
+
+switch:
+
+  - !include common/switches/restart.yaml
+  - !include common/switches/relay_internal.yaml
+
+  - platform: template
+    name: $project
+    icon: "mdi:arrow-up-down-bold-outline"
+    turn_on_action:
+    - switch.turn_on: relay
+    - delay: 500ms
+    - switch.turn_off: relay
+
+output:
+  <<: !include common/outputs/status_led.yaml
+
+light:
+  <<: !include common/lights/status_led.yaml  
+

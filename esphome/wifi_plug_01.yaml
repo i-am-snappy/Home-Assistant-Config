@@ -1,0 +1,7 @@
+substitutions:
+  id: wifi_plug_01
+  project: James Bed Lamp
+
+  <<: !include common/substitutions/gpio/brilliant_plug.yaml
+
+<<: !include common/templates/brilliant_plug_lamp_no_red_light.yaml

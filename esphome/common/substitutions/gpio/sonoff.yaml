@@ -1,0 +1,4 @@
+---
+button_gpio: GPIO0
+led_status_gpio: GPIO13
+relay_gpio: GPIO12

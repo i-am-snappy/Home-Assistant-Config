@@ -1,0 +1,7 @@
+substitutions:
+  project: LED Strip 01
+  id: led_strip_01
+
+  <<: !include common/substitutions/gpio/cocoon_smart_led.yaml
+
+<<: !include common/templates/cocoon_smart_led.yaml

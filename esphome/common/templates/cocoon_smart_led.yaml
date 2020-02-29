@@ -1,0 +1,26 @@
+---
+#
+# Cocoon Smart LED Strip from Aldi
+#
+
+esphome:
+  name: ${id}
+  platform: ESP8266
+  board: esp01_1m
+
+<<: !include ../wifi.yaml
+<<: !include ../ota.yaml
+<<: !include ../api.yaml
+<<: !include ../logger_info.yaml
+
+binary_sensor:
+  - !include ../binary_sensors/status.yaml
+  - !include ../binary_sensors/power_button_inverted_light.yaml
+
+light:
+  - !include ../lights/rgb.yaml
+
+output:
+  - !include ../outputs/red.yaml
+  - !include ../outputs/green.yaml
+  - !include ../outputs/blue.yaml
