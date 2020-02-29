@@ -141057,3 +141057,814 @@
 2020-02-29 10:30:29.837 Detail, Node021, Changes to this value are not verified
 2020-02-29 10:30:29.837 Detail, Node021, Notification: ValueChanged
 2020-02-29 10:30:29.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:30:39.283 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:30:39.283 Detail, 
+2020-02-29 10:30:39.283 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:30:39.283 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:30:39.283 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:30:39.283 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:30:39.283 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:30:39.283 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:30:39.287 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:30:40.619 Detail, Node025,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x19, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9d
+2020-02-29 10:30:40.619 Detail, 
+2020-02-29 10:30:40.620 Detail, Node025, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:30:40.620 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:30:40.620 Info, Node025, Received Meter report from node 25: Power=0.000W
+2020-02-29 10:30:40.620 Detail, Node025, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:30:40.620 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:30:40.621 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:30:40.624 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:30:44.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:30:44.836 Detail, 
+2020-02-29 10:30:44.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:30:44.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:30:44.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:30:44.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:30:44.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:30:44.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:30:44.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:30:48.079 Detail, Node026,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1a, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x78, 0xea, 0x00, 0x00, 0x0c
+2020-02-29 10:30:48.079 Detail, 
+2020-02-29 10:30:48.079 Detail, Node026, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:30:48.079 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:30:48.079 Info, Node026, Received Meter report from node 26: Power=30.954W
+2020-02-29 10:30:48.079 Detail, Node026, Refreshed Value: old value=30.984, new value=30.954, type=decimal
+2020-02-29 10:30:48.079 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:30:48.079 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:30:48.083 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:30:51.155 Detail, Node015,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0f, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x01, 0x01, 0xab, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x30
+2020-02-29 10:30:51.155 Detail, 
+2020-02-29 10:30:51.155 Detail, Node015, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:30:51.155 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:30:51.155 Info, Node015, Received Meter report from node 15: Power=65.963W
+2020-02-29 10:30:51.155 Detail, Node015, Refreshed Value: old value=66.056, new value=65.963, type=decimal
+2020-02-29 10:30:51.155 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:30:51.155 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:30:51.161 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:30:54.283 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:30:54.283 Detail, 
+2020-02-29 10:30:54.283 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:30:54.283 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:30:54.283 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:30:54.283 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:30:54.283 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:30:54.283 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:30:54.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:30:59.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:30:59.836 Detail, 
+2020-02-29 10:30:59.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:30:59.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:30:59.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:30:59.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:30:59.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:30:59.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:30:59.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:31:00.703 Detail, Node028,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1c, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x98
+2020-02-29 10:31:00.703 Detail, 
+2020-02-29 10:31:00.703 Detail, Node028, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:00.703 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:31:00.703 Info, Node028, Received Meter report from node 28: Power=0.000W
+2020-02-29 10:31:00.703 Detail, Node028, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:00.703 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:31:00.703 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:31:00.706 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:31:03.246 Detail, Node003,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x03, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x05, 0x09, 0x00, 0x00, 0x8b
+2020-02-29 10:31:03.247 Detail, 
+2020-02-29 10:31:03.247 Detail, Node003, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:03.247 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:31:03.247 Info, Node003, Received Meter report from node 3: Power=1.289W
+2020-02-29 10:31:03.247 Detail, Node003, Refreshed Value: old value=15.407, new value=1.289, type=decimal
+2020-02-29 10:31:03.247 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:31:03.247 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:31:03.250 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:31:09.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:31:09.284 Detail, 
+2020-02-29 10:31:09.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:09.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:31:09.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:31:09.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:09.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:31:09.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:31:09.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:31:14.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:31:14.836 Detail, 
+2020-02-29 10:31:14.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:14.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:31:14.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:31:14.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:14.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:31:14.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:31:14.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:31:15.181 Detail, Node020,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x14, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x90
+2020-02-29 10:31:15.181 Detail, 
+2020-02-29 10:31:24.282 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:31:24.283 Detail, 
+2020-02-29 10:31:24.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:24.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:31:24.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:31:24.286 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:24.286 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:31:24.286 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:31:24.289 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:31:29.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:31:29.837 Detail, 
+2020-02-29 10:31:29.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:29.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:31:29.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:31:29.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:29.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:31:29.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:31:29.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:31:39.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:31:39.284 Detail, 
+2020-02-29 10:31:39.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:39.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:31:39.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:31:39.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:39.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:31:39.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:31:39.287 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:31:40.620 Detail, Node025,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x19, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9d
+2020-02-29 10:31:40.620 Detail, 
+2020-02-29 10:31:40.620 Detail, Node025, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:40.620 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:31:40.620 Info, Node025, Received Meter report from node 25: Power=0.000W
+2020-02-29 10:31:40.620 Detail, Node025, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:40.620 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:31:40.620 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:31:40.623 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:31:44.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:31:44.836 Detail, 
+2020-02-29 10:31:44.836 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:44.836 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:31:44.836 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:31:44.836 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:44.836 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:31:44.836 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:31:44.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:31:48.079 Detail, Node026,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1a, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x78, 0x33, 0x00, 0x00, 0xd5
+2020-02-29 10:31:48.079 Detail, 
+2020-02-29 10:31:48.079 Detail, Node026, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:48.079 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:31:48.079 Info, Node026, Received Meter report from node 26: Power=30.771W
+2020-02-29 10:31:48.079 Detail, Node026, Refreshed Value: old value=30.954, new value=30.771, type=decimal
+2020-02-29 10:31:48.079 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:31:48.079 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:31:48.083 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:31:51.156 Detail, Node015,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0f, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x01, 0x02, 0x1d, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x85
+2020-02-29 10:31:51.157 Detail, 
+2020-02-29 10:31:51.157 Detail, Node015, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:51.157 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:31:51.157 Info, Node015, Received Meter report from node 15: Power=66.077W
+2020-02-29 10:31:51.157 Detail, Node015, Refreshed Value: old value=65.963, new value=66.077, type=decimal
+2020-02-29 10:31:51.157 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:31:51.157 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:31:51.161 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:31:53.502 Detail, Node013,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0d, 0x03, 0x30, 0x03, 0xff, 0x30
+2020-02-29 10:31:53.502 Detail, 
+2020-02-29 10:31:53.502 Info, Node013, Received SensorBinary report: Sensor:48 State=On
+2020-02-29 10:31:53.502 Detail, Node013, Refreshed Value: old value=false, new value=true, type=bool
+2020-02-29 10:31:53.502 Detail, Node013, Changes to this value are not verified
+2020-02-29 10:31:53.502 Detail, Node013, Notification: ValueChanged
+2020-02-29 10:31:53.743 Detail, Node013,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x0d, 0x0a, 0x71, 0x05, 0x00, 0x00, 0x00, 0xff, 0x07, 0x08, 0x00, 0x00, 0x68
+2020-02-29 10:31:53.743 Detail, 
+2020-02-29 10:31:53.743 Info, Node013, Received Alarm report: type=0, level=0, sensorSrcID=0, type:Burglar event:8, status=255
+2020-02-29 10:31:53.743 Detail, Node013, Refreshed Value: old value=0, new value=0, type=byte
+2020-02-29 10:31:53.743 Detail, Node013, Changes to this value are not verified
+2020-02-29 10:31:53.743 Detail, Node013, Refreshed Value: old value=0, new value=0, type=byte
+2020-02-29 10:31:53.743 Detail, Node013, Changes to this value are not verified
+2020-02-29 10:31:53.743 Detail, Node013, Refreshed Value: old value=0, new value=0, type=byte
+2020-02-29 10:31:53.743 Detail, Node013, Changes to this value are not verified
+2020-02-29 10:31:53.743 Detail, Node013, Refreshed Value: old value=0, new value=8, type=byte
+2020-02-29 10:31:53.743 Detail, Node013, Changes to this value are not verified
+2020-02-29 10:31:53.743 Detail, Node013, Notification: ValueChanged
+2020-02-29 10:31:53.748 Detail, Node013, Notification: ValueChanged
+2020-02-29 10:31:53.751 Detail, Node013, Notification: ValueChanged
+2020-02-29 10:31:53.755 Detail, Node013, Notification: ValueChanged
+2020-02-29 10:31:54.283 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:31:54.284 Detail, 
+2020-02-29 10:31:54.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:54.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:31:54.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:31:54.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:54.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:31:54.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:31:54.287 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:31:59.882 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:31:59.883 Detail, 
+2020-02-29 10:31:59.883 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:31:59.883 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:31:59.883 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:31:59.883 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:31:59.883 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:31:59.883 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:31:59.887 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:32:00.705 Detail, Node028,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1c, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x98
+2020-02-29 10:32:00.706 Detail, 
+2020-02-29 10:32:00.706 Detail, Node028, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:00.706 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:32:00.706 Info, Node028, Received Meter report from node 28: Power=0.000W
+2020-02-29 10:32:00.706 Detail, Node028, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:00.706 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:32:00.706 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:32:00.710 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:32:03.246 Detail, Node003,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x03, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x04, 0xe4, 0x00, 0x00, 0x67
+2020-02-29 10:32:03.246 Detail, 
+2020-02-29 10:32:03.246 Detail, Node003, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:03.246 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:32:03.246 Info, Node003, Received Meter report from node 3: Power=1.252W
+2020-02-29 10:32:03.246 Detail, Node003, Refreshed Value: old value=1.289, new value=1.252, type=decimal
+2020-02-29 10:32:03.246 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:32:03.246 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:32:03.250 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:32:09.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:32:09.284 Detail, 
+2020-02-29 10:32:09.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:09.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:32:09.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:32:09.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:09.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:32:09.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:32:09.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:32:14.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:32:14.836 Detail, 
+2020-02-29 10:32:14.836 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:14.836 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:32:14.836 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:32:14.836 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:14.836 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:32:14.836 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:32:14.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:32:15.182 Detail, Node020,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x14, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x90
+2020-02-29 10:32:15.182 Detail, 
+2020-02-29 10:32:24.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:32:24.284 Detail, 
+2020-02-29 10:32:24.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:24.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:32:24.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:32:24.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:24.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:32:24.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:32:24.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:32:25.196 Detail, Node014,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0e, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0xc3, 0x94, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xcd
+2020-02-29 10:32:25.196 Detail, 
+2020-02-29 10:32:25.196 Detail, Node014, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:25.196 Detail, Node014, Changes to this value are not verified
+2020-02-29 10:32:25.196 Info, Node014, Received Meter report from node 14: Power=50.068W
+2020-02-29 10:32:25.196 Detail, Node014, Refreshed Value: old value=49.540, new value=50.068, type=decimal
+2020-02-29 10:32:25.196 Detail, Node014, Changes to this value are not verified
+2020-02-29 10:32:25.196 Detail, Node014, Notification: ValueChanged
+2020-02-29 10:32:25.200 Detail, Node014, Notification: ValueChanged
+2020-02-29 10:32:29.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:32:29.837 Detail, 
+2020-02-29 10:32:29.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:29.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:32:29.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:32:29.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:29.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:32:29.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:32:29.841 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:32:39.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:32:39.284 Detail, 
+2020-02-29 10:32:39.285 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:39.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:32:39.285 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:32:39.285 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:39.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:32:39.285 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:32:39.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:32:40.620 Detail, Node025,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x19, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9d
+2020-02-29 10:32:40.620 Detail, 
+2020-02-29 10:32:40.620 Detail, Node025, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:40.620 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:32:40.621 Info, Node025, Received Meter report from node 25: Power=0.000W
+2020-02-29 10:32:40.621 Detail, Node025, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:40.621 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:32:40.621 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:32:40.625 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:32:44.917 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:32:44.917 Detail, 
+2020-02-29 10:32:44.917 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:44.917 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:32:44.917 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:32:44.917 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:44.917 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:32:44.917 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:32:44.921 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:32:48.080 Detail, Node026,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1a, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x78, 0x3a, 0x00, 0x00, 0xdc
+2020-02-29 10:32:48.080 Detail, 
+2020-02-29 10:32:48.080 Detail, Node026, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:48.080 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:32:48.080 Info, Node026, Received Meter report from node 26: Power=30.778W
+2020-02-29 10:32:48.080 Detail, Node026, Refreshed Value: old value=30.771, new value=30.778, type=decimal
+2020-02-29 10:32:48.080 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:32:48.080 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:32:48.085 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:32:51.157 Detail, Node015,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0f, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x01, 0x0b, 0xa8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x39
+2020-02-29 10:32:51.157 Detail, 
+2020-02-29 10:32:51.157 Detail, Node015, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:51.157 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:32:51.157 Info, Node015, Received Meter report from node 15: Power=68.520W
+2020-02-29 10:32:51.157 Detail, Node015, Refreshed Value: old value=66.077, new value=68.520, type=decimal
+2020-02-29 10:32:51.157 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:32:51.157 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:32:51.198 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:32:54.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:32:54.284 Detail, 
+2020-02-29 10:32:54.285 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:54.286 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:32:54.286 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:32:54.286 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:54.286 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:32:54.286 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:32:54.293 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:32:59.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:32:59.836 Detail, 
+2020-02-29 10:32:59.836 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:32:59.836 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:32:59.836 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:32:59.836 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:32:59.836 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:32:59.836 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:32:59.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:33:00.703 Detail, Node028,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1c, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x98
+2020-02-29 10:33:00.703 Detail, 
+2020-02-29 10:33:00.703 Detail, Node028, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:00.703 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:33:00.703 Info, Node028, Received Meter report from node 28: Power=0.000W
+2020-02-29 10:33:00.703 Detail, Node028, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:00.703 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:33:00.703 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:33:00.707 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:33:03.247 Detail, Node003,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x03, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x05, 0x0f, 0x00, 0x00, 0x8d
+2020-02-29 10:33:03.247 Detail, 
+2020-02-29 10:33:03.247 Detail, Node003, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:03.247 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:33:03.247 Info, Node003, Received Meter report from node 3: Power=1.295W
+2020-02-29 10:33:03.247 Detail, Node003, Refreshed Value: old value=1.252, new value=1.295, type=decimal
+2020-02-29 10:33:03.247 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:33:03.247 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:33:03.250 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:33:09.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:33:09.284 Detail, 
+2020-02-29 10:33:09.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:09.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:33:09.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:33:09.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:09.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:33:09.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:33:09.289 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:33:12.053 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x80, 0x03, 0xff, 0x87
+2020-02-29 10:33:12.054 Detail, 
+2020-02-29 10:33:12.054 Info, Node010, Received Battery report from node 10: level=0
+2020-02-29 10:33:12.056 Detail, Node010, Refreshed Value: old value=0, new value=0, type=byte
+2020-02-29 10:33:12.059 Detail, Node010, Changes to this value are not verified
+2020-02-29 10:33:12.059 Detail, Node010, Notification: ValueChanged
+2020-02-29 10:33:14.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:33:14.837 Detail, 
+2020-02-29 10:33:14.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:14.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:33:14.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:33:14.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:14.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:33:14.838 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:33:14.841 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:33:15.182 Detail, Node020,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x14, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x90
+2020-02-29 10:33:15.182 Detail, 
+2020-02-29 10:33:24.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:33:24.285 Detail, 
+2020-02-29 10:33:24.285 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:24.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:33:24.285 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:33:24.285 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:24.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:33:24.285 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:33:24.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:33:29.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:33:29.837 Detail, 
+2020-02-29 10:33:29.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:29.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:33:29.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:33:29.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:29.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:33:29.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:33:29.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:33:39.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:33:39.284 Detail, 
+2020-02-29 10:33:39.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:39.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:33:39.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:33:39.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:39.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:33:39.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:33:39.287 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:33:40.620 Detail, Node025,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x19, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9d
+2020-02-29 10:33:40.620 Detail, 
+2020-02-29 10:33:40.620 Detail, Node025, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:40.620 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:33:40.620 Info, Node025, Received Meter report from node 25: Power=0.000W
+2020-02-29 10:33:40.620 Detail, Node025, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:40.620 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:33:40.620 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:33:40.623 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:33:44.836 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:33:44.836 Detail, 
+2020-02-29 10:33:44.836 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:44.836 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:33:44.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:33:44.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:44.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:33:44.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:33:44.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:33:48.080 Detail, Node026,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1a, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x78, 0x03, 0x00, 0x00, 0xe5
+2020-02-29 10:33:48.080 Detail, 
+2020-02-29 10:33:48.080 Detail, Node026, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:48.080 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:33:48.080 Info, Node026, Received Meter report from node 26: Power=30.723W
+2020-02-29 10:33:48.080 Detail, Node026, Refreshed Value: old value=30.778, new value=30.723, type=decimal
+2020-02-29 10:33:48.080 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:33:48.080 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:33:48.083 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:33:51.157 Detail, Node015,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0f, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x01, 0x07, 0xa3, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3e
+2020-02-29 10:33:51.157 Detail, 
+2020-02-29 10:33:51.157 Detail, Node015, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:51.157 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:33:51.157 Info, Node015, Received Meter report from node 15: Power=67.491W
+2020-02-29 10:33:51.157 Detail, Node015, Refreshed Value: old value=68.520, new value=67.491, type=decimal
+2020-02-29 10:33:51.157 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:33:51.157 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:33:51.162 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:33:54.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:33:54.284 Detail, 
+2020-02-29 10:33:54.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:54.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:33:54.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:33:54.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:54.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:33:54.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:33:54.287 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:33:59.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:33:59.837 Detail, 
+2020-02-29 10:33:59.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:33:59.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:33:59.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:33:59.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:33:59.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:33:59.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:33:59.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:34:00.704 Detail, Node028,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1c, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x98
+2020-02-29 10:34:00.705 Detail, 
+2020-02-29 10:34:00.705 Detail, Node028, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:00.705 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:34:00.705 Info, Node028, Received Meter report from node 28: Power=0.000W
+2020-02-29 10:34:00.705 Detail, Node028, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:00.705 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:34:00.705 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:34:00.708 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:34:03.248 Detail, Node003,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x03, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x03, 0xee, 0x00, 0x00, 0x6a
+2020-02-29 10:34:03.249 Detail, 
+2020-02-29 10:34:03.249 Detail, Node003, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:03.249 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:34:03.249 Info, Node003, Received Meter report from node 3: Power=1.006W
+2020-02-29 10:34:03.249 Detail, Node003, Refreshed Value: old value=1.295, new value=1.006, type=decimal
+2020-02-29 10:34:03.249 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:34:03.249 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:34:03.252 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:34:09.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:34:09.284 Detail, 
+2020-02-29 10:34:09.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:09.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:34:09.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:34:09.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:09.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:34:09.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:34:09.287 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:34:14.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:34:14.837 Detail, 
+2020-02-29 10:34:14.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:14.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:34:14.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:34:14.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:14.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:34:14.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:34:14.841 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:34:15.182 Detail, Node020,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x14, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x90
+2020-02-29 10:34:15.183 Detail, 
+2020-02-29 10:34:18.922 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x80, 0x03, 0xff, 0x87
+2020-02-29 10:34:18.922 Detail, 
+2020-02-29 10:34:18.922 Info, Node010, Received Battery report from node 10: level=0
+2020-02-29 10:34:18.922 Detail, Node010, Refreshed Value: old value=0, new value=0, type=byte
+2020-02-29 10:34:18.923 Detail, Node010, Changes to this value are not verified
+2020-02-29 10:34:18.923 Detail, Node010, Notification: ValueChanged
+2020-02-29 10:34:19.262 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x30, 0x03, 0xff, 0x37
+2020-02-29 10:34:19.262 Detail, 
+2020-02-29 10:34:19.262 Info, Node010, Received SensorBinary report: Sensor:55 State=On
+2020-02-29 10:34:19.262 Detail, Node010, Refreshed Value: old value=false, new value=true, type=bool
+2020-02-29 10:34:19.262 Detail, Node010, Changes to this value are not verified
+2020-02-29 10:34:19.262 Detail, Node010, Notification: ValueChanged
+2020-02-29 10:34:19.607 Detail, Node010,   Received: 0x01, 0x11, 0x00, 0x04, 0x00, 0x0a, 0x0b, 0x71, 0x05, 0x00, 0x00, 0x00, 0xff, 0x06, 0x16, 0x00, 0x00, 0x00, 0x70
+2020-02-29 10:34:19.607 Detail, 
+2020-02-29 10:34:19.607 Info, Node010, Received Alarm report: type=0, level=0, sensorSrcID=0, type:Access Control event:22, status=255
+2020-02-29 10:34:19.607 Detail, Node010, Refreshed Value: old value=0, new value=0, type=byte
+2020-02-29 10:34:19.607 Detail, Node010, Changes to this value are not verified
+2020-02-29 10:34:19.607 Detail, Node010, Refreshed Value: old value=0, new value=0, type=byte
+2020-02-29 10:34:19.607 Detail, Node010, Changes to this value are not verified
+2020-02-29 10:34:19.607 Detail, Node010, Refreshed Value: old value=0, new value=0, type=byte
+2020-02-29 10:34:19.607 Detail, Node010, Changes to this value are not verified
+2020-02-29 10:34:19.607 Detail, Node010, Refreshed Value: old value=254, new value=22, type=byte
+2020-02-29 10:34:19.607 Detail, Node010, Changes to this value are not verified
+2020-02-29 10:34:19.607 Detail, Node010, Notification: ValueChanged
+2020-02-29 10:34:19.610 Detail, Node010, Notification: ValueChanged
+2020-02-29 10:34:19.614 Detail, Node010, Notification: ValueChanged
+2020-02-29 10:34:19.616 Detail, Node010, Notification: ValueChanged
+2020-02-29 10:34:24.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:34:24.284 Detail, 
+2020-02-29 10:34:24.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:24.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:34:24.285 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:34:24.287 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:24.289 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:34:24.289 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:34:24.292 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:34:25.199 Detail, Node014,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0e, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0xc2, 0x1c, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x44
+2020-02-29 10:34:25.199 Detail, 
+2020-02-29 10:34:25.199 Detail, Node014, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:25.199 Detail, Node014, Changes to this value are not verified
+2020-02-29 10:34:25.199 Info, Node014, Received Meter report from node 14: Power=49.692W
+2020-02-29 10:34:25.199 Detail, Node014, Refreshed Value: old value=50.068, new value=49.692, type=decimal
+2020-02-29 10:34:25.199 Detail, Node014, Changes to this value are not verified
+2020-02-29 10:34:25.199 Detail, Node014, Notification: ValueChanged
+2020-02-29 10:34:25.203 Detail, Node014, Notification: ValueChanged
+2020-02-29 10:34:29.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:34:29.838 Detail, 
+2020-02-29 10:34:29.839 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:29.839 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:34:29.839 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:34:29.839 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:29.839 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:34:29.839 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:34:29.847 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:34:39.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:34:39.284 Detail, 
+2020-02-29 10:34:39.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:39.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:34:39.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:34:39.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:39.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:34:39.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:34:39.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:34:40.620 Detail, Node025,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x19, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9d
+2020-02-29 10:34:40.621 Detail, 
+2020-02-29 10:34:40.621 Detail, Node025, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:40.621 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:34:40.621 Info, Node025, Received Meter report from node 25: Power=0.000W
+2020-02-29 10:34:40.621 Detail, Node025, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:40.621 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:34:40.621 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:34:40.624 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:34:44.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:34:44.837 Detail, 
+2020-02-29 10:34:44.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:44.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:34:44.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:34:44.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:44.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:34:44.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:34:44.842 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:34:48.081 Detail, Node026,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1a, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x7c, 0xa1, 0x00, 0x00, 0x43
+2020-02-29 10:34:48.081 Detail, 
+2020-02-29 10:34:48.081 Detail, Node026, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:48.081 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:34:48.082 Info, Node026, Received Meter report from node 26: Power=31.905W
+2020-02-29 10:34:48.082 Detail, Node026, Refreshed Value: old value=30.723, new value=31.905, type=decimal
+2020-02-29 10:34:48.082 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:34:48.082 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:34:48.086 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:34:51.160 Detail, Node015,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0f, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x01, 0x0e, 0x23, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xb7
+2020-02-29 10:34:51.160 Detail, 
+2020-02-29 10:34:51.160 Detail, Node015, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:51.160 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:34:51.160 Info, Node015, Received Meter report from node 15: Power=69.155W
+2020-02-29 10:34:51.160 Detail, Node015, Refreshed Value: old value=67.491, new value=69.155, type=decimal
+2020-02-29 10:34:51.160 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:34:51.160 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:34:51.186 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:34:54.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:34:54.284 Detail, 
+2020-02-29 10:34:54.285 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:54.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:34:54.285 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:34:54.285 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:54.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:34:54.285 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:34:54.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:34:59.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:34:59.837 Detail, 
+2020-02-29 10:34:59.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:34:59.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:34:59.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:34:59.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:34:59.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:34:59.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:34:59.841 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:35:00.704 Detail, Node028,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1c, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x98
+2020-02-29 10:35:00.704 Detail, 
+2020-02-29 10:35:00.704 Detail, Node028, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:00.704 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:35:00.704 Info, Node028, Received Meter report from node 28: Power=0.000W
+2020-02-29 10:35:00.704 Detail, Node028, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:00.704 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:35:00.704 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:35:00.707 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:35:03.249 Detail, Node003,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x03, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x03, 0x77, 0x00, 0x00, 0xf3
+2020-02-29 10:35:03.249 Detail, 
+2020-02-29 10:35:03.249 Detail, Node003, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:03.249 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:35:03.249 Info, Node003, Received Meter report from node 3: Power=0.887W
+2020-02-29 10:35:03.249 Detail, Node003, Refreshed Value: old value=1.006, new value=0.887, type=decimal
+2020-02-29 10:35:03.249 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:35:03.249 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:35:03.253 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:35:09.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:35:09.285 Detail, 
+2020-02-29 10:35:09.285 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:09.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:35:09.285 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:35:09.285 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:09.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:35:09.285 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:35:09.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:35:14.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:35:14.837 Detail, 
+2020-02-29 10:35:14.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:14.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:35:14.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:35:14.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:14.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:35:14.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:35:14.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:35:15.183 Detail, Node020,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x14, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x90
+2020-02-29 10:35:15.183 Detail, 
+2020-02-29 10:35:24.158 Detail, Node015,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0f, 0x12, 0x32, 0x02, 0x21, 0x64, 0x00, 0x04, 0x15, 0xe8, 0x0e, 0x10, 0x00, 0x04, 0x15, 0xa5, 0x00, 0x00, 0x00, 0x00, 0xd8
+2020-02-29 10:35:24.158 Detail, 
+2020-02-29 10:35:24.158 Detail, Node015, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:24.158 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:35:24.158 Info, Node015, Received Meter report from node 15: Energy=267.752kWh
+2020-02-29 10:35:24.158 Detail, Node015, Refreshed Value: old value=267.685, new value=267.752, type=decimal
+2020-02-29 10:35:24.158 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:35:24.158 Info, Node015,     Previous value was 267.685kWh, received 3600 seconds ago.
+2020-02-29 10:35:24.158 Detail, Node015, Refreshed Value: old value=267.618, new value=267.685, type=decimal
+2020-02-29 10:35:24.158 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:35:24.158 Detail, Node015, Refreshed Value: old value=3600, new value=3600, type=int
+2020-02-29 10:35:24.158 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:35:24.158 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:35:24.181 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:35:24.194 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:35:24.203 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:35:24.287 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:35:24.287 Detail, 
+2020-02-29 10:35:24.287 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:24.287 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:35:24.287 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:35:24.287 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:24.287 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:35:24.287 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:35:24.296 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:35:29.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:35:29.837 Detail, 
+2020-02-29 10:35:29.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:29.838 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:35:29.838 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:35:29.838 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:29.838 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:35:29.838 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:35:29.841 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:35:39.291 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:35:39.292 Detail, 
+2020-02-29 10:35:39.292 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:39.292 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:35:39.292 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:35:39.292 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:39.292 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:35:39.292 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:35:39.295 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:35:40.621 Detail, Node025,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x19, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9d
+2020-02-29 10:35:40.621 Detail, 
+2020-02-29 10:35:40.621 Detail, Node025, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:40.621 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:35:40.621 Info, Node025, Received Meter report from node 25: Power=0.000W
+2020-02-29 10:35:40.621 Detail, Node025, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:40.621 Detail, Node025, Changes to this value are not verified
+2020-02-29 10:35:40.621 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:35:40.624 Detail, Node025, Notification: ValueChanged
+2020-02-29 10:35:44.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:35:44.837 Detail, 
+2020-02-29 10:35:44.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:44.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:35:44.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:35:44.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:44.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:35:44.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:35:44.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:35:48.082 Detail, Node026,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1a, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x7d, 0x69, 0x00, 0x00, 0x8a
+2020-02-29 10:35:48.083 Detail, 
+2020-02-29 10:35:48.083 Detail, Node026, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:48.083 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:35:48.083 Info, Node026, Received Meter report from node 26: Power=32.105W
+2020-02-29 10:35:48.083 Detail, Node026, Refreshed Value: old value=31.905, new value=32.105, type=decimal
+2020-02-29 10:35:48.083 Detail, Node026, Changes to this value are not verified
+2020-02-29 10:35:48.083 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:35:48.086 Detail, Node026, Notification: ValueChanged
+2020-02-29 10:35:51.158 Detail, Node015,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0f, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x01, 0x09, 0xd5, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46
+2020-02-29 10:35:51.158 Detail, 
+2020-02-29 10:35:51.158 Detail, Node015, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:51.158 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:35:51.158 Info, Node015, Received Meter report from node 15: Power=68.053W
+2020-02-29 10:35:51.158 Detail, Node015, Refreshed Value: old value=69.155, new value=68.053, type=decimal
+2020-02-29 10:35:51.158 Detail, Node015, Changes to this value are not verified
+2020-02-29 10:35:51.158 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:35:51.162 Detail, Node015, Notification: ValueChanged
+2020-02-29 10:35:54.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:35:54.285 Detail, 
+2020-02-29 10:35:54.285 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:54.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:35:54.285 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:35:54.285 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:54.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:35:54.285 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:35:54.288 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:35:59.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:35:59.837 Detail, 
+2020-02-29 10:35:59.837 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:35:59.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:35:59.837 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:35:59.837 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:35:59.837 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:35:59.837 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:35:59.840 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:36:00.705 Detail, Node028,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x1c, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x98
+2020-02-29 10:36:00.706 Detail, 
+2020-02-29 10:36:00.706 Detail, Node028, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:36:00.706 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:36:00.706 Info, Node028, Received Meter report from node 28: Power=0.000W
+2020-02-29 10:36:00.706 Detail, Node028, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:36:00.706 Detail, Node028, Changes to this value are not verified
+2020-02-29 10:36:00.706 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:36:00.709 Detail, Node028, Notification: ValueChanged
+2020-02-29 10:36:03.250 Detail, Node003,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x03, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x03, 0x67, 0x00, 0x00, 0xe3
+2020-02-29 10:36:03.250 Detail, 
+2020-02-29 10:36:03.250 Detail, Node003, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:36:03.250 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:36:03.250 Info, Node003, Received Meter report from node 3: Power=0.871W
+2020-02-29 10:36:03.250 Detail, Node003, Refreshed Value: old value=0.887, new value=0.871, type=decimal
+2020-02-29 10:36:03.250 Detail, Node003, Changes to this value are not verified
+2020-02-29 10:36:03.250 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:36:03.254 Detail, Node003, Notification: ValueChanged
+2020-02-29 10:36:09.284 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:36:09.285 Detail, 
+2020-02-29 10:36:09.285 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:36:09.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:36:09.285 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:36:09.285 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:36:09.285 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:36:09.285 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:36:09.289 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:36:14.838 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:36:14.838 Detail, 
+2020-02-29 10:36:14.838 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:36:14.838 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:36:14.838 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:36:14.838 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:36:14.838 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:36:14.838 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:36:14.841 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:36:15.192 Detail, Node020,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x14, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x90
+2020-02-29 10:36:15.192 Detail, 
+2020-02-29 10:36:24.283 Detail, Node018,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x12, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96
+2020-02-29 10:36:24.284 Detail, 
+2020-02-29 10:36:24.284 Detail, Node018, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:36:24.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:36:24.284 Info, Node018, Received Meter report from node 18: Power=0.000W
+2020-02-29 10:36:24.284 Detail, Node018, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:36:24.284 Detail, Node018, Changes to this value are not verified
+2020-02-29 10:36:24.284 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:36:24.289 Detail, Node018, Notification: ValueChanged
+2020-02-29 10:36:25.198 Detail, Node014,   Received: 0x01, 0x18, 0x00, 0x04, 0x00, 0x0e, 0x12, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0xc1, 0x62, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x39
+2020-02-29 10:36:25.198 Detail, 
+2020-02-29 10:36:25.198 Detail, Node014, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:36:25.198 Detail, Node014, Changes to this value are not verified
+2020-02-29 10:36:25.198 Info, Node014, Received Meter report from node 14: Power=49.506W
+2020-02-29 10:36:25.198 Detail, Node014, Refreshed Value: old value=49.692, new value=49.506, type=decimal
+2020-02-29 10:36:25.198 Detail, Node014, Changes to this value are not verified
+2020-02-29 10:36:25.198 Detail, Node014, Notification: ValueChanged
+2020-02-29 10:36:25.201 Detail, Node014, Notification: ValueChanged
+2020-02-29 10:36:29.837 Detail, Node021,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x15, 0x0a, 0x32, 0x02, 0x21, 0x74, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x91
+2020-02-29 10:36:29.838 Detail, 
+2020-02-29 10:36:29.838 Detail, Node021, Refreshed Value: old value=false, new value=false, type=bool
+2020-02-29 10:36:29.838 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:36:29.838 Info, Node021, Received Meter report from node 21: Power=0.000W
+2020-02-29 10:36:29.838 Detail, Node021, Refreshed Value: old value=0.000, new value=0.000, type=decimal
+2020-02-29 10:36:29.838 Detail, Node021, Changes to this value are not verified
+2020-02-29 10:36:29.838 Detail, Node021, Notification: ValueChanged
+2020-02-29 10:36:29.841 Detail, Node021, Notification: ValueChanged
