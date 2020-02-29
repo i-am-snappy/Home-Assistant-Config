@@ -40,7 +40,6 @@ secrets.yaml
 tradfri.conf
 core
 options.xml
-OZW_Log.txt
 pyozw.sqlite
 zwcfg_*
 zwscene.xml
@@ -50,7 +49,6 @@ zigbee.db
 .cloud
 .storage
 node-red
-deps
 
 # ESPHome ignores
 /esphome/secrets.yaml
