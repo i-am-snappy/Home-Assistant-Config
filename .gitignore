@@ -26,7 +26,6 @@ __pycache__
 .tradfri_psk.conf
 icloud/
 google_calendars.yaml
-harmony_*
 home-assistant.db
 home-assistant_v2.db
 home-assistant_v2.db-*
