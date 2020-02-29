@@ -1,0 +1,17 @@
+---
+
+platform: template
+sensors:
+  harmony_activity:
+    friendly_name: 'Harmony Activity'
+    value_template: '{{ states.remote.living_room.attributes.current_activity }}'
+    icon_template: >-
+      {% if is_state("sensor.harmony_activity", "Watch TV") %}
+        mdi:television-box
+      {% elif is_state("sensor.harmony_activity", "Shield TV") %}
+        mdi:shield
+      {% elif is_state("sensor.harmony_activity", "Listen To Sonos") %}
+        mdi:music
+      {% else %}
+        mdi:monitor
+      {% endif %}
