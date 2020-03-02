@@ -103,6 +103,7 @@ binary_sensor:
 
   - platform: gpio
     id: key1
+    internal: true
     pin:
       number: $button_1_gpio
       mode: INPUT_PULLUP
@@ -118,6 +119,7 @@ binary_sensor:
 
   - platform: gpio
     id: key2
+    internal: true
     pin:
       number: $button_2_gpio
       mode: INPUT_PULLUP
@@ -133,6 +135,7 @@ binary_sensor:
 
   - platform: gpio
     id: key3
+    internal: true
     pin:
       number: $button_3_gpio
       mode: INPUT_PULLUP
@@ -148,6 +151,7 @@ binary_sensor:
 
   - platform: gpio
     id: key4
+    internal: true
     pin:
       number: $button_4_gpio
       mode: INPUT_PULLUP

@@ -14,6 +14,8 @@ __pycache__
 *.conf
 *.pickle
 *.sqlite
+*.sqlite-shm
+*.sqlite-wal
 *.crt
 *.csr
 *.key
@@ -48,6 +50,7 @@ zigbee.db
 .cloud
 .storage
 node-red
+neighbours
 
 # ESPHome ignores
 /esphome/secrets.yaml

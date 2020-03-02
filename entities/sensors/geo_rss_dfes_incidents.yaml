@@ -1,0 +1,9 @@
+---
+#
+#
+#
+platform: geo_rss_events
+name: DFES Incidents
+url: https://www.emergency.wa.gov.au/data/incident_FCAD.rss
+radius: 50
+

@@ -23,11 +23,14 @@ influxdb:
   # Max number of retries in case of a failure
   max_retries: 3
 
-  default_measurement: state
+  # The list of attribute names which should be reported as tags
+  # and not fields to InfluxDB.
+  # I've added `device_class` tag and the Z-Wave `node_id`.
+  tags_attributes:
+    - "device_class"
+    - "node_id"
 
   # I like to specify (whitelist) each thing I'd like to put
   # into InfluxDB, to keep the database as clean as possible.
-  ##include:
-  ##  entities:
-  ##    - sensor.bathroom_humidity
-  ##    - sensor.bathroom_temperature
+  include:
+    entities: !include_dir_merge_list ../influxdb
