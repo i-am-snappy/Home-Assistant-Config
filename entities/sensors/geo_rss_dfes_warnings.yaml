@@ -1,0 +1,9 @@
+---
+#
+#
+#
+platform: geo_rss_events
+name: DFES Warnings
+url: https://www.emergency.wa.gov.au/data/message.rss
+radius: 50
+

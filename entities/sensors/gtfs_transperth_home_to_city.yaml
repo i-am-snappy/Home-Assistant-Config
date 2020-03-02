@@ -1,0 +1,9 @@
+---
+
+platform: gtfs
+name: "Home to City"
+origin: !secret gtfs_home
+destination: !secret gtfs_city
+data: transperth
+offset: 5
+include_tomorrow: true
