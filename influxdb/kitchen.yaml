@@ -1,0 +1,17 @@
+---
+# These are the entities from my kitchen that I want
+# to store into InfluxDB.
+#
+# I like to specify (whitelist) each entity to store,
+# since that keeps my InfluxDB clean and small.
+#
+- sensor.fridge_current
+- sensor.fridge_energy
+- sensor.fridge_power
+- sensor.fridge_previous_reading
+- sensor.fridge_voltage
+- sensor.dishwasher_current
+- sensor.dishwasher_energy
+- sensor.dishwasher_power
+- sensor.dishwasher_previous_reading
+- sensor.dishwasher_voltage
