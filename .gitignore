@@ -49,6 +49,7 @@ zigbee.db
 # Directory (contents) ignores
 .cloud
 .storage
+gtfs
 node-red
 neighbours
 
