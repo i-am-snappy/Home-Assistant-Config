@@ -3,5 +3,4 @@
 platform: group
 name: Laundry Lights
 entities:
-  - light.laundry_downlight_1
-  - light.laundry_downlight_2
+  - light.laundry_downlights
