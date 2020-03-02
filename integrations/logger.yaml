@@ -19,16 +19,17 @@
 
 
 logger:
-  default: info
-  logs:
-    pydeconz: debug
-    homeassistant.components.deconz: debug
-    homeassistant.components.pvoutput: debug
-    zigpy: debug
-    zigpy.application: debug
-    zigpy.zdo: debug
-    zigpy-deconz: debug
-    homeassistant.components.zha: debug
+#  default: info
+  default: warn
+#  logs:
+#    pydeconz: debug
+#    homeassistant.components.deconz: debug
+#    homeassistant.components.pvoutput: debug
+#    zigpy: debug
+#    zigpy.application: debug
+#    zigpy.zdo: debug
+#    zigpy-deconz: debug
+#    homeassistant.components.zha: debug
 #  logs:
 #    homeassistant.components.lifx.light: debug
 #    homeassistant.components.sensor.travisci: debug
