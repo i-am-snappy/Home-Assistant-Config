@@ -1,6 +1,6 @@
 ---
 # This alerts me on my iPhone when a new release
-# of Home Assistant for Hass.io is released.
+# of Home Assistant for Home Assistant is released.
 #
 alias: system_upgrade_alert
 trigger:
@@ -19,7 +19,7 @@ action:
     data_template:
       title: Upgrade time!
       message: >-
-        There is a Home Assistant upgrade for Hass.io pending!
+        There is a Home Assistant upgrade for Home Assistant pending!
         Version {{ states('sensor.version_available') }} just got released!
       data:
         attachment:
@@ -29,6 +29,6 @@ action:
     data_template:
       title: Upgrade time!
       message: >-
-        There is a Home Assistant upgrade for Hass.io pending!
+        There is a Home Assistant upgrade for Home Assistant pending!
         Version {{ states('sensor.version_available') }} just got released!
       notification_id: hassio_upgrade
