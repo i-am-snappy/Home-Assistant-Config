@@ -9,6 +9,7 @@
 
 proxmoxve:
   - host: !secret pve1_1_host
+    verify_ssl: false
     username: !secret pve1_1_username
     password: !secret pve1_1_password
     realm: pve
@@ -17,6 +18,7 @@ proxmoxve:
         vms:
           - 105
   - host: !secret pve1_2_host
+    verify_ssl: false
     username: !secret pve1_2_username
     password: !secret pve1_2_password
     realm: pve
