@@ -1,0 +1,6 @@
+alarm_volume:
+  name: Alarm Volume
+  min: 0.0
+  max: 0.3
+  icon: mdi:volume-high
+  mode: box

@@ -1,0 +1,5 @@
+sonos_alarm:
+    name: Master Bedroom Sonos Alarm
+    icon: mdi:alarm
+    entities:
+      - switch.sonos_alarm_210
