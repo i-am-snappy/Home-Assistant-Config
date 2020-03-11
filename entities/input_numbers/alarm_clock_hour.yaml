@@ -1,0 +1,6 @@
+alarm_clock_hour:
+  name: Hour
+  min: 4
+  max: 10
+  step: 1
+  icon: mdi:timer

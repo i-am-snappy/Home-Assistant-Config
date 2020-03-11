@@ -1,0 +1,42 @@
+---
+hello_world:
+  module: hello
+  class: HelloWorld
+
+###################################################################################################
+# Home Assistant People Tracking Sensor
+# https://github.com/Petro31/ad_people_tracker
+#
+# People Tracking Sesnor app for AppDaemon.
+# 
+# Creates a sensor that tracks the number of people at home. Also creates gramatically correct
+# lists of formated names at home.
+# 
+# The sensor contains the following information:
+# 
+# Number of people at home, including guests.
+# A list of people at home, sorted by first name. Guests are always last. e.g. A, B, and guests
+# Removes plural letters from device tracker names. e.g. Petro's iPhone will be reduced to Petro.
+# A gramatically correct string using the conjunction 'and' e.g. A, B, and C
+# A gramatically correct string using the conjunction 'or'. e.g. A, B, or C
+#
+events:
+  module: people_tracker
+  class: PeopleTracker
+  guest_entity_id: input_boolean.guests
+  entities:
+  - person.james
+  - person.denise
+  name: People at Home
+
+###################################################################################################
+# Sonos Alarm Automation
+# https://github.com/AaronDavidSchneider/SonosAlarmAutomation
+#
+# 
+#alarm:
+#  module:    SonosAlarm
+#  class:     SonosAlarm
+#  entity_id: media_player.master_bedroom_sonos
+#  ids:
+#    - 210

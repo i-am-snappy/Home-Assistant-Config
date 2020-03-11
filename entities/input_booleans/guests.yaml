@@ -1,0 +1,9 @@
+---
+# This is an input boolean to use with automations
+# to let me know if there are guests at home.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+guests:
+  name: Guests
+  icon: mdi:account-multiple

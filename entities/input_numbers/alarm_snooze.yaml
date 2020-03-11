@@ -1,0 +1,6 @@
+alarm_snooze:
+  name: Snooze Duration
+  min: 5
+  max: 60
+  step: 5
+  icon: mdi:sleep
