@@ -11,6 +11,7 @@ proxmoxve:
   - host: !secret pve1_1_host
     username: !secret pve1_1_username
     password: !secret pve1_1_password
+    realm: pve
     nodes:
       - node: !secret pve1_1_node
         vms:
@@ -18,6 +19,7 @@ proxmoxve:
   - host: !secret pve1_2_host
     username: !secret pve1_2_username
     password: !secret pve1_2_password
+    realm: pve
     nodes:
       - node: !secret pve1_2_node
         vms:
