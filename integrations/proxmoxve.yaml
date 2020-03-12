@@ -6,6 +6,7 @@
 # This integration allows you to poll various data from your instance.
 #
 # After configuring this component, the binary sensors automatically appear.
+# https://www.home-assistant.io/integrations/proxmoxve/
 
 proxmoxve:
   - host: !secret pve1_1_host
