@@ -77,6 +77,7 @@ bedtime_inside_lights:
           - light.ambient_lights
           - light.kitchen_pendants
           - light.under_bridge_downlight_2
+          - light.living_room_lamp
         transition: 30
 
     - delay:
