@@ -153,3 +153,7 @@ binary_sensor.denise_car_bay:
 binary_sensor.james_car_bay:
   device_class: occupancy
 switch.garage_light: {}
+zwave.unknown_node_4:
+  is_failed: true
+zwave.unknown_node_10:
+  is_failed: true

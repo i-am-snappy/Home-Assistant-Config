@@ -6,4 +6,4 @@
 # since that keeps my InfluxDB clean and small.
 #
 - sensor.landing_sensor_temperature
-- sensor.master_bathroom_sensor_luminance
+- sensor.master_bathroom_sensor_illuminance
