@@ -2,17 +2,17 @@
 esphome:
   name: ${id}
   platform: ESP8266
-  board: esp01_1m
+  board: d1_mini
   
   <<: !include ../esphome/leds/status.yaml
 
-<<: !include ../wifi.yaml
+<<: !include ../wifi_fast_connect.yaml
 <<: !include ../ota.yaml
 <<: !include ../api.yaml
-<<: !include ../logger.yaml
+<<: !include ../logger_info.yaml
 
 binary_sensor:
-  - !include ../binary_sensors/power_button_inverted.yaml
+  - !include ../binary_sensors/status.yaml
 
 light:
   - !include ../lights/status_led.yaml
