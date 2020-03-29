@@ -1,0 +1,5 @@
+---
+
+maintenance_server_room:
+  name: Server Room
+  initial: on

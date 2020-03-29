@@ -1,0 +1,5 @@
+---
+
+maintenance_alfresco:
+  name: Alfresco
+  initial: on
