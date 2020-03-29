@@ -27,10 +27,9 @@ binary_sensor:
     pin:
       number: GPIO13
       mode: INPUT_PULLUP
-      inverted: False
-    name: "Garage Door"
-    id: garage_door_close
-    device_class: garage_door
+      inverted: True
+    name: "Garage Door Down"
+    id: garage_door_down
     filters:
       - delayed_on: 20ms
 
@@ -39,8 +38,8 @@ binary_sensor:
       number: GPIO12
       mode: INPUT_PULLUP
       inverted: True
-    name: "Garage Door Open"
-    id: garage_door_open
+    name: "Garage Door Up"
+    id: garage_door_up
     filters:
       - delayed_on: 20ms
 
@@ -99,8 +98,8 @@ switch:
   - !include common/switches/relay_internal.yaml
 
   - platform: template
-    name: $project
-    icon: "mdi:arrow-up-down-bold-outline"
+    internal: true
+    id: $id
     turn_on_action:
     - switch.turn_on: relay
     - delay: 500ms
@@ -110,5 +109,24 @@ output:
   <<: !include common/outputs/status_led.yaml
 
 light:
-  <<: !include common/lights/status_led.yaml  
-
+  <<: !include common/lights/status_led.yaml
+  
+cover:
+  - platform: template
+    name: "Garage Door"
+    device_class: garage
+    lambda: |-
+      if (id(garage_door_up).state) {
+        return COVER_OPEN;
+      } else if (id(garage_door_down).state) {
+        return COVER_CLOSED;
+      } else {
+        return {};
+      }
+      
+    open_action:
+      - switch.turn_on: $id
+    close_action:
+      - switch.turn_on: $id
+    stop_action:
+      - switch.turn_on: $id

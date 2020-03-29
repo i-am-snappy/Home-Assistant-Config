@@ -1,7 +1,4 @@
 ---
-hello_world:
-  module: hello
-  class: HelloWorld
 
 ###################################################################################################
 # Home Assistant People Tracking Sensor
@@ -28,15 +25,3 @@ events:
   - person.james
   - person.denise
   name: People at Home
-
-###################################################################################################
-# Sonos Alarm Automation
-# https://github.com/AaronDavidSchneider/SonosAlarmAutomation
-#
-# 
-#alarm:
-#  module:    SonosAlarm
-#  class:     SonosAlarm
-#  entity_id: media_player.master_bedroom_sonos
-#  ids:
-#    - 210

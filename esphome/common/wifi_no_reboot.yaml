@@ -1,6 +1,6 @@
 ---
 wifi:
-  ssid: !secret ssid3
-  password: !secret ssid3_password
+  ssid: !secret ssid
+  password: !secret ssid_password
   domain: !secret domain
   reboot_timeout: 0s

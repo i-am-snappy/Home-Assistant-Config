@@ -157,3 +157,8 @@ zwave.unknown_node_4:
   is_failed: true
 zwave.unknown_node_10:
   is_failed: true
+binary_sensor.laundry_sliding_door:
+  device_class: door
+binary_sensor.james_bayesian:
+  device_class: presence
+  icon: mdi:account
