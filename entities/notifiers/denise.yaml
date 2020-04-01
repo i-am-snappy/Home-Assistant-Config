@@ -3,4 +3,4 @@
 name: denise
 platform: group
 services:
-  - service: html5_denise_phone
+  - service: mobile_app_denise_phone

@@ -1,10 +1,10 @@
 ---
 # This is an input boolean to use with automations
-# in case we have guests over for visit or sleepovers.
+# for when we are away from the house on holiday.
 #
 # https://www.home-assistant.io/components/input_boolean/
 #
-mode_guest:
-  name: Guest Mode
+mode_holiday:
+  name: Holiday Mode
   initial: false
   icon: mdi:hotel
