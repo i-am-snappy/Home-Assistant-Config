@@ -1,0 +1,10 @@
+---
+
+# The uptime sensor platform displays the time since the last Home Assistant restart.
+#
+# https://www.home-assistant.io/integrations/uptime/
+#
+
+platform: uptime
+name: HA Uptime Hours
+unit_of_measurement: hours

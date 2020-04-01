@@ -4,7 +4,7 @@ name: james_and_denise
 platform: group
 services:
   - service: mobile_app_james_phone
-  - service: html5_denise_phone
+  - service: mobile_app_denise_phone
   - service: html5_inspiron
 
 
