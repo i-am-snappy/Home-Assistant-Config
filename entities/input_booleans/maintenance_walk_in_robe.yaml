@@ -2,4 +2,4 @@
 
 maintenance_walk_in_robe:
   name: Walk In Robe
-  initial: on
+  initial: false

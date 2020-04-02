@@ -2,4 +2,4 @@
 
 maintenance_stairs:
   name: Stairs
-  initial: on
+  initial: false

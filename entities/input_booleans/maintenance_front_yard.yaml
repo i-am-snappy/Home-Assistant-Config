@@ -2,4 +2,4 @@
 
 maintenance_front_yard:
   name: Front Yard
-  initial: on
+  initial: false

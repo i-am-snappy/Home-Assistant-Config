@@ -2,4 +2,4 @@
 
 maintenance_entry:
   name: Entry
-  initial: on
+  initial: false

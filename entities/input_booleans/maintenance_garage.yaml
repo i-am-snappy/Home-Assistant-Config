@@ -2,4 +2,4 @@
 
 maintenance_garage:
   name: Garage
-  initial: on
+  initial: false
