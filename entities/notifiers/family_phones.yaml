@@ -1,11 +1,11 @@
 ---
   
-name: james_and_denise
+name: family_phones
 platform: group
 services:
   - service: mobile_app_james_phone
   - service: mobile_app_denise_phone
-  - service: html5_inspiron
+
 
 
 

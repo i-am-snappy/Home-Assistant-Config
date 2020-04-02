@@ -2,4 +2,4 @@
 
 maintenance_master_bedroom:
   name: Master Bedroom
-  initial: on
+  initial: false

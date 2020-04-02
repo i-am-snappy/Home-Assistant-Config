@@ -2,4 +2,4 @@
 
 maintenance_guest_bathroom:
   name: Guest Bathroom
-  initial: on
+  initial: false

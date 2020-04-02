@@ -2,4 +2,4 @@
 
 maintenance_roof:
   name: Roof
-  initial: on
+  initial: false
