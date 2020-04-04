@@ -5,3 +5,36 @@
 # I like to specify (whitelist) each entity to store,
 # since that keeps my InfluxDB clean and small.
 #
+
+# PVE1-Node1
+- sensor.pve1node1_current
+- sensor.pve1node1_energy
+- sensor.pve1node1_power
+- sensor.pve1node1_previous_reading
+- sensor.pve1node1_voltage
+
+# PVE1-Node2
+- sensor.pve1node2_current
+- sensor.pve1node2_energy
+- sensor.pve1node2_power
+- sensor.pve1node2_previous_reading
+- sensor.pve1node2_voltage
+
+# Tower
+- sensor.tower_current
+- sensor.tower_energy
+- sensor.tower_power
+- sensor.tower_previous_reading
+- sensor.tower_voltage
+
+# Switch1
+- sensor.switch1_current
+- sensor.switch1_energy
+- sensor.switch1_power
+- sensor.switch1_previous_reading
+- sensor.switch1_voltage
+
+# Server Room Sensor
+- sensor.server_room_sensor_motion
+- sensor.server_room_sensor_temperature
+- sensor.server_room_sensor_illuminance
