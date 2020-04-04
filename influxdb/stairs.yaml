@@ -1,0 +1,14 @@
+---
+# These are the entities from my garden that I want
+# to store into InfluxDB.
+#
+# I like to specify (whitelist) each entity to store,
+# since that keeps my InfluxDB clean and small.
+#
+
+# Stair LEDs
+- sensor.stair_leds_current
+- sensor.stair_leds_energy
+- sensor.stair_leds_power
+- sensor.stair_leds_previous_reading
+- sensor.stair_leds_voltage
