@@ -7,15 +7,13 @@
 #
 
 # Fountain
-- sensor.fountain_sensor_motion
-- sensor.fountain_sensor_temperature
-- sensor.fountain_sensor_humidity
-- sensor.fountain_sensor_illuminance
-- sensor.fountain_sensor_uv
+- sensor.fountain_current
+- sensor.fountain_energy
+- sensor.fountain_power
+- sensor.fountain_previous_reading
 
 # Garden Lights
-- sensor.garden_lights_sensor_motion
-- sensor.garden_lights_sensor_temperature
-- sensor.garden_lights_sensor_humidity
-- sensor.garden_lights_sensor_illuminance
-- sensor.garden_lights_sensor_uv
+- sensor.garden_lights_current
+- sensor.garden_lights_energy
+- sensor.garden_lights_power
+- sensor.garden_lights_previous_reading

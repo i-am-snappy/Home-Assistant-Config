@@ -11,14 +11,12 @@
 - sensor.fridge_energy
 - sensor.fridge_power
 - sensor.fridge_previous_reading
-- sensor.fridge_voltage
 
 # Dishwasher
 - sensor.dishwasher_current
 - sensor.dishwasher_energy
 - sensor.dishwasher_power
 - sensor.dishwasher_previous_reading
-- sensor.dishwasher_voltage
 
 # Kitchen Sensor
 - sensor.kitchen_sensor_motion

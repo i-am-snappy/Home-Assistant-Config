@@ -11,4 +11,3 @@
 - sensor.stair_leds_energy
 - sensor.stair_leds_power
 - sensor.stair_leds_previous_reading
-- sensor.stair_leds_voltage
