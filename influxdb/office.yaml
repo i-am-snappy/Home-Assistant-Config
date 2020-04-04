@@ -29,5 +29,5 @@
 
 # Office Sensor
 - sensor.office_sensor_motion
-- sensor.office_temperature
-- sensor.office_illuminance
+- sensor.office_sensor_temperature
+- sensor.office_sensor_illuminance

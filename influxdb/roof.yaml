@@ -5,3 +5,13 @@
 # I like to specify (whitelist) each entity to store,
 # since that keeps my InfluxDB clean and small.
 #
+
+# East Roof Sensor
+- sensor.east_roof_sensor_motion
+- sensor.east_roof_sensor_temperature
+- sensor.east_roof_sensor_illuminance
+
+# West Roof Sensor
+- sensor.west_roof_sensor_motion
+- sensor.west_roof_sensor_temperature
+- sensor.west_roof_sensor_illuminance

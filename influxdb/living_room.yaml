@@ -5,3 +5,29 @@
 # I like to specify (whitelist) each entity to store,
 # since that keeps my InfluxDB clean and small.
 #
+
+# Living Room Receiver
+- sensor.living_room_receiver_current
+- sensor.living_room_receiver_energy
+- sensor.living_room_receiver_power
+- sensor.living_room_receiver_previous_reading
+- sensor.living_room_receiver_voltage
+
+# Living Room Sub
+- sensor.living_room_sub_current
+- sensor.living_room_sub_energy
+- sensor.living_room_sub_power
+- sensor.living_room_sub_previous_reading
+- sensor.living_room_sub_voltage
+
+# TV
+- sensor.tv_current
+- sensor.tv_energy
+- sensor.tv_power
+- sensor.tv_previous_reading
+- sensor.tv_voltage
+
+# Living Room Sensor
+- sensor.living_room_sensor_motion
+- sensor.living_room_sensor_temperature
+- sensor.living_room_sensor_illuminance
