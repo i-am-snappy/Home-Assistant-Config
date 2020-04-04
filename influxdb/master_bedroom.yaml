@@ -5,3 +5,10 @@
 # I like to specify (whitelist) each entity to store,
 # since that keeps my InfluxDB clean and small.
 #
+
+# Master Bedroom Sensor
+- sensor.master_bedroom_sensor_motion
+- sensor.master_bedroom_sensor_temperature
+- sensor.master_bedroom_sensor_humidity
+- sensor.master_bedroom_sensor_illuminance
+- sensor.master_bedroom_sensor_uv

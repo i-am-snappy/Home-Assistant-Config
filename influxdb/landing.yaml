@@ -5,5 +5,10 @@
 # I like to specify (whitelist) each entity to store,
 # since that keeps my InfluxDB clean and small.
 #
+
+# Landing Sensor
+- sensor.landing_sensor_motion
 - sensor.landing_sensor_temperature
+- sensor.landing_sensor_humidity
 - sensor.landing_sensor_illuminance
+- sensor.landing_sensor_uv
