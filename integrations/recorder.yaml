@@ -14,3 +14,36 @@ recorder:
 
   # How often (in days) the purge task runs
   purge_interval: 1
+
+  exclude:
+    domains:
+      - automation
+      - calendar
+      - device_tracker
+      - group
+      - media_player
+      - scene
+      - script
+      - sun
+      - updater
+      - weather
+      - zwave
+
+    entities:
+      - sensor.date
+      - sensor.date_time
+      - sensor.date_time_iso
+      - sensor.time
+      - sensor.time_date
+      - sensor.time_utc
+      - sensor.internet_time
+      - zone.home
+  
+  include:
+    entities:
+      - device_tracker.james_phone
+      - device_tracker.james_phone_unifi
+      - device_tracker.life360_james_chapman
+      - device_tracker.denise_phone
+      - device_tracker.denise_phone_unifi
+      - device_tracker.family
