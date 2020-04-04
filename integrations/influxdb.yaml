@@ -37,3 +37,12 @@ influxdb:
   # into InfluxDB, to keep the database as clean as possible.
   include:
     entities: !include_dir_merge_list ../influxdb
+
+  # This attribute contains component-specific override values.
+  component_config_glob:
+    sensor.*humidity:
+      override_measurement: humidity
+    sensor.*temperature:
+      override_measurement: temperature
+    sensor.*_uv:
+      override_measurement: uv
