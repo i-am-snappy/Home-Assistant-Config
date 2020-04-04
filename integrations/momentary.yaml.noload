@@ -1,7 +1,0 @@
----
-
-# https://github.com/twrecked/hass-momentary/blob/master/README.md
-
-# A simple switch component that once turned on will turn itself off.
-
-momentary:
