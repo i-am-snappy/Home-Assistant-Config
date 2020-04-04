@@ -11,14 +11,12 @@
 - sensor.dryer_energy
 - sensor.dryer_power
 - sensor.dryer_previous_reading
-- sensor.dryer_voltage
 
 # Washing Machine
 - sensor.washing_machine_current
 - sensor.washing_machine_energy
 - sensor.washing_machine_power
 - sensor.washing_machine_previous_reading
-- sensor.washing_machine_voltage
 
 # Laundry Sensor
 - sensor.laundry_sensor_motion

@@ -11,4 +11,3 @@
 - sensor.wine_fridge_sensor_temperature
 - sensor.wine_fridge_sensor_humidity
 - sensor.wine_fridge_sensor_illuminance
-- sensor.wine_fridge_sensor_uv
