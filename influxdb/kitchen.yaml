@@ -5,13 +5,24 @@
 # I like to specify (whitelist) each entity to store,
 # since that keeps my InfluxDB clean and small.
 #
+
+# Fridge
 - sensor.fridge_current
 - sensor.fridge_energy
 - sensor.fridge_power
 - sensor.fridge_previous_reading
 - sensor.fridge_voltage
+
+# Dishwasher
 - sensor.dishwasher_current
 - sensor.dishwasher_energy
 - sensor.dishwasher_power
 - sensor.dishwasher_previous_reading
 - sensor.dishwasher_voltage
+
+# Kitchen Sensor
+- sensor.kitchen_sensor_motion
+- sensor.kitchen_sensor_temperature
+- sensor.kitchen_sensor_humidity
+- sensor.kitchen_sensor_illuminance
+- sensor.kitchen_sensor_uv
