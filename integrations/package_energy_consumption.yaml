@@ -32,9 +32,9 @@ input_select:
     name: Electricity Tariff
     options:
       - everyday_offpeak
-      - peak_weekdays
-      - weekday_shoulder
       - weekend_shoulder
+      - weekday_shoulder
+      - peak_weekdays
 
 
 #################################################################
@@ -45,7 +45,50 @@ input_select:
 
 input number:
 
+  electricity_cost_supply_charge:
+    name: Electricity Supply Charge Per Day
+    min: 50.0000
+    max: 150.0000
+    unit_of_measurement: 'c'
+    initial: 103.3263
+    mode: box
+    icon: mdi:currency-usd
 
+  electricity_cost_everyday_offpeak:
+    name: Electricity Cost Everyday Off-Peak
+    min: 10.0000
+    max: 80.0000
+    unit_of_measurement: 'c'
+    initial: 15.1002
+    mode: box
+    icon: mdi:currency-usd
+
+  electricity_cost_weekend_shoulder:
+    name: Electricity Cost Weekend Shoulder
+    min: 10.0000
+    max: 80.0000
+    unit_of_measurement: 'c'
+    initial: 28.7076
+    mode: box
+    icon: mdi:currency-usd
+
+  electricity_cost_weekday_shoulder:
+    name: Electricity Cost Weekday Shoulder
+    min: 10.0000
+    max: 80.0000
+    unit_of_measurement: 'c'
+    initial: 28.7076
+    mode: box
+    icon: mdi:currency-usd
+
+  electricity_cost_peak_weekdays:
+    name: Electricity Cost Peak Weekdays
+    min: 10.0000
+    max: 80.0000
+    unit_of_measurement: 'c'
+    initial: 54.8142
+    mode: box
+    icon: mdi:currency-usd
 
 
 
