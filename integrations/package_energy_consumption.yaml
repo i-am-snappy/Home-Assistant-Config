@@ -109,13 +109,59 @@ sensor:
   - platform: template
     sensors:
 
+      appliances_energy:
+        value_template: >
+          "{{ ( states.sensor.dishwasher_energy.state|float +
+                states.sensor.dryer_energy.state|float +
+                states.sensor.fountain_energy.state|float +
+                states.sensor.fridge_energy.state|float +
+                states.sensor.washing_machine_energy.state|float +
+                states.sensor.wine_fridge_energy.state|float) |round(2) }}"
+        friendly_name: 'Appliances Energy'
 
+      lights_energy:
+        value_template: >
+          "{{ ( states.sensor.garden_lights_energy.state|float +
+                states.sensor.garage_light_energy.state|float +
+                states.sensor.stair_leds_energy.state|float) |round(2) }}"
+        friendly_name: 'Lights Energy'
 
+      climate_energy:
+        value_template: >
+          "{{ ( states.sensor.living_room_heater.state|float +
+                states.sensor.office_mat_heater.state|float) |round(2) }}"
+        friendly_name: 'Climate Energy'
 
-    
+      media_energy:
+        value_template: >
+          "{{ ( states.sensor.living_room_receiver_energy.state|float +
+                states.sensor.living_room_sub_energy.state|float +
+                states.sensor.tv_energy.state|float) |round(2) }}"
+        friendly_name: 'Media Energy'
+
+      it_energy:
+        value_template: >
+          "{{ ( states.sensor.office_equipment_energy.state|float +
+                states.sensor.office_monitors_energy.state|float +
+                states.sensor.pve1node1_energy.state|float +
+                states.sensor.pve1node2_energy.state|float +
+                states.sensor.switch1_energy.state|float +
+                states.sensor.tower_energy.state|float +
+                states.sensor.ups_energy.state|float) |round(2) }}"
+        friendly_name: 'IT Energy'
+
       total_energy:
-        value_template: "{{ (states.sensor.monthly_dryer_energy.state|float + states.sensor.monthly_washing_machine_energy.state|float) |round(2) }}"
-        friendly_name: 'Total'
+        value_template: >
+          "{{ ( states.sensor.appliances_energy.state|float +
+                states.sensor.lights_energy.state|float +
+                states.sensor.climate_energy.state|float +
+                states.sensor.media_energy.state|float +
+                states.sensor.switch1_energy.state|float +
+                states.sensor.it_energy.state|float) |round(2) }}"
+        friendly_name: 'Total Energy'
+
+
+
 
       dryer_last_month:
         value_template: "{{ states.sensor.monthly_dryer_energy.attributes.last_period }}"
@@ -191,12 +237,14 @@ sensor:
   # DONE Monthly
   # DONE Quarterly
 
-# Total Daily Consumptions
-  # Appliances
-  # Lights
-  # Climate
-  # Media
-  # IT
+# Category Energy Template Sensors
+  # DONE Appliances
+  # DONE Lights
+  # DONE Climate
+  # DONE Media
+  # DONE IT
+  # DONE Total (All Categories)
+
 
 #### END OF TASKS #####
 
@@ -211,11 +259,11 @@ sensor:
   # Fridge                        Appliance
   # Garage Light                  Lights
   # Garden Lights                 Lights
-  # Living Room Heater            Appliance
-  # Living Room Receiver          Appliance
-  # Living Room Sub               Appliance
+  # Living Room Heater            Climate
+  # Living Room Receiver          Media
+  # Living Room Sub               Media
   # Office Equipment              IT
-  # Office Mat Heater             IT
+  # Office Mat Heater             Climate
   # Office Monitors               IT
   # PVE1-Node1                    IT
   # PVE1-Node2                    IT
