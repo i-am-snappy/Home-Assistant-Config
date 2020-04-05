@@ -1,0 +1,24 @@
+---
+
+# Synergy Smart Home Plan Tariffs
+#
+# Everyday Off-peak                        (9pm to 7am)
+# Peak - weekdays only                     (3pm to 9pm)
+# Weekday shoulder                         (7am to 3pm)
+# Weekend shoulder                         (7am to 9pm)
+#
+# 
+# Item                                     Price inc. GST
+# Supply charge                            103.3263 cents per day
+# Everyday Off-peak electricity charge     15.1002 cents per unit
+# Weekend shoulder electricity charge      28.7076 cents per unit
+# Weekday shoulder electricity charge      28.7076 cents per unit
+# Peak electricity charge                  54.8142 cents per unit 
+
+power_utility_tariff:
+  name: Power Utility Tariff
+  options:
+    - everyday_offpeak
+    - peak_weekdays
+    - weekday_shoulder
+    - weekend_shoulder
