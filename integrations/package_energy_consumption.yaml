@@ -172,15 +172,148 @@ sensor:
 #                                                               #
 ################################################################# 
 
+# Periods
+  # Hourly
+  # Daily     #
+  # Weekly    #
+  # Monthly   #
+  # Quarterly #
+  # Yearly
+
+# Devices - Z-Wave
+  # Dishwasher
+  # Dryer
+  # Washing Machine
+  # Fountain
+  # Garden Lights
+  # Fridge
+  # Wine Fridge
+  # Garage Light
+  # Living Room Heater
+  # Living Room Receiver
+  # Living Room Sub
+  # TV
+  # Office Equipment
+  # Office Monitors
+  # Office Mat Heater
+  # PVE1-Node1
+  # PVE1-Node2
+  # Tower
+  # Switch1
+  # UPS
+
+
+
+# Categories
+  # Appliances
+  # Lights
+  # Fans
+  # Climate
+
+# Measurement
+  # Usage
+  # Cost
+
+
+# Total Usage
+  # Total Daily Usage Appliances
+  # Total Daily Usage Lights
+  # Total Daily Usage Fans
+  # Total Daily Usage Climate
+  ####
+  # Total Daily Usage
+
+  # Total Weekly Usage Appliances
+  # Total Weekly Usage Lights
+  # Total Weekly Usage Fans
+  # Total Weekly Usage Climate
+  ####
+  # Total Weekly Usage
+
+  # Total Monthly Usage Appliances
+  # Total Monthly Usage Lights
+  # Total Monthly Usage Fans
+  # Total Monthly Usage Climate
+  ####
+  # Total Monthly Usage
+
+  # Total Quarterly Usage Appliances
+  # Total Quarterly Usage Lights
+  # Total Quarterly Usage Fans
+  # Total Quarterly Usage Climate
+  ####
+  # Total Quarterly Usage
+
+# Comparison Usage
+  # Yesterday Usage Comparison
+  # Last Week Usage Comparison
+  # Last Month Usage Comparison
+  # Last Quarter Usage Comparison
+
+  # This Time Last Year Usage Comparison - Day
+  # This Time Last Year Usage Comparison - Week
+  # This Time Last Year Usage Comparison - Month
+  # This Time Last Year Usage Comparison - Quarter
+
+# Difference Usage
+  # Yesterday Usage Difference
+  # Last Week Usage Difference
+  # Last Month Usage Difference
+  # Last Quarter Usage Difference
+
+  # This Time Last Year Usage Difference - Day
+  # This Time Last Year Usage Difference - Week
+  # This Time Last Year Usage Difference - Month
+  # This Time Last Year Usage Difference - Quarter
+
+
+
+
+# Total Cost
+  # Total Daily Cost Appliances
+  # Total Daily Cost Lights
+  # Total Daily Cost Fans
+  # Total Daily Cost Climate
+  ####
+  # Total Daily Cost
+
+  # Total Weekly Cost Appliances
+  # Total Weekly Cost Lights
+  # Total Weekly Cost Fans
+  # Total Weekly Cost Climate
+  ####
+  # Total Weekly Cost
+
+  # Total Monthly Cost Appliances
+  # Total Monthly Cost Lights
+  # Total Monthly Cost Fans
+  # Total Monthly Cost Climate
+  ####
+  # Total Monthly Cost
+
+  # Total Quarterly Cost Appliances
+  # Total Quarterly Cost Lights
+  # Total Quarterly Cost Fans
+  # Total Quarterly Cost Climate
+  ####
+  # Total Quarterly Cost
+
+# Comparison Cost
+  # Yesterday Cost
+  # Last Week Cost
+  # Last Month Cost
+  # Last Quarter Cost
+
+  # This Time Last Year Cost - Day
+  # This Time Last Year Cost - Week
+  # This Time Last Year Cost - Month
+  # This Time Last Year Cost - Quarter
+
+
+
 utility_meter:
 
-# Hourly
 # Daily
-# Weekly
-# Monthly
-# Quarterly
-# Yearly
-
 
   monthly_dryer_energy:
     source: sensor.dryer_energy
