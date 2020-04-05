@@ -1,6 +1,6 @@
 #################################################################
 #                                                               #
-#                  Packages/Power Consumption                   #
+#                  Packages/Energy Consumption                  #
 #                                                               #
 #################################################################
 
@@ -18,6 +18,32 @@
 # Weekend shoulder electricity charge      28.7076 cents per unit
 # Weekday shoulder electricity charge      28.7076 cents per unit
 # Peak electricity charge                  54.8142 cents per unit 
+
+
+#################################################################
+#                                                               #
+#                          Input Selects                        #
+#                                                               #
+################################################################# 
+
+input_select:
+
+  utility_meter_electricity_tariff:
+    name: Electricity Tariff
+    options:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+
+#################################################################
+#                                                               #
+#                          Input Numbers                        #
+#                                                               #
+################################################################# 
+
+input number:
 
 
 
