@@ -43,7 +43,7 @@ input_select:
 #                                                               #
 ################################################################# 
 
-input number:
+input_number:
 
   electricity_cost_supply_charge:
     name: Electricity Supply Charge Per Day
@@ -107,7 +107,12 @@ sensor:
 ####################################################
 
   - platform: template
-    sensors: 
+    sensors:
+
+
+
+
+    
       total_energy:
         value_template: "{{ (states.sensor.monthly_dryer_energy.state|float + states.sensor.monthly_washing_machine_energy.state|float) |round(2) }}"
         friendly_name: 'Total'
@@ -126,7 +131,7 @@ sensor:
         friendly_name: 'Last Month'
         
       month_remaining_days:
-        friendly_name: "Month Left"
+        friendly_name: "Days left in Month"
         entity_id: sensor.date
         value_template: >-
           {% if now().month in [1,3,5,7,8,10,12] %}
@@ -163,7 +168,8 @@ sensor:
 #                                                               #
 #################################################################
 
-#automation:
+# Tariff time triggering is done in Node Red
+
 
 
 #################################################################
@@ -171,6 +177,57 @@ sensor:
 #                        Utility Meter                          #
 #                                                               #
 ################################################################# 
+
+#### TASKS #####
+# DONE Individual Utility Meter Creations
+  # DONE Daily
+  # DONE Weekly
+  # DONE Monthly
+  # DONE Quarterly
+
+# DONE Individual Meter Tariff updated in Node Red
+  # DONE Daily
+  # DONE Weekly
+  # DONE Monthly
+  # DONE Quarterly
+
+# Total Daily Consumptions
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+#### END OF TASKS #####
+
+
+# Devices
+# Z-Wave
+  # Name                          Category
+  #-------------------------------------------------------------------------------------------
+  # Dishwasher                    Appliance
+  # Dryer                         Appliance
+  # Fountain                      Appliance
+  # Fridge                        Appliance
+  # Garage Light                  Lights
+  # Garden Lights                 Lights
+  # Living Room Heater            Appliance
+  # Living Room Receiver          Appliance
+  # Living Room Sub               Appliance
+  # Office Equipment              IT
+  # Office Mat Heater             IT
+  # Office Monitors               IT
+  # PVE1-Node1                    IT
+  # PVE1-Node2                    IT
+  # Stair LEDs                    Lights
+  # Switch1                       IT
+  # Tower                         IT
+  # TV                            Media
+  # UPS                           IT
+  # Washing Machine               Appliance
+  # Wine Fridge                   Appliance
+
+
 
 # Periods
   # Hourly
@@ -183,154 +240,788 @@ sensor:
 # Categories
   # Appliances
   # Lights
-  # Fans
   # Climate
+  # Media
+  # IT
 
-
-# Devices
-# Z-Wave
-  # Name                          Category
-  #-------------------------------------------------------------------------------------------
-  # Dishwasher                    
-  # Dryer                         
-  # Fountain                      
-  # Fridge                        
-  # Garage Light                  
-  # Garden Lights                 
-  # Living Room Heater            
-  # Living Room Receiver          
-  # Living Room Sub               
-  # Office Equipment              
-  # Office Mat Heater             
-  # Office Monitors               
-  # PVE1-Node1                    
-  # PVE1-Node2                    
-  # Stair LEDs                    
-  # Switch1                       
-  # Tower                         
-  # TV                            
-  # UPS                           
-  # Washing Machine               
-  # Wine Fridge                   
-
-
-# Measurement
-  # Usage
+# Energy Measurements
+  # Consumption
   # Cost
 
+# Analysis
+  # Total
+  # Comparison
+  # Difference
+  # Average
+  # Predict
+  ######## Peak - Not Set up yet #############
 
-# Total Usage
-  # Total Daily Usage Appliances
-  # Total Daily Usage Lights
-  # Total Daily Usage Fans
-  # Total Daily Usage Climate
-  ####
-  # Total Daily Usage
+########################################################################
 
-  # Total Weekly Usage Appliances
-  # Total Weekly Usage Lights
-  # Total Weekly Usage Fans
-  # Total Weekly Usage Climate
-  ####
-  # Total Weekly Usage
+# Total Consumption
+  # Total Daily Consumption
+    # Total Daily Consumption Appliances
+    # Total Daily Consumption Lights
+    # Total Daily Consumption Climate
+    # Total Daily Consumption Media
+    # Total Daily Consumption IT
 
-  # Total Monthly Usage Appliances
-  # Total Monthly Usage Lights
-  # Total Monthly Usage Fans
-  # Total Monthly Usage Climate
-  ####
-  # Total Monthly Usage
+  # Total Weekly Consumption
+    # Total Weekly Consumption Appliances
+    # Total Weekly Consumption Lights
+    # Total Weekly Consumption Climate
+    # Total Weekly Consumption Media
+    # Total Weekly Consumption IT
 
-  # Total Quarterly Usage Appliances
-  # Total Quarterly Usage Lights
-  # Total Quarterly Usage Fans
-  # Total Quarterly Usage Climate
-  ####
-  # Total Quarterly Usage
+  # Total Monthly Consumption
+    # Total Monthly Consumption Appliances
+    # Total Monthly Consumption Lights
+    # Total Monthly Consumption Climate
+    # Total Monthly Consumption Media
+    # Total Monthly Consumption IT
 
-# Comparison Usage
-  # Yesterday Usage Comparison
-  # Last Week Usage Comparison
-  # Last Month Usage Comparison
-  # Last Quarter Usage Comparison
+  # Total Quarterly Consumption
+    # Total Quarterly Consumption Appliances
+    # Total Quarterly Consumption Lights
+    # Total Quarterly Consumption Climate
+    # Total Quarterly Consumption Media
+    # Total Quarterly Consumption IT
 
-  # This Time Last Year Usage Comparison - Day
-  # This Time Last Year Usage Comparison - Week
-  # This Time Last Year Usage Comparison - Month
-  # This Time Last Year Usage Comparison - Quarter
+# Comparison Consumption
+  # Yesterday Consumption Comparison
+    # Yesterday Consumption Comparison Appliances
+    # Yesterday Consumption Comparison Lights
+    # Yesterday Consumption Comparison Climate
+    # Yesterday Consumption Comparison Media
+    # Yesterday Consumption Comparison IT
 
-# Difference Usage
-  # Yesterday Usage Difference
-  # Last Week Usage Difference
-  # Last Month Usage Difference
-  # Last Quarter Usage Difference
+  # Last Week Consumption Comparison
+    # Last Week Consumption Comparison Appliances
+    # Last Week Consumption Comparison Lights
+    # Last Week Consumption Comparison Climate
+    # Last Week Consumption Comparison Media
+    # Last Week Consumption Comparison IT
 
-  # This Time Last Year Usage Difference - Day
-  # This Time Last Year Usage Difference - Week
-  # This Time Last Year Usage Difference - Month
-  # This Time Last Year Usage Difference - Quarter
+  # Last Month Consumption Comparison
+    # Last Month Consumption Comparison Appliances
+    # Last Month Consumption Comparison Lights
+    # Last Month Consumption Comparison Climate
+    # Last Month Consumption Comparison Media
+    # Last Month Consumption Comparison IT
+
+  # Last Quarter Consumption Comparison
+    # Last Quarter Consumption Comparison Appliances
+    # Last Quarter Consumption Comparison Lights
+    # Last Quarter Consumption Comparison Climate
+    # Last Quarter Consumption Comparison Media
+    # Last Quarter Consumption Comparison IT
+
+  # This Time Last Year Consumption Comparison - Day
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Consumption Comparison - Week
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Consumption Comparison - Month
+  # Appliances
+  # Lights
+  # Fans
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Consumption Comparison - Quarter
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
 
 
+# Difference Consumption
+  # Yesterday Consumption Difference
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
 
+  # Last Week Consumption Difference
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # Last Month Consumption Difference
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # Last Quarter Consumption Difference
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Consumption Difference - Day
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Consumption Difference - Week
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Consumption Difference - Month
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Consumption Difference - Quarter
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+
+# Average Daily Consumption in Month
+  # Average Daily Consumption in Month Appliances
+  # Average Daily Consumption in Month Lights
+  # Average Daily Consumption in Month Climate
+  # Average Daily Consumption in Month Media
+  # Average Daily Consumption in Month IT
+
+# Predict Consumption for Month
+  # Predict Consumption for Month Appliances
+  # Predict Consumption for Month Lights
+  # Predict Consumption for Month Climate
+  # Predict Consumption for Month Media
+  # Predict Consumption for Month IT
+
+########################################################################
 
 # Total Cost
-  # Total Daily Cost Appliances
-  # Total Daily Cost Lights
-  # Total Daily Cost Fans
-  # Total Daily Cost Climate
-  ####
   # Total Daily Cost
+    # Total Daily Cost Appliances
+    # Total Daily Cost Lights
+    # Total Daily Cost Climate
+    # Total Daily Cost Media
+    # Total Daily Cost IT
 
-  # Total Weekly Cost Appliances
-  # Total Weekly Cost Lights
-  # Total Weekly Cost Fans
-  # Total Weekly Cost Climate
-  ####
   # Total Weekly Cost
+    # Total Weekly Cost Appliances
+    # Total Weekly Cost Lights
+    # Total Weekly Cost Climate
+    # Total Weekly Cost Media
+    # Total Weekly Cost IT
 
-  # Total Monthly Cost Appliances
-  # Total Monthly Cost Lights
-  # Total Monthly Cost Fans
-  # Total Monthly Cost Climate
-  ####
   # Total Monthly Cost
+    # Total Monthly Cost Appliances
+    # Total Monthly Cost Lights
+    # Total Monthly Cost Climate
+    # Total Monthly Cost Media
+    # Total Monthly Cost IT
 
-  # Total Quarterly Cost Appliances
-  # Total Quarterly Cost Lights
-  # Total Quarterly Cost Fans
-  # Total Quarterly Cost Climate
-  ####
   # Total Quarterly Cost
+    # Total Quarterly Cost Appliances
+    # Total Quarterly Cost Lights
+    # Total Quarterly Cost Climate
+    # Total Quarterly Cost Media
+    # Total Quarterly Cost  IT
 
 # Comparison Cost
   # Yesterday Cost Comparison
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # Last Week Cost Comparison
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # Last Month Cost Comparison
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # Last Quarter Cost Comparison
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
 
   # This Time Last Year Cost Comparison - Day
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # This Time Last Year Cost Comparison - Week
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # This Time Last Year Cost Comparison - Month
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # This Time Last Year Cost Comparison - Quarter
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
 
 # Difference Cost
   # Yesterday Cost Difference
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # Last Week Cost Difference
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # Last Month Cost Difference
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
   # Last Quarter Cost Difference
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
 
   # This Time Last Year Cost Difference - Day
-  # This Time Last Year Cost Difference - Week
-  # This Time Last Year Cost Difference - Month
-  # This Time Last Year Cost Difference - Quarter
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
 
+  # This Time Last Year Cost Difference - Week
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Cost Difference - Month
+  # Appliances
+  # Lights
+  # Climate
+  # Media
+  # IT
+
+  # This Time Last Year Cost Difference - Quarter
+    # This Time Last Year Cost Difference - Quarter Appliances
+    # This Time Last Year Cost Difference - Quarter Lights
+    # This Time Last Year Cost Difference - Quarter Climate
+    # This Time Last Year Cost Difference - Quarter Media
+    # This Time Last Year Cost Difference - Quarter IT
+  
+
+# Average Daily Cost in Month
+  # Average Daily Cost in Month Appliances
+  # Average Daily Cost in Month Lights
+  # Average Daily Cost in Month Climate
+  # Average Daily Cost in Month Media
+  # Average Daily Cost in Month IT
+
+# Predict Cost for Month
+  # Predict Cost for Month Appliances
+  # Predict Cost for Month Lights
+  # Predict Cost for Month Climate
+  # Predict Cost for Month Media
+  # Predict Cost for Month IT
+
+###################################################################################################
 
 
 utility_meter:
 
-# Daily
+# Daily     #######################################################################################
+  # Dishwasher                    Appliance
+  dishwasher_daily_energy_consumption:
+    source: sensor.dishwasher_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
 
-  monthly_dryer_energy:
+  # Dryer                         Appliance
+  dryer_daily_energy_consumption:
+    source: sensor.dryer_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Fountain                      Appliance
+  fountain_daily_energy_consumption:
+    source: sensor.fountain_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Fridge                        Appliance
+  fridge_daily_energy_consumption:
+    source: sensor.fridge_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Garage Light                  Lights
+  garage_light_daily_energy_consumption:
+    source: sensor.garage_light_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Garden Lights                 Lights
+  garden_lights_daily_energy_consumption:
+    source: sensor.garden_lights_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Heater            Appliance
+  living_room_heater_daily_energy_consumption:
+    source: sensor.living_room_heater_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Receiver          Appliance
+  living_room_receiver_daily_energy_consumption:
+    source: sensor.living_room_receiver_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Sub               Appliance
+  living_room_sub_daily_energy_consumption:
+    source: sensor.living_room_sub_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Equipment              IT
+  office_equipment_daily_energy_consumption:
+    source: sensor.office_equipment_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Mat Heater             IT
+  office_may_heater_daily_energy_consumption:
+    source: sensor.office_mat_heater_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Monitors               IT
+  office_monitors_daily_energy_consumption:
+    source: sensor.office_monitors_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # PVE1-Node1                    IT
+  pve1node1_daily_energy_consumption:
+    source: sensor.pve1node1_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # PVE1-Node2                    IT
+  pve1node2_daily_energy_consumption:
+    source: sensor.pve1node2_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Stair LEDs                    Lights
+  stair_leds_daily_energy_consumption:
+    source: sensor.stair_leds_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Switch1                       IT
+  switch1_daily_energy_consumption:
+    source: sensor.switch1_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Tower                         IT
+  tower_daily_energy_consumption:
+    source: sensor.tower_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # TV                            Media
+  tv_daily_energy_consumption:
+    source: sensor.tv_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # UPS                           IT
+  ups_daily_energy_consumption:
+    source: sensor.ups_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Washing Machine               Appliance
+  washing_machine_daily_energy_consumption:
+    source: sensor.washing_machine_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Wine Fridge                   Appliance
+  wine_fridge_daily_energy_consumption:
+    source: sensor.wine_fridge_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+
+
+# Weekly    #######################################################################################
+  # Dishwasher                    Appliance
+  dishwasher_weekly_energy_consumption:
+    source: sensor.dishwasher_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Dryer                         Appliance
+  dryer_weekly_energy_consumption:
+    source: sensor.dryer_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Fountain                      Appliance
+  fountain_weekly_energy_consumption:
+    source: sensor.fountain_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Fridge                        Appliance
+  fridge_weekly_energy_consumption:
+    source: sensor.fridge_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Garage Light                  Lights
+  garage_light_weekly_energy_consumption:
+    source: sensor.garage_light_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Garden Lights                 Lights
+  garden_lights_weekly_energy_consumption:
+    source: sensor.garden_lights_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Heater            Appliance
+  living_room_heater_weekly_energy_consumption:
+    source: sensor.living_room_heater_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Receiver          Appliance
+  living_room_receiver_weekly_energy_consumption:
+    source: sensor.living_room_receiver_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Sub               Appliance
+  living_room_sub_weekly_energy_consumption:
+    source: sensor.living_room_sub_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Equipment              IT
+  office_equipment_weekly_energy_consumption:
+    source: sensor.office_equipment_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Mat Heater             IT
+  office_may_heater_weekly_energy_consumption:
+    source: sensor.office_mat_heater_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Monitors               IT
+  office_monitors_weekly_energy_consumption:
+    source: sensor.office_monitors_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # PVE1-Node1                    IT
+  pve1node1_weekly_energy_consumption:
+    source: sensor.pve1node1_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # PVE1-Node2                    IT
+  pve1node2_weekly_energy_consumption:
+    source: sensor.pve1node2_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Stair LEDs                    Lights
+  stair_leds_weekly_energy_consumption:
+    source: sensor.stair_leds_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Switch1                       IT
+  switch1_weekly_energy_consumption:
+    source: sensor.switch1_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Tower                         IT
+  tower_weekly_energy_consumption:
+    source: sensor.tower_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # TV                            Media
+  tv_weekly_energy_consumption:
+    source: sensor.tv_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # UPS                           IT
+  ups_weekly_energy_consumption:
+    source: sensor.ups_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Washing Machine               Appliance
+  washing_machine_weekly_energy_consumption:
+    source: sensor.washing_machine_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Wine Fridge                   Appliance
+  wine_fridge_weekly_energy_consumption:
+    source: sensor.wine_fridge_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+
+# Monthly   #######################################################################################
+  # Dishwasher                    Appliance
+  dishwasher_monthly_energy_consumption:
+    source: sensor.dishwasher_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Dryer                         Appliance
+  dryer_monthly_energy_consumption:
     source: sensor.dryer_energy
     cycle: monthly
     tariffs:
@@ -338,8 +1029,179 @@ utility_meter:
       - peak_weekdays
       - weekday_shoulder
       - weekend_shoulder
-    
-  monthly_washing_machine_energy:
+
+  # Fountain                      Appliance
+  fountain_monthly_energy_consumption:
+    source: sensor.fountain_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Fridge                        Appliance
+  fridge_monthly_energy_consumption:
+    source: sensor.fridge_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Garage Light                  Lights
+  garage_light_monthly_energy_consumption:
+    source: sensor.garage_light_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Garden Lights                 Lights
+  garden_lights_monthly_energy_consumption:
+    source: sensor.garden_lights_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Heater            Appliance
+  living_room_heater_monthly_energy_consumption:
+    source: sensor.living_room_heater_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Receiver          Appliance
+  living_room_receiver_monthly_energy_consumption:
+    source: sensor.living_room_receiver_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Sub               Appliance
+  living_room_sub_monthly_energy_consumption:
+    source: sensor.living_room_sub_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Equipment              IT
+  office_equipment_monthly_energy_consumption:
+    source: sensor.office_equipment_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Mat Heater             IT
+  office_may_heater_monthly_energy_consumption:
+    source: sensor.office_mat_heater_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Monitors               IT
+  office_monitors_monthly_energy_consumption:
+    source: sensor.office_monitors_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # PVE1-Node1                    IT
+  pve1node1_monthly_energy_consumption:
+    source: sensor.pve1node1_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # PVE1-Node2                    IT
+  pve1node2_monthly_energy_consumption:
+    source: sensor.pve1node2_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Stair LEDs                    Lights
+  stair_leds_monthly_energy_consumption:
+    source: sensor.stair_leds_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Switch1                       IT
+  switch1_monthly_energy_consumption:
+    source: sensor.switch1_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Tower                         IT
+  tower_monthly_energy_consumption:
+    source: sensor.tower_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # TV                            Media
+  tv_monthly_energy_consumption:
+    source: sensor.tv_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # UPS                           IT
+  ups_monthly_energy_consumption:
+    source: sensor.ups_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Washing Machine               Appliance
+  washing_machine_monthly_energy_consumption:
     source: sensor.washing_machine_energy
     cycle: monthly
     tariffs:
@@ -348,7 +1210,236 @@ utility_meter:
       - weekday_shoulder
       - weekend_shoulder
 
-  daily_energy_total:
+  # Wine Fridge                   Appliance
+  wine_fridge_monthly_energy_consumption:
+    source: sensor.wine_fridge_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+
+# Quarterly #######################################################################################
+  # Dishwasher                    Appliance
+  dishwasher_quarterly_energy_consumption:
+    source: sensor.dishwasher_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Dryer                         Appliance
+  dryer_quarterly_energy_consumption:
+    source: sensor.dryer_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Fountain                      Appliance
+  fountain_quarterly_energy_consumption:
+    source: sensor.fountain_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Fridge                        Appliance
+  fridge_quarterly_energy_consumption:
+    source: sensor.fridge_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Garage Light                  Lights
+  garage_light_quarterly_energy_consumption:
+    source: sensor.garage_light_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Garden Lights                 Lights
+  garden_lights_quarterly_energy_consumption:
+    source: sensor.garden_lights_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Heater            Appliance
+  living_room_heater_quarterly_energy_consumption:
+    source: sensor.living_room_heater_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Receiver          Appliance
+  living_room_receiver_quarterly_energy_consumption:
+    source: sensor.living_room_receiver_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Living Room Sub               Appliance
+  living_room_sub_quarterly_energy_consumption:
+    source: sensor.living_room_sub_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Equipment              IT
+  office_equipment_quarterly_energy_consumption:
+    source: sensor.office_equipment_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Mat Heater             IT
+  office_may_heater_quarterly_energy_consumption:
+    source: sensor.office_mat_heater_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Office Monitors               IT
+  office_monitors_quarterly_energy_consumption:
+    source: sensor.office_monitors_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # PVE1-Node1                    IT
+  pve1node1_quarterly_energy_consumption:
+    source: sensor.pve1node1_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # PVE1-Node2                    IT
+  pve1node2_quarterly_energy_consumption:
+    source: sensor.pve1node2_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Stair LEDs                    Lights
+  stair_leds_quarterly_energy_consumption:
+    source: sensor.stair_leds_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Switch1                       IT
+  switch1_quarterly_energy_consumption:
+    source: sensor.switch1_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Tower                         IT
+  tower_quarterly_energy_consumption:
+    source: sensor.tower_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # TV                            Media
+  tv_quarterly_energy_consumption:
+    source: sensor.tv_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # UPS                           IT
+  ups_quarterly_energy_consumption:
+    source: sensor.ups_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Washing Machine               Appliance
+  washing_machine_quarterly_energy_consumption:
+    source: sensor.washing_machine_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Wine Fridge                   Appliance
+  wine_fridge_quarterly_energy_consumption:
+    source: sensor.wine_fridge_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+###################################################################################################
+
+
+
+
+
+
+  total_daily_energy_consumption:
     source: sensor.total_energy
     cycle: daily
     tariffs:
@@ -357,7 +1448,7 @@ utility_meter:
       - weekday_shoulder
       - weekend_shoulder
     
-  weekly_energy_total:
+  total_weekly_energy_consumption:
     source: sensor.total_energy
     cycle: weekly
     tariffs:
@@ -366,7 +1457,7 @@ utility_meter:
       - weekday_shoulder
       - weekend_shoulder
     
-  monthly_energy_total:
+  total_monthly_energy_consumption:
     source: sensor.total_energy
     cycle: monthly
     tariffs:
