@@ -3,7 +3,7 @@
 input_boolean:
   follow_music:
     name: Follow Music
-    initial: 'off'
+    initial: off
 
 input_select:
   music_controller:
@@ -209,4 +209,3 @@ automation:
     action:
       - service: homeassistant.turn_off
         entity_id: input_boolean.follow_music
- 
