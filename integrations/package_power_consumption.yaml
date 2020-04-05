@@ -4,6 +4,25 @@
 #                                                               #
 #################################################################
 
+# Synergy Smart Home Plan Tariffs
+#
+# Everyday Off-peak                        (9pm to 7am)
+# Peak - weekdays only                     (3pm to 9pm)
+# Weekday shoulder                         (7am to 3pm)
+# Weekend shoulder                         (7am to 9pm)
+#
+# 
+# Item                                     Price inc. GST
+# Supply charge                            103.3263 cents per day
+# Everyday Off-peak electricity charge     15.1002 cents per unit
+# Weekend shoulder electricity charge      28.7076 cents per unit
+# Weekday shoulder electricity charge      28.7076 cents per unit
+# Peak electricity charge                  54.8142 cents per unit 
+
+
+
+
+
 #################################################################
 #                                                               #
 #                          Sensors                              #
@@ -21,20 +40,20 @@ sensor:
   - platform: template
     sensors: 
       total_energy:
-        value_template: "{{ (states.sensor.monthly_dryer.state|float + states.sensor.monthly_washing_machine.state|float) |round(2) }}"
+        value_template: "{{ (states.sensor.monthly_dryer_energy.state|float + states.sensor.monthly_washing_machine_energy.state|float) |round(2) }}"
         friendly_name: 'Total'
 
       dryer_last_month:
-        value_template: "{{ states.sensor.monthly_dryer.attributes.last_period }}"
+        value_template: "{{ states.sensor.monthly_dryer_energy.attributes.last_period }}"
         friendly_name: 'Last Month'
         
       washing_machine_last_month:
-        value_template: "{{ states.sensor.monthly_washing_machine.attributes.last_period }}"
+        value_template: "{{ states.sensor.monthly_washing_machine_energy.attributes.last_period }}"
         friendly_name: 'Last Month'
         
       total_last_month:
-        entity_id: sensor.monthly_total
-        value_template: "{{ states.sensor.monthly_total.attributes.last_period }}"
+        entity_id: sensor.monthly_energy_total
+        value_template: "{{ states.sensor.monthly_energy_total.attributes.last_period }}"
         friendly_name: 'Last Month'
         
       remaining_days:
@@ -71,28 +90,62 @@ sensor:
 
 #################################################################
 #                                                               #
+#                         Automations                           #
+#                                                               #
+#################################################################
+
+#automation:
+
+
+#################################################################
+#                                                               #
 #                        Utility Meter                          #
 #                                                               #
 ################################################################# 
 
 utility_meter:
 
-  monthly_dryer:
+  monthly_dryer_energy:
     source: sensor.dryer_energy
     cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
     
-  monthly_washing_machine:
+  monthly_washing_machine_energy:
     source: sensor.washing_machine_energy
     cycle: monthly
-    
-  daily_total:
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  daily_energy_total:
     source: sensor.total_energy
     cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
     
-  weekly_total:
+  weekly_energy_total:
     source: sensor.total_energy
     cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
     
-  monthly_total:
+  monthly_energy_total:
     source: sensor.total_energy
     cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
