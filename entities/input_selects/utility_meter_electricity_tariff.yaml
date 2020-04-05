@@ -7,6 +7,7 @@
 # Weekday shoulder                         (7am to 3pm)
 # Weekend shoulder                         (7am to 9pm)
 #
+# Charges as of 05 April 2020
 # 
 # Item                                     Price inc. GST
 # Supply charge                            103.3263 cents per day
@@ -15,8 +16,8 @@
 # Weekday shoulder electricity charge      28.7076 cents per unit
 # Peak electricity charge                  54.8142 cents per unit 
 
-power_utility_tariff:
-  name: Power Utility Tariff
+utility_meter_electricity_tariff:
+  name: Electricity Tariff
   options:
     - everyday_offpeak
     - peak_weekdays
