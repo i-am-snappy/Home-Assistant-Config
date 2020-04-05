@@ -111,54 +111,60 @@ sensor:
 
       appliances_energy:
         value_template: >
-          "{{ ( states.sensor.dishwasher_energy.state|float +
-                states.sensor.dryer_energy.state|float +
-                states.sensor.fountain_energy.state|float +
-                states.sensor.fridge_energy.state|float +
-                states.sensor.washing_machine_energy.state|float +
-                states.sensor.wine_fridge_energy.state|float) |round(2) }}"
+          {{ (states('sensor.dishwasher_energy')|float +
+              states('sensor.dryer_energy')|float +
+              states('sensor.fountain_energy')|float +
+              states('sensor.fridge_energy')|float +
+              states('sensor.washing_machine_energy')|float +
+              states('sensor.wine_fridge_energy')|float) |round(2) }}
         friendly_name: 'Appliances Energy'
+        unit_of_measurement: 'kWh'
 
       lights_energy:
         value_template: >
-          "{{ ( states.sensor.garden_lights_energy.state|float +
-                states.sensor.garage_light_energy.state|float +
-                states.sensor.stair_leds_energy.state|float) |round(2) }}"
+          {{ (states('sensor.garage_light_energy')|float +
+              states('sensor.garden_lights_energy')|float +
+              states('sensor.stair_leds_energy')|float) |round(2) }}
         friendly_name: 'Lights Energy'
+        unit_of_measurement: 'kWh'
 
       climate_energy:
         value_template: >
-          "{{ ( states.sensor.living_room_heater.state|float +
-                states.sensor.office_mat_heater.state|float) |round(2) }}"
+          {{ (states('sensor.living_room_heater_energy')|float +
+              states('sensor.office_mat_heater_energy')|float) |round(2) }}
         friendly_name: 'Climate Energy'
+        unit_of_measurement: 'kWh'
 
       media_energy:
         value_template: >
-          "{{ ( states.sensor.living_room_receiver_energy.state|float +
-                states.sensor.living_room_sub_energy.state|float +
-                states.sensor.tv_energy.state|float) |round(2) }}"
+          {{ (states('sensor.living_room_receiver_energy')|float +
+              states('sensor.living_room_sub_energy')|float +
+              states('sensor.tv_energy')|float) |round(2) }}
         friendly_name: 'Media Energy'
+        unit_of_measurement: 'kWh'
 
       it_energy:
         value_template: >
-          "{{ ( states.sensor.office_equipment_energy.state|float +
-                states.sensor.office_monitors_energy.state|float +
-                states.sensor.pve1node1_energy.state|float +
-                states.sensor.pve1node2_energy.state|float +
-                states.sensor.switch1_energy.state|float +
-                states.sensor.tower_energy.state|float +
-                states.sensor.ups_energy.state|float) |round(2) }}"
+          {{ (states('sensor.office_equipment_energy')|float +
+              states('sensor.office_monitors_energy')|float +
+              states('sensor.pve1node1_energy.')|float +
+              states('sensor.pve1node2_energy')|float +
+              states('sensor.switch1_energy')|float +
+              states('sensor.tower_energy')|float +
+              states('sensor.ups_energy')|float) |round(2) }}
         friendly_name: 'IT Energy'
+        unit_of_measurement: 'kWh'
 
       total_energy:
         value_template: >
-          "{{ ( states.sensor.appliances_energy.state|float +
-                states.sensor.lights_energy.state|float +
-                states.sensor.climate_energy.state|float +
-                states.sensor.media_energy.state|float +
-                states.sensor.switch1_energy.state|float +
-                states.sensor.it_energy.state|float) |round(2) }}"
+          {{ (states('sensor.appliances_energy')|float +
+              states('sensor.lights_energy')|float +
+              states('sensor.climate_energy')|float +
+              states('sensor.media_energy')|float +
+              states('sensor.switch1_energy')|float +
+              states('sensor.it_energy')|float) |round(2) }}
         friendly_name: 'Total Energy'
+        unit_of_measurement: 'kWh'
 
 
 
@@ -244,6 +250,13 @@ sensor:
   # DONE Media
   # DONE IT
   # DONE Total (All Categories)
+
+# DONE Category Utility meters (Day, week, month, qtr)
+  # DONE Appliances
+  # DONE Lights
+  # DONE Climate
+  # DONE Media
+  # DONE IT
 
 
 #### END OF TASKS #####
@@ -1482,11 +1495,192 @@ utility_meter:
 
 ###################################################################################################
 
+  # Appliances
+  appliances_daily_energy_consumption:
+    source: sensor.appliances_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
 
+  appliances_weekly_energy_consumption:
+    source: sensor.appliances_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
 
+  appliances_monthly_energy_consumption:
+    source: sensor.appliances_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
 
+  appliances_quarterly_energy_consumption:
+    source: sensor.appliances_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
 
+  # Lights
+  lights_daily_energy_consumption:
+    source: sensor.lights_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
 
+  lights_weekly_energy_consumption:
+    source: sensor.lights_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  lights_monthly_energy_consumption:
+    source: sensor.lights_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  lights_quarterly_energy_consumption:
+    source: sensor.lights_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Climate
+  climate_daily_energy_consumption:
+    source: sensor.climate_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  climate_weekly_energy_consumption:
+    source: sensor.climate_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  climate_monthly_energy_consumption:
+    source: sensor.climate_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  climate_quarterly_energy_consumption:
+    source: sensor.climate_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Media
+  media_daily_energy_consumption:
+    source: sensor.media_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  media_weekly_energy_consumption:
+    source: sensor.media_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  media_monthly_energy_consumption:
+    source: sensor.media_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  media_quarterly_energy_consumption:
+    source: sensor.media_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # IT
+  it_daily_energy_consumption:
+    source: sensor.it_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  it_weekly_energy_consumption:
+    source: sensor.it_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  it_monthly_energy_consumption:
+    source: sensor.it_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  it_quarterly_energy_consumption:
+    source: sensor.it_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
+  # Total
   total_daily_energy_consumption:
     source: sensor.total_energy
     cycle: daily
@@ -1495,7 +1689,7 @@ utility_meter:
       - peak_weekdays
       - weekday_shoulder
       - weekend_shoulder
-    
+
   total_weekly_energy_consumption:
     source: sensor.total_energy
     cycle: weekly
@@ -1504,7 +1698,7 @@ utility_meter:
       - peak_weekdays
       - weekday_shoulder
       - weekend_shoulder
-    
+
   total_monthly_energy_consumption:
     source: sensor.total_energy
     cycle: monthly
@@ -1513,3 +1707,13 @@ utility_meter:
       - peak_weekdays
       - weekday_shoulder
       - weekend_shoulder
+
+  total_quarterly_energy_consumption:
+    source: sensor.total_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
