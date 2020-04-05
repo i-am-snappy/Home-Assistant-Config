@@ -125,7 +125,7 @@ sensor:
         value_template: "{{ states.sensor.monthly_energy_total.attributes.last_period }}"
         friendly_name: 'Last Month'
         
-      remaining_days:
+      month_remaining_days:
         friendly_name: "Month Left"
         entity_id: sensor.date
         value_template: >-
@@ -173,6 +173,14 @@ sensor:
 ################################################################# 
 
 utility_meter:
+
+# Hourly
+# Daily
+# Weekly
+# Monthly
+# Quarterly
+# Yearly
+
 
   monthly_dryer_energy:
     source: sensor.dryer_energy
