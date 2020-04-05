@@ -5,9 +5,13 @@ app_token: !secret efergy_token
 utc_offset: +480
 monitored_variables:
   - type: instant_readings
-  - type: cost
-    period: day
-    currency: $
   - type: amount
     period: day
-  - type: current_values
+  - type: amount
+    period: week
+  - type: amount
+    period: month
+  - type: amount
+    period: year
+
+
