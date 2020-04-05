@@ -18,6 +18,12 @@
 - sensor.living_room_sub_power
 - sensor.living_room_sub_previous_reading
 
+# Living Room Heater
+- sensor.living_room_heater_current
+- sensor.living_room_heater_energy
+- sensor.living_room_heater_power
+- sensor.living_room_heater_previous_reading
+
 # TV
 - sensor.tv_current
 - sensor.tv_energy
