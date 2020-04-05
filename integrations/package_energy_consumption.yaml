@@ -180,35 +180,39 @@ sensor:
   # Quarterly #
   # Yearly
 
-# Devices - Z-Wave
-  # Dishwasher
-  # Dryer
-  # Washing Machine
-  # Fountain
-  # Garden Lights
-  # Fridge
-  # Wine Fridge
-  # Garage Light
-  # Living Room Heater
-  # Living Room Receiver
-  # Living Room Sub
-  # TV
-  # Office Equipment
-  # Office Monitors
-  # Office Mat Heater
-  # PVE1-Node1
-  # PVE1-Node2
-  # Tower
-  # Switch1
-  # UPS
-
-
-
 # Categories
   # Appliances
   # Lights
   # Fans
   # Climate
+
+
+# Devices
+# Z-Wave
+  # Name                          Category
+  #-------------------------------------------------------------------------------------------
+  # Dishwasher                    
+  # Dryer                         
+  # Fountain                      
+  # Fridge                        
+  # Garage Light                  
+  # Garden Lights                 
+  # Living Room Heater            
+  # Living Room Receiver          
+  # Living Room Sub               
+  # Office Equipment              
+  # Office Mat Heater             
+  # Office Monitors               
+  # PVE1-Node1                    
+  # PVE1-Node2                    
+  # Stair LEDs                    
+  # Switch1                       
+  # Tower                         
+  # TV                            
+  # UPS                           
+  # Washing Machine               
+  # Wine Fridge                   
+
 
 # Measurement
   # Usage
@@ -299,15 +303,26 @@ sensor:
   # Total Quarterly Cost
 
 # Comparison Cost
-  # Yesterday Cost
-  # Last Week Cost
-  # Last Month Cost
-  # Last Quarter Cost
+  # Yesterday Cost Comparison
+  # Last Week Cost Comparison
+  # Last Month Cost Comparison
+  # Last Quarter Cost Comparison
 
-  # This Time Last Year Cost - Day
-  # This Time Last Year Cost - Week
-  # This Time Last Year Cost - Month
-  # This Time Last Year Cost - Quarter
+  # This Time Last Year Cost Comparison - Day
+  # This Time Last Year Cost Comparison - Week
+  # This Time Last Year Cost Comparison - Month
+  # This Time Last Year Cost Comparison - Quarter
+
+# Difference Cost
+  # Yesterday Cost Difference
+  # Last Week Cost Difference
+  # Last Month Cost Difference
+  # Last Quarter Cost Difference
+
+  # This Time Last Year Cost Difference - Day
+  # This Time Last Year Cost Difference - Week
+  # This Time Last Year Cost Difference - Month
+  # This Time Last Year Cost Difference - Quarter
 
 
 
