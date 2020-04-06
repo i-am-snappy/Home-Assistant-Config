@@ -10,19 +10,16 @@
 - sensor.office_monitors_current
 - sensor.office_monitors_energy
 - sensor.office_monitors_power
-- sensor.office_monitors_previous_reading
 
 # Office Equipment
 - sensor.office_equipment_current
 - sensor.office_equipment_energy
 - sensor.office_equipment_power
-- sensor.office_equipment_previous_reading
 
 # Office Mat Heater
 - sensor.office_mat_heater_current
 - sensor.office_mat_heater_energy
 - sensor.office_mat_heater_power
-- sensor.office_mat_heater_previous_reading
 
 # Office Sensor
 - sensor.office_sensor_motion

@@ -10,10 +10,8 @@
 - sensor.fountain_current
 - sensor.fountain_energy
 - sensor.fountain_power
-- sensor.fountain_previous_reading
 
 # Garden Lights
 - sensor.garden_lights_current
 - sensor.garden_lights_energy
 - sensor.garden_lights_power
-- sensor.garden_lights_previous_reading

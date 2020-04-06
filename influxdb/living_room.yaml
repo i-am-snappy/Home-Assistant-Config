@@ -10,19 +10,16 @@
 - sensor.living_room_receiver_current
 - sensor.living_room_receiver_energy
 - sensor.living_room_receiver_power
-- sensor.living_room_receiver_previous_reading
 
 # Living Room Sub
 - sensor.living_room_sub_current
 - sensor.living_room_sub_energy
 - sensor.living_room_sub_power
-- sensor.living_room_sub_previous_reading
 
 # Living Room Heater
 - sensor.living_room_heater_current
 - sensor.living_room_heater_energy
 - sensor.living_room_heater_power
-- sensor.living_room_heater_previous_reading
 
 # TV
 - sensor.tv_current

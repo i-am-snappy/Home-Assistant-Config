@@ -10,7 +10,6 @@
 - sensor.garage_light_current
 - sensor.garage_light_energy
 - sensor.garage_light_power
-- sensor.garage_light_previous_reading
 
 # UPS
 - sensor.ups_current
