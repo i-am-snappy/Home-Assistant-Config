@@ -10,4 +10,3 @@
 - sensor.stair_leds_current
 - sensor.stair_leds_energy
 - sensor.stair_leds_power
-- sensor.stair_leds_previous_reading

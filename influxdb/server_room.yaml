@@ -10,25 +10,21 @@
 - sensor.pve1node1_current
 - sensor.pve1node1_energy
 - sensor.pve1node1_power
-- sensor.pve1node1_previous_reading
 
 # PVE1-Node2
 - sensor.pve1node2_current
 - sensor.pve1node2_energy
 - sensor.pve1node2_power
-- sensor.pve1node2_previous_reading
 
 # Tower
 - sensor.tower_current
 - sensor.tower_energy
 - sensor.tower_power
-- sensor.tower_previous_reading
 
 # Switch1
 - sensor.switch1_current
 - sensor.switch1_energy
 - sensor.switch1_power
-- sensor.switch1_previous_reading
 
 # Server Room Sensor
 - sensor.server_room_sensor_motion

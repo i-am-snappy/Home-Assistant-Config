@@ -10,13 +10,11 @@
 - sensor.fridge_current
 - sensor.fridge_energy
 - sensor.fridge_power
-- sensor.fridge_previous_reading
 
 # Dishwasher
 - sensor.dishwasher_current
 - sensor.dishwasher_energy
 - sensor.dishwasher_power
-- sensor.dishwasher_previous_reading
 
 # Kitchen Sensor
 - sensor.kitchen_sensor_motion
