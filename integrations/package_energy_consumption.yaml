@@ -145,7 +145,8 @@ sensor:
 
       it_energy:
         value_template: >
-          {{ (states('sensor.office_equipment_energy')|float +
+          {{ (states('sensor.adhoc_energy')|float +
+              states('sensor.office_equipment_energy')|float +
               states('sensor.office_monitors_energy')|float +
               states('sensor.pve1node1_energy.')|float +
               states('sensor.pve1node2_energy')|float +
@@ -287,7 +288,7 @@ sensor:
   # UPS                           IT
   # Washing Machine               Appliance
   # Wine Fridge                   Appliance
-
+  # Adhoc                         IT
 
 
 # Periods
@@ -646,6 +647,16 @@ sensor:
 utility_meter:
 
 # Daily     #######################################################################################
+  # Adhoc                         IT
+  adhoc_daily_energy_consumption:
+    source: sensor.adhoc_energy
+    cycle: daily
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
   # Dishwasher                    Appliance
   dishwasher_daily_energy_consumption:
     source: sensor.dishwasher_energy
@@ -747,7 +758,7 @@ utility_meter:
       - weekend_shoulder
 
   # Office Mat Heater             IT
-  office_may_heater_daily_energy_consumption:
+  office_mat_heater_daily_energy_consumption:
     source: sensor.office_mat_heater_energy
     cycle: daily
     tariffs:
@@ -859,6 +870,16 @@ utility_meter:
 
 
 # Weekly    #######################################################################################
+  # Adhoc                         IT
+  adhoc_weekly_energy_consumption:
+    source: sensor.adhoc_energy
+    cycle: weekly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
   # Dishwasher                    Appliance
   dishwasher_weekly_energy_consumption:
     source: sensor.dishwasher_energy
@@ -960,7 +981,7 @@ utility_meter:
       - weekend_shoulder
 
   # Office Mat Heater             IT
-  office_may_heater_weekly_energy_consumption:
+  office_mat_heater_weekly_energy_consumption:
     source: sensor.office_mat_heater_energy
     cycle: weekly
     tariffs:
@@ -1071,6 +1092,16 @@ utility_meter:
 
 
 # Monthly   #######################################################################################
+  # Adhoc                         IT
+  adhoc_monthly_energy_consumption:
+    source: sensor.adhoc_energy
+    cycle: monthly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
   # Dishwasher                    Appliance
   dishwasher_monthly_energy_consumption:
     source: sensor.dishwasher_energy
@@ -1172,7 +1203,7 @@ utility_meter:
       - weekend_shoulder
 
   # Office Mat Heater             IT
-  office_may_heater_monthly_energy_consumption:
+  office_mat_heater_monthly_energy_consumption:
     source: sensor.office_mat_heater_energy
     cycle: monthly
     tariffs:
@@ -1283,6 +1314,16 @@ utility_meter:
 
 
 # Quarterly #######################################################################################
+  # Adhoc                         IT
+  adhoc_quarterly_energy_consumption:
+    source: sensor.adhoc_energy
+    cycle: quarterly
+    tariffs:
+      - everyday_offpeak
+      - peak_weekdays
+      - weekday_shoulder
+      - weekend_shoulder
+
   # Dishwasher                    Appliance
   dishwasher_quarterly_energy_consumption:
     source: sensor.dishwasher_energy
@@ -1384,7 +1425,7 @@ utility_meter:
       - weekend_shoulder
 
   # Office Mat Heater             IT
-  office_may_heater_quarterly_energy_consumption:
+  office_mat_heater_quarterly_energy_consumption:
     source: sensor.office_mat_heater_energy
     cycle: quarterly
     tariffs:
