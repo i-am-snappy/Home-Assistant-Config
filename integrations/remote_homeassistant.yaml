@@ -1,0 +1,8 @@
+---
+# https://github.com/lukas-hetzenecker/home-assistant-remote
+
+#remote_homeassistant:
+#  instances:
+#  - host: !secret energy_manager_host
+#    access_token: !secret energy_manager_token
+#    entity_prefix: "em_"

@@ -45,6 +45,7 @@ pyozw.sqlite
 zwcfg_*
 zwscene.xml
 zigbee.db
+mqtt_dump.txt
 
 # Directory (contents) ignores
 .cloud
