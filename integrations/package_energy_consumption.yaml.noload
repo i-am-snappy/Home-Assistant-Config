@@ -49,7 +49,7 @@ input_number:
     name: Electricity Supply Charge Per Day
     min: 50.0000
     max: 150.0000
-    unit_of_measurement: 'c'
+    unit_of_measurement: 'cents'
     initial: 103.3263
     mode: box
     icon: mdi:currency-usd
@@ -58,7 +58,7 @@ input_number:
     name: Electricity Cost Everyday Off-Peak
     min: 10.0000
     max: 80.0000
-    unit_of_measurement: 'c'
+    unit_of_measurement: 'cents'
     initial: 15.1002
     mode: box
     icon: mdi:currency-usd
@@ -67,7 +67,7 @@ input_number:
     name: Electricity Cost Weekend Shoulder
     min: 10.0000
     max: 80.0000
-    unit_of_measurement: 'c'
+    unit_of_measurement: 'cents'
     initial: 28.7076
     mode: box
     icon: mdi:currency-usd
@@ -76,7 +76,7 @@ input_number:
     name: Electricity Cost Weekday Shoulder
     min: 10.0000
     max: 80.0000
-    unit_of_measurement: 'c'
+    unit_of_measurement: 'cents'
     initial: 28.7076
     mode: box
     icon: mdi:currency-usd
@@ -85,7 +85,7 @@ input_number:
     name: Electricity Cost Peak Weekdays
     min: 10.0000
     max: 80.0000
-    unit_of_measurement: 'c'
+    unit_of_measurement: 'cents'
     initial: 54.8142
     mode: box
     icon: mdi:currency-usd
@@ -109,6 +109,7 @@ sensor:
   - platform: template
     sensors:
 
+###  Categories Energy Sensors   ##################################################################
       appliances_energy:
         value_template: >
           {{ (states('sensor.dishwasher_energy')|float +
@@ -167,35 +168,6 @@ sensor:
         friendly_name: 'Total Energy'
         unit_of_measurement: 'kWh'
 
-
-
-
-      dryer_last_month:
-        value_template: "{{ states.sensor.monthly_dryer_energy.attributes.last_period }}"
-        friendly_name: 'Last Month'
-        
-      washing_machine_last_month:
-        value_template: "{{ states.sensor.monthly_washing_machine_energy.attributes.last_period }}"
-        friendly_name: 'Last Month'
-        
-      total_last_month:
-        entity_id: sensor.monthly_energy_total
-        value_template: "{{ states.sensor.monthly_energy_total.attributes.last_period }}"
-        friendly_name: 'Last Month'
-        
-      month_remaining_days:
-        friendly_name: "Days left in Month"
-        entity_id: sensor.date
-        value_template: >-
-          {% if now().month in [1,3,5,7,8,10,12] %}
-            {{ 31 - now().day }}
-          {% elif now().month in [4,6,9,11] %}
-            {{ 30 - now().day }}
-          {% elif now().month == 2 and ((now().year-2000) % 4 > 0) %}
-            {{ 28 - now().day }}
-          {% elif now().month == 2 and ((now().year-2000) % 4 == 0) %}
-            {{ 29 - now().day }}
-          {% endif %}
 
 
 
@@ -259,6 +231,15 @@ sensor:
   # DONE Media
   # DONE IT
 
+# DONE Add Current and Previous meter calculation Template Sensors (Today, Yesterday, This Wk, last wk, month, qtr)
+  # DONE All Individuals
+  # DONE Appliances
+  # DONE Lights
+  # DONE Climate
+  # DONE Media
+  # DONE IT
+  # DONE Total (All Categories)
+
 
 #### END OF TASKS #####
 
@@ -267,6 +248,7 @@ sensor:
 # Z-Wave
   # Name                          Category
   #-------------------------------------------------------------------------------------------
+  # Adhoc                         IT
   # Dishwasher                    Appliance
   # Dryer                         Appliance
   # Fountain                      Appliance
@@ -288,7 +270,6 @@ sensor:
   # UPS                           IT
   # Washing Machine               Appliance
   # Wine Fridge                   Appliance
-  # Adhoc                         IT
 
 
 # Periods
@@ -311,7 +292,7 @@ sensor:
   # Cost
 
 # Analysis
-  # Total
+  # Actual
   # Comparison
   # Difference
   # Average
@@ -320,37 +301,42 @@ sensor:
 
 ########################################################################
 
-# Total Consumption
-  # Total Daily Consumption
-    # Total Daily Consumption Appliances
-    # Total Daily Consumption Lights
-    # Total Daily Consumption Climate
-    # Total Daily Consumption Media
-    # Total Daily Consumption IT
+# Actual Consumption
+  # DONE Actual Daily Consumption
+    # DONE Actual Daily Consumption Devices
+    # DONE Actual Daily Consumption Appliances
+    # DONE Actual Daily Consumption Lights
+    # DONE Actual Daily Consumption Climate
+    # DONE Actual Daily Consumption Media
+    # DONE Actual Daily Consumption IT
 
-  # Total Weekly Consumption
-    # Total Weekly Consumption Appliances
-    # Total Weekly Consumption Lights
-    # Total Weekly Consumption Climate
-    # Total Weekly Consumption Media
-    # Total Weekly Consumption IT
+  # DONE Actual Weekly Consumption
+    # DONE Devices
+    # DONE Actual Weekly Consumption Appliances
+    # DONE Actual Weekly Consumption Lights
+    # DONE Actual Weekly Consumption Climate
+    # DONE Actual Weekly Consumption Media
+    # DONE Actual Weekly Consumption IT
 
-  # Total Monthly Consumption
-    # Total Monthly Consumption Appliances
-    # Total Monthly Consumption Lights
-    # Total Monthly Consumption Climate
-    # Total Monthly Consumption Media
-    # Total Monthly Consumption IT
+  # DONE Actual Monthly Consumption
+    # DONE Devices
+    # DONE Actual Monthly Consumption Appliances
+    # DONE Actual Monthly Consumption Lights
+    # DONE Actual Monthly Consumption Climate
+    # DONE Actual Monthly Consumption Media
+    # DONE Actual Monthly Consumption IT
 
-  # Total Quarterly Consumption
-    # Total Quarterly Consumption Appliances
-    # Total Quarterly Consumption Lights
-    # Total Quarterly Consumption Climate
-    # Total Quarterly Consumption Media
-    # Total Quarterly Consumption IT
+  # DONE Actual Quarterly Consumption
+    # DONE Devices
+    # DONE Actual Quarterly Consumption Appliances
+    # DONE Actual Quarterly Consumption Lights
+    # DONE Actual Quarterly Consumption Climate
+    # DONE Actual Quarterly Consumption Media
+    # DONE Actual Quarterly Consumption IT
 
 # Comparison Consumption
   # Yesterday Consumption Comparison
+    # Devices
     # Yesterday Consumption Comparison Appliances
     # Yesterday Consumption Comparison Lights
     # Yesterday Consumption Comparison Climate
@@ -358,6 +344,7 @@ sensor:
     # Yesterday Consumption Comparison IT
 
   # Last Week Consumption Comparison
+    # Devices
     # Last Week Consumption Comparison Appliances
     # Last Week Consumption Comparison Lights
     # Last Week Consumption Comparison Climate
@@ -365,6 +352,7 @@ sensor:
     # Last Week Consumption Comparison IT
 
   # Last Month Consumption Comparison
+    # Devices
     # Last Month Consumption Comparison Appliances
     # Last Month Consumption Comparison Lights
     # Last Month Consumption Comparison Climate
@@ -372,6 +360,7 @@ sensor:
     # Last Month Consumption Comparison IT
 
   # Last Quarter Consumption Comparison
+    # Devices
     # Last Quarter Consumption Comparison Appliances
     # Last Quarter Consumption Comparison Lights
     # Last Quarter Consumption Comparison Climate
@@ -379,6 +368,7 @@ sensor:
     # Last Quarter Consumption Comparison IT
 
   # This Time Last Year Consumption Comparison - Day
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -386,6 +376,7 @@ sensor:
   # IT
 
   # This Time Last Year Consumption Comparison - Week
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -393,6 +384,7 @@ sensor:
   # IT
 
   # This Time Last Year Consumption Comparison - Month
+  # Devices
   # Appliances
   # Lights
   # Fans
@@ -401,6 +393,7 @@ sensor:
   # IT
 
   # This Time Last Year Consumption Comparison - Quarter
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -410,6 +403,7 @@ sensor:
 
 # Difference Consumption
   # Yesterday Consumption Difference
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -417,6 +411,7 @@ sensor:
   # IT
 
   # Last Week Consumption Difference
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -424,6 +419,7 @@ sensor:
   # IT
 
   # Last Month Consumption Difference
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -431,6 +427,7 @@ sensor:
   # IT
 
   # Last Quarter Consumption Difference
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -438,6 +435,7 @@ sensor:
   # IT
 
   # This Time Last Year Consumption Difference - Day
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -445,6 +443,7 @@ sensor:
   # IT
 
   # This Time Last Year Consumption Difference - Week
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -452,6 +451,7 @@ sensor:
   # IT
 
   # This Time Last Year Consumption Difference - Month
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -459,6 +459,7 @@ sensor:
   # IT
 
   # This Time Last Year Consumption Difference - Quarter
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -467,6 +468,7 @@ sensor:
 
 
 # Average Daily Consumption in Month
+  # Devices
   # Average Daily Consumption in Month Appliances
   # Average Daily Consumption in Month Lights
   # Average Daily Consumption in Month Climate
@@ -474,6 +476,7 @@ sensor:
   # Average Daily Consumption in Month IT
 
 # Predict Consumption for Month
+  # Devices
   # Predict Consumption for Month Appliances
   # Predict Consumption for Month Lights
   # Predict Consumption for Month Climate
@@ -482,37 +485,42 @@ sensor:
 
 ########################################################################
 
-# Total Cost
-  # Total Daily Cost
-    # Total Daily Cost Appliances
-    # Total Daily Cost Lights
-    # Total Daily Cost Climate
-    # Total Daily Cost Media
-    # Total Daily Cost IT
+# Actual Cost
+  # Actual Daily Cost
+    # Devices
+    # Actual Daily Cost Appliances
+    # Actual Daily Cost Lights
+    # Actual Daily Cost Climate
+    # Actual Daily Cost Media
+    # Actual Daily Cost IT
 
-  # Total Weekly Cost
-    # Total Weekly Cost Appliances
-    # Total Weekly Cost Lights
-    # Total Weekly Cost Climate
-    # Total Weekly Cost Media
-    # Total Weekly Cost IT
+  # Actual Weekly Cost
+    # Devices
+    # Actual Weekly Cost Appliances
+    # Actual Weekly Cost Lights
+    # Actual Weekly Cost Climate
+    # Actual Weekly Cost Media
+    # Actual Weekly Cost IT
 
-  # Total Monthly Cost
-    # Total Monthly Cost Appliances
-    # Total Monthly Cost Lights
-    # Total Monthly Cost Climate
-    # Total Monthly Cost Media
-    # Total Monthly Cost IT
+  # Actual Monthly Cost
+    # Devices
+    # Actual Monthly Cost Appliances
+    # Actual Monthly Cost Lights
+    # Actual Monthly Cost Climate
+    # Actual Monthly Cost Media
+    # Actual Monthly Cost IT
 
-  # Total Quarterly Cost
-    # Total Quarterly Cost Appliances
-    # Total Quarterly Cost Lights
-    # Total Quarterly Cost Climate
-    # Total Quarterly Cost Media
-    # Total Quarterly Cost  IT
+  # Actual Quarterly Cost
+    # Devices
+    # Actual Quarterly Cost Appliances
+    # Actual Quarterly Cost Lights
+    # Actual Quarterly Cost Climate
+    # Actual Quarterly Cost Media
+    # Actual Quarterly Cost  IT
 
 # Comparison Cost
   # Yesterday Cost Comparison
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -520,6 +528,7 @@ sensor:
   # IT
 
   # Last Week Cost Comparison
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -527,6 +536,7 @@ sensor:
   # IT
 
   # Last Month Cost Comparison
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -534,6 +544,7 @@ sensor:
   # IT
 
   # Last Quarter Cost Comparison
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -541,6 +552,7 @@ sensor:
   # IT
 
   # This Time Last Year Cost Comparison - Day
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -548,6 +560,7 @@ sensor:
   # IT
 
   # This Time Last Year Cost Comparison - Week
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -555,6 +568,7 @@ sensor:
   # IT
 
   # This Time Last Year Cost Comparison - Month
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -562,6 +576,7 @@ sensor:
   # IT
 
   # This Time Last Year Cost Comparison - Quarter
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -571,6 +586,7 @@ sensor:
 
 # Difference Cost
   # Yesterday Cost Difference
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -578,6 +594,7 @@ sensor:
   # IT
 
   # Last Week Cost Difference
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -585,6 +602,7 @@ sensor:
   # IT
 
   # Last Month Cost Difference
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -592,6 +610,7 @@ sensor:
   # IT
 
   # Last Quarter Cost Difference
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -599,6 +618,7 @@ sensor:
   # IT
 
   # This Time Last Year Cost Difference - Day
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -606,6 +626,7 @@ sensor:
   # IT
 
   # This Time Last Year Cost Difference - Week
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -613,6 +634,7 @@ sensor:
   # IT
 
   # This Time Last Year Cost Difference - Month
+  # Devices
   # Appliances
   # Lights
   # Climate
@@ -620,6 +642,7 @@ sensor:
   # IT
 
   # This Time Last Year Cost Difference - Quarter
+    # Devices
     # This Time Last Year Cost Difference - Quarter Appliances
     # This Time Last Year Cost Difference - Quarter Lights
     # This Time Last Year Cost Difference - Quarter Climate
@@ -628,6 +651,7 @@ sensor:
   
 
 # Average Daily Cost in Month
+  # Devices
   # Average Daily Cost in Month Appliances
   # Average Daily Cost in Month Lights
   # Average Daily Cost in Month Climate
@@ -635,6 +659,7 @@ sensor:
   # Average Daily Cost in Month IT
 
 # Predict Cost for Month
+  # Devices
   # Predict Cost for Month Appliances
   # Predict Cost for Month Lights
   # Predict Cost for Month Climate
@@ -646,7 +671,7 @@ sensor:
 
 utility_meter:
 
-# Daily     #######################################################################################
+# Daily Devices   #################################################################################
   # Adhoc                         IT
   adhoc_daily_energy_consumption:
     source: sensor.adhoc_energy
@@ -869,7 +894,7 @@ utility_meter:
 
 
 
-# Weekly    #######################################################################################
+# Weekly Devices    ###############################################################################
   # Adhoc                         IT
   adhoc_weekly_energy_consumption:
     source: sensor.adhoc_energy
@@ -1091,7 +1116,7 @@ utility_meter:
       - weekend_shoulder
 
 
-# Monthly   #######################################################################################
+# Monthly Devices  ################################################################################
   # Adhoc                         IT
   adhoc_monthly_energy_consumption:
     source: sensor.adhoc_energy
@@ -1313,7 +1338,7 @@ utility_meter:
       - weekend_shoulder
 
 
-# Quarterly #######################################################################################
+# Quarterly Devices ###############################################################################
   # Adhoc                         IT
   adhoc_quarterly_energy_consumption:
     source: sensor.adhoc_energy
@@ -1534,7 +1559,7 @@ utility_meter:
       - weekday_shoulder
       - weekend_shoulder
 
-###################################################################################################
+# Categories   ####################################################################################
 
   # Appliances
   appliances_daily_energy_consumption:

@@ -22,6 +22,11 @@ logger:
 #  default: info
   default: warn
 #  logs:
+#    ozw.mqtt.commands: debug
+#    qt.mqtt.connection.verbose: debug
+#    qt.mqtt.connection: debug
+#    custom_components.zwave_mqtt.services: debug
+#    openzwavemqtt: debug
 #    pydeconz: debug
 #    homeassistant.components.deconz: debug
 #    homeassistant.components.pvoutput: debug
