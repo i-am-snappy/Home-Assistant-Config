@@ -7,18 +7,18 @@
 #
 
 # Fridge
-- sensor.fridge_current
-- sensor.fridge_energy
-- sensor.fridge_power
+- sensor.fridge_electric_a
+- sensor.fridge_electric_kwh
+- sensor.fridge_electric_w
 
 # Dishwasher
-- sensor.dishwasher_current
-- sensor.dishwasher_energy
-- sensor.dishwasher_power
+- sensor.dishwasher_electric_a
+- sensor.dishwasher_electric_kwh
+- sensor.dishwasher_electric_w
 
 # Kitchen Sensor
 - sensor.kitchen_sensor_motion
 - sensor.kitchen_sensor_temperature
 - sensor.kitchen_sensor_humidity
 - sensor.kitchen_sensor_illuminance
-- sensor.kitchen_sensor_uv
+- sensor.kitchen_sensor_ultraviolet

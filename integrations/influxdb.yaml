@@ -44,5 +44,5 @@ influxdb:
       override_measurement: humidity
     sensor.*temperature:
       override_measurement: temperature
-    sensor.*_uv:
-      override_measurement: uv
+    sensor.*_ultraviolet:
+      override_measurement: ultraviolet

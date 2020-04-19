@@ -11,4 +11,4 @@
 - sensor.landing_sensor_temperature
 - sensor.landing_sensor_humidity
 - sensor.landing_sensor_illuminance
-- sensor.landing_sensor_uv
+- sensor.landing_sensor_ultraviolet

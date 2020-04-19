@@ -7,25 +7,24 @@
 #
 
 # Living Room Receiver
-- sensor.living_room_receiver_current
-- sensor.living_room_receiver_energy
-- sensor.living_room_receiver_power
+- sensor.living_room_receiver_electric_a
+- sensor.living_room_receiver_electric_kwh
+- sensor.living_room_receiver_electric_w
 
 # Living Room Sub
-- sensor.living_room_sub_current
-- sensor.living_room_sub_energy
-- sensor.living_room_sub_power
+- sensor.living_room_sub_electric_a
+- sensor.living_room_sub_electric_kwh
+- sensor.living_room_sub_electric_w
 
 # Living Room Heater
-- sensor.living_room_heater_current
-- sensor.living_room_heater_energy
-- sensor.living_room_heater_power
+- sensor.living_room_heater_electric_a
+- sensor.living_room_heater_electric_kwh
+- sensor.living_room_heater_electric_w
 
 # TV
-- sensor.tv_current
-- sensor.tv_energy
-- sensor.tv_power
-- sensor.tv_previous_reading
+- sensor.tv_electric_a
+- sensor.tv_electric_kwh
+- sensor.tv_electric_w
 
 # Living Room Sensor
 - sensor.living_room_sensor_motion

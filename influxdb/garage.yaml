@@ -7,12 +7,11 @@
 #
 
 # Garage Light
-- sensor.garage_light_current
-- sensor.garage_light_energy
-- sensor.garage_light_power
+- sensor.garage_light_electric_a
+- sensor.garage_light_electric_kwh
+- sensor.garage_light_electric_w
 
 # UPS
-- sensor.ups_current
-- sensor.ups_energy
-- sensor.ups_power
-- sensor.ups_previous_reading
+- sensor.ups_electric_a
+- sensor.ups_electric_kwh
+- sensor.ups_electric_w
