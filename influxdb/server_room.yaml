@@ -7,24 +7,24 @@
 #
 
 # PVE1-Node1
-- sensor.pve1node1_current
-- sensor.pve1node1_energy
-- sensor.pve1node1_power
+- sensor.pve1node1_electric_a
+- sensor.pve1node1_electric_kwh
+- sensor.pve1node1_electric_w
 
 # PVE1-Node2
-- sensor.pve1node2_current
-- sensor.pve1node2_energy
-- sensor.pve1node2_power
+- sensor.pve1node2_electric_a
+- sensor.pve1node2_electric_kwh
+- sensor.pve1node2_electric_w
 
 # Tower
-- sensor.tower_current
-- sensor.tower_energy
-- sensor.tower_power
+- sensor.tower_electric_a
+- sensor.tower_electric_kwh
+- sensor.tower_electric_w
 
 # Switch1
-- sensor.switch1_current
-- sensor.switch1_energy
-- sensor.switch1_power
+- sensor.switch1_electric_a
+- sensor.switch1_electric_kwh
+- sensor.switch1_electric_w
 
 # Server Room Sensor
 - sensor.server_room_sensor_motion

@@ -7,19 +7,19 @@
 #
 
 # Office Monitors
-- sensor.office_monitors_current
-- sensor.office_monitors_energy
-- sensor.office_monitors_power
+- sensor.office_monitors_electric_a
+- sensor.office_monitors_electric_kwh
+- sensor.office_monitors_electric_w
 
 # Office Equipment
-- sensor.office_equipment_current
-- sensor.office_equipment_energy
-- sensor.office_equipment_power
+- sensor.office_equipment_electric_a
+- sensor.office_equipment_electric_kwh
+- sensor.office_equipment_electric_w
 
 # Office Mat Heater
-- sensor.office_mat_heater_current
-- sensor.office_mat_heater_energy
-- sensor.office_mat_heater_power
+- sensor.office_mat_heater_electric_a
+- sensor.office_mat_heater_electric_kwh
+- sensor.office_mat_heater_electric_w
 
 # Office Sensor
 - sensor.office_sensor_motion

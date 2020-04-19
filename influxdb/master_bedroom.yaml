@@ -11,4 +11,4 @@
 - sensor.master_bedroom_sensor_temperature
 - sensor.master_bedroom_sensor_humidity
 - sensor.master_bedroom_sensor_illuminance
-- sensor.master_bedroom_sensor_uv
+- sensor.master_bedroom_sensor_ultraviolet

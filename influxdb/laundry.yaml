@@ -7,21 +7,21 @@
 #
 
 # Dryer
-- sensor.dryer_current
-- sensor.dryer_energy
-- sensor.dryer_power
+- sensor.dryer_electric_a
+- sensor.dryer_electric_kwh
+- sensor.dryer_electric_w
 
 # Washing Machine
-- sensor.washing_machine_current
-- sensor.washing_machine_energy
-- sensor.washing_machine_power
+- sensor.washing_machine_electric_a
+- sensor.washing_machine_electric_kwh
+- sensor.washing_machine_electric_w
 
 # Laundry Sensor
 - sensor.laundry_sensor_motion
 - sensor.laundry_sensor_temperature
 - sensor.laundry_sensor_humidity
 - sensor.laundry_sensor_illuminance
-- sensor.laundry_sensor_uv
+- sensor.laundry_sensor_ultraviolet
 
 # Laundry Sliding Door
 - binary_sensor.laundry_sliding_door

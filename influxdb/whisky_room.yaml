@@ -7,7 +7,6 @@
 #
 
 # Wine Fridge
-- sensor.wine_fridge_sensor_motion
-- sensor.wine_fridge_sensor_temperature
-- sensor.wine_fridge_sensor_humidity
-- sensor.wine_fridge_sensor_illuminance
+- sensor.wine_fridge_electric_a
+- sensor.wine_fridge_electric_kwh
+- sensor.wine_fridge_electric_w

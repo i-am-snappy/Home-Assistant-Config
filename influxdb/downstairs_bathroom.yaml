@@ -11,4 +11,4 @@
 - sensor.downstairs_bathroom_sensor_temperature
 - sensor.downstairs_bathroom_sensor_humidity
 - sensor.downstairs_bathroom_sensor_illuminance
-- sensor.downstairs_bathroom_sensor_uv
+- sensor.downstairs_bathroom_sensor_ultraviolet
