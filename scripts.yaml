@@ -1,0 +1,24 @@
+goodnight:
+  alias: Goodnight
+  sequence:
+  - device_id: ''
+    domain: ''
+    entity_id: ''
+good_morning:
+  alias: Good Morning
+  sequence:
+  - device_id: ''
+    domain: ''
+    entity_id: ''
+tv_time:
+  alias: TV Time
+  sequence:
+  - device_id: ''
+    domain: ''
+    entity_id: ''
+movie_time:
+  alias: Movie Time
+  sequence:
+  - device_id: ''
+    domain: ''
+    entity_id: ''
