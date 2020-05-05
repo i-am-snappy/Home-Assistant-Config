@@ -1,0 +1,18 @@
+---
+
+known_guests:
+  name: Known Guests
+  entities:
+    - person.chris
+    - person.mel
+    - person.greg
+    - person.mark
+    - person.amanda
+    - person.john
+    - peson.carol
+    - person.roz
+    - person.ben
+    - person.bob
+    - person.jeanie
+    - person.grae
+    - person.lis

@@ -1,7 +1,7 @@
 ---
 
 platform: generic
-name: Cam 3
+name: Garage Left Camera
 still_image_url: http://cam3.snappylan/ISAPI/Streaming/channels/101/picture
 #mjpeg_url: http://cam3.snappylan/ISAPI/Streaming/channels/102/httppreview
 stream_source: !secret cam3_stream_url

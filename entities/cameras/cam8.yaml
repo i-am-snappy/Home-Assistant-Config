@@ -1,7 +1,7 @@
 ---
 
 platform: generic
-name: Cam 8
+name: Garage Right Camera
 still_image_url: http://cam8.snappylan/ISAPI/Streaming/channels/101/picture
 #mjpeg_url: http://cam8.snappylan/ISAPI/Streaming/channels/102/httppreview
 stream_source: !secret cam8_stream_url
