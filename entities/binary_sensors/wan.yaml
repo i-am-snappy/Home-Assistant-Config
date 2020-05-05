@@ -1,0 +1,7 @@
+---
+
+platform: ping
+host: !secret wan_url
+name: Wan
+count: 2
+scan_interval: 30

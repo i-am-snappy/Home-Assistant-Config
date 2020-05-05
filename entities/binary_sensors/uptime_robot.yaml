@@ -1,0 +1,9 @@
+---
+
+# The uptimerobot binary sensor platform allows you get the
+# status for all of your monitors from your account on Uptime Robot.
+
+# https://www.home-assistant.io/integrations/uptimerobot
+
+platform: uptimerobot
+api_key: !secret uptime_robot_api
