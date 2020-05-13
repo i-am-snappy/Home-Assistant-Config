@@ -1,34 +1,34 @@
-# A light mode theme with a green accent color
-# Creater: Juan - @juanmtech
+# A matte black theme with a green accent color
+# Creator: Juan - @juanmtech
 # Website: https://www.juanmtech.com
 # YouTube Channel: https://youtube.com/juanmtech
 # My Home Assistant Config files: https://github.com/JuanMTech/Home_Assistant_files
 #
 #
-Green light Mode:
+Green Dark Mode:
   # Header:
-  app-header-background-color: "#F8F8F8"
-  app-header-text-color: "#9BA2AE"
+  app-header-background-color: "#1C1D21"
+  app-header-text-color: "#7c7d83"
   # Main Interface Colors
   primary-color: "#45AA79"
   light-primary-color: var(--primary-color)
-  primary-background-color: "#FDFBFE"
-  secondary-background-color: var(--primary-background-color)
+  primary-background-color: "#1C1D21"
+  secondary-background-color: "#252629"
   divider-color: var(--primary-background-color)
   # Text
-  primary-text-color: "#424242"
-  secondary-text-color: "#5F6267"
+  primary-text-color: "#BDC1C6"
+  secondary-text-color: "#BDC1C6"
   text-primary-color: "#FFFFFF"
   disabled-text-color: "#717171"
   # Sidebar Menu
   sidebar-icon-color: var(--app-header-text-color)
-  sidebar-text-color: '#424242'
-  sidebar-background-color: "#FFFFFF"
+  sidebar-text-color: '#BDC1C6'
+  sidebar-background-color: "#1C1D21"
   sidebar-selected-background-color: var(--primary-background-color)
   sidebar-selected-icon-color: "#45AA79"
   sidebar-selected-text-color: var(--sidebar-selected-icon-color))
   # States and Badges
-  state-icon-color: "#8f96a3 "
+  state-icon-color: "#636469"
   state-icon-active-color: "#45AA79"
   state-icon-unavailable-color: var(--disabled-text-color)
   # Sliders
@@ -38,23 +38,24 @@ Green light Mode:
   paper-slider-active-color: var(--paper-slider-knob-color)
   paper-slider-secondary-color: var(--light-primary-color)
   # Labels
-  label-badge-background-color: "#F8FAF9"
-  label-badge-text-color: "#4D5575"
-  label-badge-red: "#C7484C"
-  label-badge-green: "#6DC071"
-  label-badge-blue: "#51AAD1"
-  label-badge-yellow: "#D9B757"
+  label-badge-background-color: "#202124"
+  label-badge-text-color: "#BDC1C6"
+  label-badge-red: "#D06568"
+  label-badge-green: "#80C884"
+  label-badge-blue: "#5F9BEA"
+  label-badge-yellow: "#DFC271"
   label-badge-gray: "#5F6267"
+
   # Cards
-  ha-card-border-radius: "15px"
-  ha-card-box-shadow: 1px 1px 5px 0px rgb(230, 230, 230)
-  paper-card-background-color: "#FFFFFF"
-  paper-listbox-background-color: "#FFFFFF"
+  ha-card-border-radius: "10px"
+  ha-card-box-shadow: 0px
+  paper-card-background-color: "#252629"
+  paper-listbox-background-color: "#1C1D21"
   # Switches
   switch-checked-button-color: "#45AA79"
-  switch-checked-track-color: "#6ec49a"
-  switch-unchecked-button-color: "#8f96a3"
-  switch-unchecked-track-color: "#b9bec6"
+  switch-checked-track-color: "#347f5a"
+  switch-unchecked-button-color: "#636466"
+  switch-unchecked-track-color: "#636466"
   # Toggles
   paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
   paper-toggle-button-checked-bar-color: var(--switch-checked-track-color)
@@ -64,3 +65,7 @@ Green light Mode:
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
   data-table-background-color: var(--primary-background-color)
+  # Dropdowns
+  material-background-color: var(--secondary-background-color)
+  material-secondary-background-color: var(--primary-background-color)
+  mdc-theme-surface: var(--secondary-background-color)
