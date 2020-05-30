@@ -46,6 +46,7 @@ zwcfg_*
 zwscene.xml
 zigbee.db
 mqtt_dump.txt
+google_calendars.yaml
 
 # Directory (contents) ignores
 .cloud

@@ -1,9 +1,0 @@
----
-
-platform: generic
-name: Front Door Camera
-still_image_url: http://cam6.snappylan/ISAPI/Streaming/channels/101/picture
-#mjpeg_url: http://cam6.snappylan/ISAPI/Streaming/channels/102/httppreview
-stream_source: !secret cam6_stream_url
-username: !secret cam_username
-password: !secret cam6_password
